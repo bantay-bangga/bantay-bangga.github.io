@@ -9,7 +9,7 @@ export function handle({ event, resolve }) {
             page += html;
             if (!done) return;
             if (!building) return page;
-            const { html: result } = await nano.process(page, {}, nano.presets.safe);
+            const { html: result } = await nano.process(page, { minifySvg: false }, nano.presets.safe);
             return result;
         },
     });
