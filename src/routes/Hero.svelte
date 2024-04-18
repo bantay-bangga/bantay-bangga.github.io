@@ -1,14 +1,6 @@
-<div class="p-12 grid grid-cols-5 gap-2">
-    <div class="p-6 rounded-lg col-span-4 bg-primary">
-        Main
-    </div>
-    <div class="p-6 rounded-lg bg-secondary">
-        Years
-    </div>
-    <div class="p-6 rounded-lg col-span-3 bg-tertiary-50">
-        Researchers
-    </div>
-    <div class="p-6 rounded-lg col-span-2 bg-tertiary-400">
-        Data size
-    </div>
+<div class="grid grid-cols-5 gap-2 p-12">
+    <div class="col-span-4 rounded-lg bg-primary p-6">Main</div>
+    <div class="rounded-lg bg-secondary p-6">Years</div>
+    <div class="col-span-3 rounded-lg bg-tertiary-50 p-6">Researchers</div>
+    <div class="col-span-2 rounded-lg bg-tertiary-400 p-6">Data size</div>
 </div>
