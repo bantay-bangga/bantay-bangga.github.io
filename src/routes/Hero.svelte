@@ -1,5 +1,7 @@
 <div class="grid grid-cols-5 gap-2">
-    <div class="col-span-4 space-y-4 rounded-lg bg-primary px-10 py-12">
+    <div
+        class="col-span-4 space-y-4 rounded-lg bg-primary px-10 py-12 shadow-md transition-transform hover:scale-105 hover:shadow-2xl"
+    >
         <h1 class="font-anon text-7xl font-bold tracking-wider">Bantay Bangga</h1>
         <p class="font-raleway">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero delectus expedita consequuntur, mollitia
@@ -9,10 +11,14 @@
             praesentium ab? Dolor, facilis laudantium?
         </p>
     </div>
-    <div class="flex items-center justify-center rounded-lg bg-secondary px-10 py-12">
+    <div
+        class="flex items-center justify-center rounded-lg bg-secondary px-10 py-12 shadow-md transition-transform hover:scale-105 hover:shadow-2xl"
+    >
         <h2 class="w-min text-center font-anon text-4xl font-bold tracking-wider">2016 to 2024</h2>
     </div>
-    <div class="col-span-3 space-y-2 rounded-lg bg-tertiary-50 px-10 py-12">
+    <div
+        class="col-span-3 space-y-2 rounded-lg bg-tertiary-50 px-10 py-12 shadow-md transition-transform hover:scale-105 hover:shadow-2xl"
+    >
         <span class="text-gray-500">Researchers</span>
         <h2 class="font-anon text-4xl font-bold tracking-wider">FerrisWheel &#129408;</h2>
         <ul class="font-raleway">
@@ -21,7 +27,9 @@
             <li><a href="https://github.com/Anjellyrika" target="_blank">Angelica Julianne A. Raborar</a></li>
         </ul>
     </div>
-    <div class="col-span-2 flex items-center justify-center rounded-lg bg-tertiary-400 px-10 py-12">
+    <div
+        class="col-span-2 flex items-center justify-center rounded-lg bg-tertiary-400 px-10 py-12 shadow-md transition-transform hover:scale-105 hover:shadow-2xl"
+    >
         <p class="w-min text-center font-raleway">
             Approximately <span class="font-anon text-6xl font-bold">46209</span> recorded road incidents in the Philippines
         </p>
