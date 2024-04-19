@@ -2,4 +2,6 @@
     import './app.css';
 </script>
 
-<slot />
+<div class="mx-auto my-8 max-w-7xl">
+    <slot />
+</div>

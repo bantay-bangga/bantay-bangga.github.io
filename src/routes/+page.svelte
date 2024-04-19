@@ -3,5 +3,3 @@
 </script>
 
 <Hero />
-
-<p>Hello world!</p>
