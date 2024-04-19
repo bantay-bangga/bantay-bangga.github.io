@@ -4,11 +4,10 @@
     >
         <h1 class="font-anon text-7xl font-bold tracking-wider">Bantay Bangga</h1>
         <p class="font-raleway">
-            What even happened after driver's licenses became harder to obtain? 
-            Are roads safer to be in now? 
-            Are there less road accidents now compared to before? 
-            Should I feel safer now with the introduced changes? 
-            Bantay Bangga is here to provide answers through thorough analysis of road crashes both pre- and post-LTO issuance changes. 
+            What even happened after driver's licenses became harder to obtain? Are roads safer to be in now? Are there
+            less road accidents now compared to before? Should I feel safer now with the introduced changes? Bantay
+            Bangga is here to provide answers through thorough analysis of road crashes both pre- and post-LTO issuance
+            changes.
         </p>
     </div>
     <div
