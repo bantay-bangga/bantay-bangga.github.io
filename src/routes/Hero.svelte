@@ -20,7 +20,7 @@
         class="col-span-3 space-y-2 rounded-lg bg-tertiary-50 px-10 py-12 shadow-md transition-transform hover:scale-105 hover:shadow-2xl"
     >
         <span class="text-gray-500">Researchers</span>
-        <h2 class="font-anon text-4xl font-bold tracking-wider">FerrisWheel &#129408;</h2>
+        <h2 class="font-anon text-4xl font-bold tracking-wider">FerrisWheel&#129408;</h2>
         <ul class="font-raleway">
             <li><a href="https://github.com/Dox-Dev" target="_blank">Jose Ellis Miguel C. Caluag</a></li>
             <li><a href="https://github.com/BastiDood" target="_blank">Sebastian Luis S. Ortiz</a></li>
