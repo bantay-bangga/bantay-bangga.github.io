@@ -4,11 +4,11 @@
     >
         <h1 class="font-anon text-7xl font-bold tracking-wider">Bantay Bangga</h1>
         <p class="font-raleway">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero delectus expedita consequuntur, mollitia
-            nesciunt quos error iste, eum adipisci qui accusantium culpa vitae eveniet voluptates deleniti soluta ad
-            sequi necessitatibus pariatur iure quod recusandae. Ipsa cumque tempora consequatur voluptatem, doloremque
-            maxime fuga. Omnis a debitis illo adipisci eaque nihil voluptates? Expedita vel, aperiam dolore deserunt
-            praesentium ab? Dolor, facilis laudantium?
+            What even happened after driver's licenses became harder to obtain? 
+            Are roads safer to be in now? 
+            Are there less road accidents now compared to before? 
+            Should I feel safer now with the introduced changes? 
+            Bantay Bangga is here to provide answers through thorough analysis of road crashes both pre- and post-LTO issuance changes. 
         </p>
     </div>
     <div
