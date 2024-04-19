@@ -1,4 +1,4 @@
-<div class="grid grid-cols-5 gap-2">
+<div class="grid grid-cols-5 gap-2 text-surface">
     <div
         class="col-span-4 space-y-4 rounded-lg bg-primary px-10 py-12 shadow-md transition-transform hover:scale-105 hover:shadow-2xl"
     >
