@@ -1,3 +1,8 @@
+<script>
+    import { Icon } from '@steeze-ui/svelte-icon';
+    import { MarkGithub } from '@steeze-ui/octicons';
+</script>
+
 <div class="grid grid-cols-2 gap-2 text-surface md:grid-cols-5">
     <div
         class="col-span-full space-y-4 rounded-lg bg-primary px-6 py-12 shadow-md transition-transform hover:scale-105 hover:shadow-2xl md:col-span-4 md:px-10"
@@ -28,10 +33,22 @@
     >
         <span class="text-gray-500">Researchers</span>
         <h2 class="font-anon text-2xl font-bold tracking-wider sm:text-4xl">FerrisWheel&#129408;</h2>
-        <ul class="font-raleway">
-            <li><a href="https://github.com/Dox-Dev" target="_blank">Jose Ellis Miguel C. Caluag</a></li>
-            <li><a href="https://github.com/BastiDood" target="_blank">Sebastian Luis S. Ortiz</a></li>
-            <li><a href="https://github.com/Anjellyrika" target="_blank">Angelica Julianne A. Raborar</a></li>
+        <ul class="font-raleway underline">
+            <li class="flex items-center gap-1">
+                <Icon src={MarkGithub} size="3%" /><a href="https://github.com/Dox-Dev" target="_blank"
+                    >Jose Ellis Miguel C. Caluag</a
+                >
+            </li>
+            <li class="flex items-center gap-1">
+                <Icon src={MarkGithub} size="3%" /><a href="https://github.com/BastiDood" target="_blank"
+                    >Sebastian Luis S. Ortiz</a
+                >
+            </li>
+            <li class="flex items-center gap-1">
+                <Icon src={MarkGithub} size="3%" /><a href="https://github.com/Anjellyrika" target="_blank"
+                    >Angelica Julianne A. Raborar</a
+                >
+            </li>
         </ul>
     </div>
 </div>
