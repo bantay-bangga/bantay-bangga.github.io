@@ -14,9 +14,9 @@ importers:
       '@linthtml/linthtml-config-recommended':
         specifier: ^0.1.0
         version: 0.1.0(@linthtml/linthtml@0.9.6)
-      '@steeze-ui/heroicons':
-        specifier: ^2.3.0
-        version: 2.3.0
+      '@steeze-ui/octicons':
+        specifier: ^2.1.1
+        version: 2.1.1
       '@steeze-ui/svelte-icon':
         specifier: ^1.5.0
         version: 1.5.0(svelte@4.2.15)
@@ -461,8 +461,8 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  '@steeze-ui/heroicons@2.3.0':
-    resolution: {integrity: sha512-tVOamjAd9ZzXgDwVKwbA3K+o86Z1ks/IMvqdgoCf9hKeGINVUIlAlGhM3wdpSmt7brIoBLgR70wlnsXGytZk9g==}
+  '@steeze-ui/octicons@2.1.1':
+    resolution: {integrity: sha512-HDfk+IElAXFXU0BGgoMqXWJK2Tcukle7fwkLnKmKhh7fQzOp5vwvaRRxBi4r2p/6ccO66kdRhGCj1xy79mZOCg==}
 
   '@steeze-ui/svelte-icon@1.5.0':
     resolution: {integrity: sha512-Y0S7Qk2kO6byzOlD5SQGbOF2ZaKXJgfTkH78QUPcq579wiWMQJ5H14zL4XwtsPJ0DfkoL5qa3WaIdYkWb9A6AA==}
@@ -2646,7 +2646,7 @@ snapshots:
   '@rollup/rollup-win32-x64-msvc@4.14.3':
     optional: true
 
-  '@steeze-ui/heroicons@2.3.0': {}
+  '@steeze-ui/octicons@2.1.1': {}
 
   '@steeze-ui/svelte-icon@1.5.0(svelte@4.2.15)':
     dependencies:
