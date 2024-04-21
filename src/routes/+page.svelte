@@ -46,3 +46,15 @@
     <a href="https://www.who.int/philippines/news/detail/18-12-2023-dotr--who--road-safety-partners-launch-global-status-report-on-road-safety-2023-in-the-philippines" target="_blank">[1]</a>
     <a href="https://www.who.int/philippines/news/detail/31-05-2023-department-of-transportation--world-health-organization-launch-philippine-road-safety-action-plan-2023-2028" target="_blank">[2]</a>
 </p>    
+
+<h1 class="text-4xl font-extrabold prose dark:prose-invert"> Research Questions </h1>
+
+<h2 class="text-2xl font-extrabold prose dark:prose-invert"> Primary </h2>
+<p class="prose dark:prose-invert">
+    Has the recent changes in the issuance of driver's licenses by the LTO improved overall road safety in Metro Manila?
+</p>
+
+<h2 class="text-2xl font-extrabold prose dark:prose-invert"> Secondary </h2>
+<p class="prose dark:prose-invert">
+    How has the number of road crashes in the Philippines changed from before to after January 2020? 
+</p>
