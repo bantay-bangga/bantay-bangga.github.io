@@ -4,8 +4,8 @@
 
 <Hero />
 
-<article class="prose-invert">
-    <h1 class="text-4xl font-extrabold"> Overview </h1>
+<article class="prose prose-invert">
+    <h1> Overview </h1>
 
     <p>
         The Bantay Bangga project is a data science initiative undertaken in fulfillment of CS 132 during the second semester of the academic year 2023-2024 at the University of the Philippines - Diliman.
@@ -13,7 +13,7 @@
         The dataset to be used for this analysis contains approximately 46000 entries of road accidents that span from the years 2016 to 2024.
     </p>
 
-    <h1 class="text-4xl font-extrabold"> Background </h1>
+    <h1> Background </h1>
     <!-- CONTENT -->
     <p>
         <!-- NOTE: We only need 1-3 references, so far we've got 2. -->
@@ -48,26 +48,26 @@
         <a href="https://www.who.int/philippines/news/detail/31-05-2023-department-of-transportation--world-health-organization-launch-philippine-road-safety-action-plan-2023-2028" target="_blank">[2]</a>
     </p>    
 
-    <h1 class="text-4xl font-extrabold"> Research Questions </h1>
+    <h1> Research Questions </h1>
 
-    <h2 class="text-2xl font-extrabold"> Primary </h2>
+    <h2> Primary </h2>
     <p>
         Has the recent changes in the issuance of driver's licenses by the LTO improved overall road safety in Metro Manila?
     </p>
 
-    <h2 class="text-2xl font-extrabold"> Secondary </h2>
+    <h2> Secondary </h2>
     <p>
         How has the number of road crashes in the Philippines changed from before to after January 2020? 
     </p>
 
-    <h1 class="text-4xl font-extrabold"> Hypotheses </h1>
+    <h1> Hypotheses </h1>
 
-    <h2 class="text-2xl font-extrabold"> Null </h2>
+    <h2> Null </h2>
     <p>
         There were no observable differences in overall road safety of the Philippines after the changes in driver's license issuance made by the LTO.
     </p>
 
-    <h2 class="text-2xl font-extrabold"> Alternative </h2>
+    <h2> Alternative </h2>
     <p>
         The changes made to driver's license issuance by the LTO have resulted in improved overall road safety within the Philippines.
     </p>
