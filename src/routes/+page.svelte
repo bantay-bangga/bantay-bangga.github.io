@@ -4,17 +4,17 @@
 
 <Hero />
 
-<h1 class="text-4xl font-extrabold dark:text-white"> Overview </h1>
+<h1 class="text-4xl font-extrabold prose dark:prose-invert"> Overview </h1>
 
-<p class="dark:text-white">
+<p class="prose dark:prose-invert">
     The Bantay Bangga project is a data science initiative undertaken in fulfillment of CS 132 during the second semester of the academic year 2023-2024 at the University of the Philippines - Diliman.
     The project aims to analyze and assess the change in road safety caused by the modified procedure of the issuance of driver's licenses by the Land Transportation Office (LTO) in the Philippines this past January 2020.
     The dataset to be used for this analysis contains approximately 46000 entries of road accidents that span from the years 2016 to 2024.
 </p>
 
-<h1 class="text-4xl font-extrabold dark:text-white"> Background </h1>
+<h1 class="text-4xl font-extrabold prose dark: prose-invert"> Background </h1>
 <!-- CONTENT -->
-<p class="dark:text-white">
+<p class="prose dark:prose-invert">
     <!-- NOTE: We only need 1-3 references, so far we've got 2. -->
 
     <!-- FIRST REFERENCE -->
@@ -42,7 +42,7 @@
 
 </p>
 <!-- REFERENCES -->
-<p class="dark:text-white">
+<p class="prose dark:prose-invert">
     <a href="https://www.who.int/philippines/news/detail/18-12-2023-dotr--who--road-safety-partners-launch-global-status-report-on-road-safety-2023-in-the-philippines" target="_blank">[1]</a>
     <a href="https://www.who.int/philippines/news/detail/31-05-2023-department-of-transportation--world-health-organization-launch-philippine-road-safety-action-plan-2023-2028" target="_blank">[2]</a>
 </p>    
