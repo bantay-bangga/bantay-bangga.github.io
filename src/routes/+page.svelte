@@ -71,4 +71,10 @@
     <p>
         The changes made to driver's license issuance by the LTO have resulted in improved overall road safety within the Philippines.
     </p>
+
+    <h1> Action Plan </h1>
+
+    <p>
+        <!-- TODO: Add action plan here -->
+    </p>
 </article>
