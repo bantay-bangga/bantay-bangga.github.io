@@ -75,4 +75,60 @@
         the improvements (or lack thereof) brought by these modifications. These may be used by local road and traffic
         enforcement to see which certain aspects of road safety in the Philippines are lacking, and act accordingly.
     </p>
+    <h2>Data Collection</h2>
+    <p>
+        Data on the road crash incidents was obtained from the <a
+            href="https://itslab.ncts.upd.edu.ph/create/"
+            target="_blank"
+            >Project <abbr title="Collection, Recording, and Analysis of Traffic Incidence Data">CREATE</abbr></a
+        >
+        SQL databases of the
+        <a href="https://itslab.ncts.upd.edu.ph/" target="_blank"
+            >Intelligent Transport Systems Laboratory <dfn
+                ><abbr title="Intelligent Transport Systems Laboratory">(ITSLab)</abbr></dfn
+            ></a
+        >
+        at the
+        <a href="https://ncts.upd.edu.ph/" target="_blank"
+            >National Center for Transportation Studies <dfn
+                ><abbr title="National Center for Transportation Studies">(NCTS)</abbr></dfn
+            ></a
+        >. As of writing, the data set includes incidents as far back as 2016 up to 2024, which amounts to
+        <strong>46,209 road crash incidents</strong> in total. Each data point records pertinent information on the nature
+        of the road crash: date of incident, time of incident, collision type, incident location, weather condition, and
+        light condition. Moreover, for each road crash incident, the data set notes each person involved (e.g., drivers,
+        passengers, pedestrians, and witnesses) with their respective ages, sexes, sustained injuries, resulting fatalities,
+        and usage of safety equipment (e.g., seatbelts and helmets). Finally, for each road crash incident, the data set
+        also encodes the model and make of each vehicle involved in the incident as well as their intended function (e.g.,
+        private, public, government, or for-hire).
+    </p>
+    <p>
+        Out of respect for the privacy of the individuals involved (sometimes fatally) in these road crash incidents,
+        personally identifiable columns such as names, plate numbers, license numbers, addresses, and hospitals have
+        been intentionally redacted from the original databases. Although these are readily available from the raw
+        databases, Bantay Bangga deems this data unnecessary and irrelevant to the data analysis.
+    </p>
+    <p>The resulting data set is a left-join of all the one-to-many relationships represented by the database.</p>
+    <ul>
+        <li>
+            One incident is to many involved persons. Note that these include drivers, passengers, pedestrians, and
+            witnesses.
+        </li>
+        <li>
+            One incident is to many involved vehicles. Note that most collisions occur between two vehicles, but it is
+            totally possible to be involved in a mass collision.
+        </li>
+    </ul>
+    <a
+        href="https://docs.google.com/spreadsheets/d/11p-dVOkn23gm96M7nfzS0bfT7h5TYGks1wgk4W-c4GY"
+        target="_blank"
+        class="rounded-lg bg-green-700 px-5 py-2.5 text-sm font-medium text-white no-underline hover:bg-green-800 focus:outline-none focus:ring-4 focus:ring-green-300 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800"
+        >See the Data Set with UP Mail</a
+    >
+    <p>
+        One major limitation of the data set is the ubiquity of null data and misspelled categories. To address these
+        concerns, only non-null entries of column-specific analyses will be considered. For misspellings and variations
+        in letter casing, text data will be standardized in lower case or upper case. Either is sufficient as long as
+        the scheme is consistent for a particular analysis.
+    </p>
 </article>
