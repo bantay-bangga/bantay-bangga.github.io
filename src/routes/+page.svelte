@@ -58,3 +58,15 @@
 <p class="prose dark:prose-invert">
     How has the number of road crashes in the Philippines changed from before to after January 2020? 
 </p>
+
+<h1 class="text-4xl font-extrabold prose dark:prose-invert"> Hypotheses </h1>
+
+<h2 class="text-2xl font-extrabold prose dark:prose-invert"> Null </h2>
+<p class="prose dark:prose-invert">
+    There were no observable differences in overall road safety of the Philippines after the changes in driver's license issuance made by the LTO.
+</p>
+
+<h2 class="text-2xl font-extrabold prose dark:prose-invert"> Alternative </h2>
+<p class="prose dark:prose-invert">
+    The changes made to driver's license issuance by the LTO have resulted in improved overall road safety within the Philippines.
+</p>
