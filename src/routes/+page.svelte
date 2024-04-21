@@ -75,6 +75,9 @@
     <h1> Action Plan </h1>
 
     <p>
-        <!-- TODO: Add action plan here -->
+        Examine the frequency and severity of recorded road incidents before and after the implementation of new LTO policy on January 2020.
+        Succeeding the analysis and assessment of road crashes before and after the LTO driver's license issuance changes,
+            we'll provide researchers and government personnel tangible and quantitative proof on the improvements (or lack thereof) brought by these modifications.
+        These may be used by local road and traffic enforcement to see which certain aspects of road safety in the Philippines are lacking, and act accordingly.
     </p>
 </article>
