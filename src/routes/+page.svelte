@@ -53,11 +53,12 @@
     <h2>Research Questions</h2>
     <h3>Primary</h3>
     <p>
-        Has the recent changes in the issuance of driver's licenses by the LTO improved overall road safety in Metro
-        Manila?
+        Did the pandemic significantly affect the amount and quality of hospital care that went into treating road-related casualties and fatalities?
     </p>
     <h3>Secondary</h3>
-    <p>How has the number of road crashes in the Philippines changed from before to after January 2020?</p>
+    <p>
+        What were the trends regarding the nature of road crashes before and during the pandemic (e.g., vehicle type and classification, cause of the accident)?
+    </p>
     <h2>Hypotheses</h2>
     <h3>Null</h3>
     <p>
