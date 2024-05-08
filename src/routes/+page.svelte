@@ -62,13 +62,11 @@
     <h2>Hypotheses</h2>
     <h3>Null</h3>
     <p>
-        There were no observable differences in overall road safety of the Philippines after the changes in driver's
-        license issuance made by the LTO.
+        There were no observable differences in the overall amount and quality of hospital care received by road-related incident victims.
     </p>
     <h3>Alternative</h3>
     <p>
-        The changes made to driver's license issuance by the LTO have resulted in improved overall road safety within
-        the Philippines.
+        The pandemic caused hospitals to prioritize COVID-19 afflicted patients, resulting in less care given to road-related incident victims.
     </p>
     <h2>Action Plan</h2>
     <p>
