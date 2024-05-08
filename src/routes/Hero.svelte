@@ -9,10 +9,10 @@
     >
         <h1 class="font-anon text-6xl font-bold tracking-wider md:text-7xl">Bantay Bangga</h1>
         <p class="font-raleway">
-            What even happened after driver's licenses became harder to obtain? Are roads safer to be in now? Are there
-            less road accidents now compared to before? Should I feel safer now with the introduced changes? <span
-                class="font-bold">Bantay Bangga</span
-            > is here to provide answers through thorough analysis of road crashes both pre- and post-LTO issuance changes.
+            What would happen if most hospitals couldn't entertain additional patients? Would more lives be at risk if
+            this were the case? Would our roads continue to present vehicular hazards and incidents on the daily?
+            <span class="font-bold">Bantay Bangga</span> is here to provide answers through thorough analysis of road crashes
+            and hospital records during both the spike and the slump of the pandemic.
         </p>
     </div>
     <div

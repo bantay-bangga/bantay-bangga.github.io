@@ -8,9 +8,11 @@
     <p>
         The <b>Bantay Bangga</b> project is a data science initiative undertaken in fulfillment of CS 132 during the second
         semester of the academic year 2023-2024 at the University of the Philippines - Diliman. The project aims to analyze
-        and assess the change in road safety caused by the modified procedure of the issuance of driver's licenses by the
-        Land Transportation Office (LTO) in the Philippines this past January 2020. The dataset to be used for this analysis
-        contains approximately 46000 entries of road accidents that span from the years 2016 to 2024.
+        hospital occupancy in relation with road-related fatalities starting during the peaks of the pandemic in 2020 and
+        2021 to its eventual downtrend in 2022. The road-related records from prior to the pandemic (2020 and below) would
+        also be used as a baseline to see if there was an increase in road-related fatalities compared to before the pandemic.
+        The datasets used for this analysis contains approximately 46000 road incident records spanning from the years 2016
+        to 2024, and approximately 1 million hospital records ranging from the 2020 to 2022.
     </p>
     <h2>Background</h2>
     <p>
@@ -51,21 +53,24 @@
     <h2>Research Questions</h2>
     <h3>Primary</h3>
     <p>
-        Has the recent changes in the issuance of driver's licenses by the LTO improved overall road safety in Metro
-        Manila?
+        Did the pandemic significantly affect the amount and quality of hospital care that went into treating
+        road-related casualties and fatalities?
     </p>
     <h3>Secondary</h3>
-    <p>How has the number of road crashes in the Philippines changed from before to after January 2020?</p>
+    <p>
+        What were the trends regarding the nature of road crashes before and during the pandemic (e.g., vehicle type and
+        classification, cause of the accident)?
+    </p>
     <h2>Hypotheses</h2>
     <h3>Null</h3>
     <p>
-        There were no observable differences in overall road safety of the Philippines after the changes in driver's
-        license issuance made by the LTO.
+        There were no observable differences in the overall amount and quality of hospital care received by road-related
+        incident victims.
     </p>
     <h3>Alternative</h3>
     <p>
-        The changes made to driver's license issuance by the LTO have resulted in improved overall road safety within
-        the Philippines.
+        The pandemic caused hospitals to prioritize COVID-19 afflicted patients, resulting in less care given to
+        road-related incident victims.
     </p>
     <h2>Action Plan</h2>
     <p>
