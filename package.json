@@ -2,7 +2,7 @@
     "name": "cs-132",
     "version": "0.0.0",
     "type": "module",
-    "packageManager": "pnpm@9.1.0",
+    "packageManager": "pnpm@9.1.2",
     "scripts": {
         "dev": "vite",
         "build": "vite build",
