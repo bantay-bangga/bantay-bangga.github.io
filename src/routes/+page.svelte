@@ -60,7 +60,7 @@
     <h3>Null</h3>
     <p>Differences in hospital capacity do not affect road incident fatality rates.</p>
     <h3>Alternative</h3>
-    <p>Some factors of hospital capacity do affect road incident fatality rates.</p>
+    <p>Some factors of hospital capacity, when insufficient, result in higher road incident fatality rates.</p>
     <h2>Action Plan</h2>
     <p>
         Examine the fatality rates (ranked in ascending order: uninjured, minor, serious, and fatal) of recorded road
