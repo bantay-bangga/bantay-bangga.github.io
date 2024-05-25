@@ -136,4 +136,21 @@
         in letter casing, text data will be standardized in lower case or upper case. Either is sufficient as long as
         the scheme is consistent for a particular analysis.
     </p>
+
+    <h2>Results</h2>
+
+    <h3>Research Question 1: To what extent does hospital capacity affect the fatality rate of road incidents?</h3>
+    <div class="grid grid-flow-row grid-cols-2 gap-2">
+        <div class="col-span-full rounded-lg bg-yellow-600 sm:col-span-1">Plot1 (No injuries versus bed occupancy)</div>
+        <div class="col-span-full rounded-lg bg-red-600 sm:col-span-1">Plot2 (Minor injuries versus bed occupancy)</div>
+        <div class="col-span-full rounded-lg bg-blue-600 sm:col-span-1">
+            Plot3 (Serious injuries versus bed occupancy)
+        </div>
+        <div class="col-span-full rounded-lg bg-green-600 sm:col-span-1">
+            Plot4 (Fatal injuries versus bed occupancy)
+        </div>
+        <div class="col-span-full rounded-lg bg-violet-600">Plot5 (Total injuries versus bed occupancy)</div>
+    </div>
+    <p>Insert summary here.</p>
+    <p>Insert conclusion here (disagree with null hypothesis).</p>
 </article>
