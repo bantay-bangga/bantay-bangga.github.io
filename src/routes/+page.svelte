@@ -156,15 +156,13 @@
 
     <h3>Research Question 2: What factors contribute to a hospital's overall capacity to provide care to patients?</h3>
     <div class="grid grid-flow-row grid-cols-2 gap-2">
-        <div class="col-span-full rounded-lg bg-yellow-600 sm:col-span-1">Plot1 (No injuries versus bed occupancy)</div>
-        <div class="col-span-full rounded-lg bg-red-600 sm:col-span-1">Plot2 (Minor injuries versus bed occupancy)</div>
+        <div class="col-span-full rounded-lg bg-yellow-600">Plot1 (Total injuries versus bed occupancy)</div>
+        <div class="col-span-full rounded-lg bg-red-600 sm:col-span-1">
+            Plot2 (Total injuries versus staff availability)
+        </div>
         <div class="col-span-full rounded-lg bg-blue-600 sm:col-span-1">
-            Plot3 (Serious injuries versus bed occupancy)
+            Plot3 (Total injuries versus equipment availability)
         </div>
-        <div class="col-span-full rounded-lg bg-green-600 sm:col-span-1">
-            Plot4 (Fatal injuries versus bed occupancy)
-        </div>
-        <div class="col-span-full rounded-lg bg-violet-600">Plot5 (Total injuries versus bed occupancy)</div>
     </div>
     <p>Insert summary here.</p>
     <p>Insert conclusion here (disagree with null hypothesis).</p>
