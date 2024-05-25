@@ -62,11 +62,13 @@
     <p>Some factors of hospital capacity do affect road incident fatality rates.</p>
     <h2>Action Plan</h2>
     <p>
-        Examine the frequency and severity of recorded road incidents before and after the implementation of new LTO
-        policy on January 2020. Succeeding the analysis and assessment of road crashes before and after the LTO driver's
-        license issuance changes, we'll provide researchers and government personnel tangible and quantitative proof on
-        the improvements (or lack thereof) brought by these modifications. These may be used by local road and traffic
-        enforcement to see which certain aspects of road safety in the Philippines are lacking, and act accordingly.
+        Examine the fatality rates (ranked in ascending order: uninjured, minor, serious, and fatal) of recorded road
+        incidents starting from the peaks of the pandemic in 2020 to its slumps in 2022, and check the relationship of
+        fatalities with different factors of hospital capacity (bed occupancy, staff availability, and equipment
+        availability). This will then be succeeded by correlations and statistical analysis between fatalities and
+        factors, which will provide the means of answering the research questions and deciding on which hypothesis to
+        accept. Researchers, government officials, and hospital organizations can hopefully use these results to
+        heighten or reduce certain factors of hospital capacity (if needed) to reduce road-related fatalities.
     </p>
     <h2>Data Collection</h2>
     <p>
