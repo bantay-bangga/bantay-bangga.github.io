@@ -52,26 +52,14 @@
     </p>
     <h2>Research Questions</h2>
     <h3>Primary</h3>
-    <p>
-        Did the pandemic significantly affect the amount and quality of hospital care that went into treating
-        road-related casualties and fatalities?
-    </p>
+    <p>To what extent does hospital capacity affect the fatality rate of road incidents?</p>
     <h3>Secondary</h3>
-    <p>
-        What were the trends regarding the nature of road crashes before and during the pandemic (e.g., vehicle type and
-        classification, cause of the accident)?
-    </p>
+    <p>What factors contribute to a hospital's overall capacity to provide care to patients?</p>
     <h2>Hypotheses</h2>
     <h3>Null</h3>
-    <p>
-        There were no observable differences in the overall amount and quality of hospital care received by road-related
-        incident victims.
-    </p>
+    <p>Differences in hospital capacity do not affect road incident fatality rates.</p>
     <h3>Alternative</h3>
-    <p>
-        The pandemic caused hospitals to prioritize COVID-19 afflicted patients, resulting in less care given to
-        road-related incident victims.
-    </p>
+    <p>Some factors of hospital capacity do affect road incident fatality rates.</p>
     <h2>Action Plan</h2>
     <p>
         Examine the frequency and severity of recorded road incidents before and after the implementation of new LTO
