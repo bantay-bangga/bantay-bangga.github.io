@@ -7,12 +7,13 @@
     <h1>Overview</h1>
     <p>
         The <b>Bantay Bangga</b> project is a data science initiative undertaken in fulfillment of CS 132 during the second
-        semester of the academic year 2023-2024 at the University of the Philippines - Diliman. The project aims to analyze
-        hospital occupancy in relation with road-related fatalities starting during the peaks of the pandemic in 2020 and
-        2021 to its eventual downtrend in 2022. The road-related records from prior to the pandemic (2020 and below) would
-        also be used as a baseline to see if there was an increase in road-related fatalities compared to before the pandemic.
-        The datasets used for this analysis contains approximately 46000 road incident records spanning from the years 2016
-        to 2024, and approximately 1 million hospital records ranging from the 2020 to 2022.
+        semester of the academic year 2023-2024 at the University of the Philippines - Diliman. The project aims to determine
+        if a hospital's capacity to help its patients, which consists of its bed occupancy, its available staff, and its
+        available medical equipment, directly affects road-related fatality rates. The project mainly looked at the peaks
+        of the the COVID-19 pandemic from early 2020 to the slumps of the COVID-19 pandemic in early 2023. The datasets used
+        for this analysis contains approximately 46000 road incident records spanning from 2016 to 2024, with approximately
+        1 million accompanying Department of Health (DOH) hospital records of occupancy, hospital staff, and medical equipment
+        covering the years 2020 to 2022.
     </p>
     <h2>Background</h2>
     <p>
