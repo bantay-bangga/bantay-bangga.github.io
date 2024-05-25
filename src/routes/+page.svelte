@@ -168,4 +168,9 @@
     </div>
     <p>Insert summary here.</p>
     <p>Insert conclusion here (disagree with null hypothesis).</p>
+
+    <h3>Pilipinas in a Nutshell</h3>
+    <div class="rounded-lg bg-violet-600">Nutshell Plot (injury trends)</div>
+    <p>Insert summary here.</p>
+    <p>Insert conclusion here (disagree with null hypothesis).</p>
 </article>
