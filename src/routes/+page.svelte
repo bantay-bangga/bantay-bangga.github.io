@@ -8,8 +8,6 @@
     import basti from '$lib/images/basti.png?enhanced';
     import ellis from '$lib/images/ellis.png?enhanced';
     import jelly from '$lib/images/jelly.png?enhanced';
-
-    import nutshell from '$lib/plots/nutshell.png';
 </script>
 
 <Hero />
@@ -190,11 +188,11 @@
     <div class="rounded-lg bg-red-600 sm:col-span-1">Plot2 (Minor injuries versus bed occupancy)</div>
     <p>
         In the first plots, the total number of road crash victims with <b>minor</b> injuries is compared to the the
-        total bed occupancy. There is a slight linear relationship between the two (as seen in the plot above), but the
+        total bed occupancy. Eyeballing the plot shows a slight linear relationship between the two variables, but the
         correlation coefficient
-        <math xmlns="http://www.w3.org/1998/Math/MathML"><msup><mi>R</mi><mn>2</mn></msup><mo>=</mo><mn>0.014</mn></math
+        <math xmlns="http://www.w3.org/1998/Math/MathML"><msup><mi>R</mi><mn>2</mn></msup><mo>=</mo><mn>0.011</mn></math
         >
-        is <em>not</em> statistically significant mostly due to the scale of the data.
+        is <em>not</em> too impressive.
     </p>
     <div class="rounded-lg bg-blue-600 sm:col-span-1">Plot3 (Serious injuries versus bed occupancy)</div>
     <p>Hello world!</p>
@@ -217,7 +215,6 @@
     <p>Insert conclusion here (disagree with null hypothesis).</p>
 
     <h3>Pilipinas in a Nutshell (PILIPINUTS 2023)</h3>
-    <img src={nutshell} alt="Bantay Bangga plot for PILIPINUTS 2023" />
     <p>
         Recorded road incidents in the Philippines reached a peak in November 2019, with 369 cases of minor injuries and
         38 fatalities. Lessened road traffic following the onset of the pandemic in 2020 led to a decline in these
