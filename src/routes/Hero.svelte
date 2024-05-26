@@ -19,8 +19,8 @@
         class="flex items-center justify-center rounded-lg bg-secondary px-10 py-12 shadow-md transition-transform hover:scale-105 hover:shadow-2xl"
     >
         <span>
-        <h2 class="w-min text-center font-anon text-4xl font-bold tracking-wider">2020 to 2022</h2>
-        <p class="text-center text-lg font-raleway">DOH Data</p>
+            <h2 class="w-min text-center font-anon text-4xl font-bold tracking-wider">2020 to 2022</h2>
+            <p class="text-center font-raleway text-lg">DOH Data</p>
         </span>
     </div>
     <div
