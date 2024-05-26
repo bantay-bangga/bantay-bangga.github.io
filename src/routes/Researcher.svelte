@@ -17,9 +17,9 @@
     export let linkedin = undefined as string | undefined;
 </script>
 
-<div class="bg-surface-900 hover:bg-surface-800 border-surface-200 inline-block space-y-2 rounded-lg border p-6 shadow">
+<div class="inline-block space-y-2 rounded-lg border border-surface-200 bg-surface-900 p-6 shadow hover:bg-surface-800">
     <enhanced:img {src} class="mx-auto block size-32 rounded-full border-4 border-primary" />
-    <h4 class="text-surface-50 text-center text-2xl font-bold tracking-tight"><slot /></h4>
+    <h4 class="text-center text-2xl font-bold tracking-tight text-surface-50"><slot /></h4>
     <ol class="align-middle underline">
         {#if email}
             <li class="flex items-center gap-2">

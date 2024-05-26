@@ -3,7 +3,7 @@
     import { MarkGithub } from '@steeze-ui/octicons';
 </script>
 
-<div class="grid grid-cols-2 gap-2 text-surface md:grid-cols-5">
+<div class="text-surface grid grid-cols-2 gap-2 md:grid-cols-5">
     <div
         class="col-span-full space-y-4 rounded-lg bg-primary px-6 py-12 shadow-md transition-transform hover:scale-105 hover:shadow-2xl md:col-span-4 md:px-10"
     >
