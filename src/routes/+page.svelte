@@ -7,12 +7,13 @@
     <h1>Overview</h1>
     <p>
         The <b>Bantay Bangga</b> project is a data science initiative undertaken in fulfillment of CS 132 during the second
-        semester of the academic year 2023-2024 at the University of the Philippines - Diliman. The project aims to analyze
-        hospital occupancy in relation with road-related fatalities starting during the peaks of the pandemic in 2020 and
-        2021 to its eventual downtrend in 2022. The road-related records from prior to the pandemic (2020 and below) would
-        also be used as a baseline to see if there was an increase in road-related fatalities compared to before the pandemic.
-        The datasets used for this analysis contains approximately 46000 road incident records spanning from the years 2016
-        to 2024, and approximately 1 million hospital records ranging from the 2020 to 2022.
+        semester of the academic year 2023-2024 at the University of the Philippines - Diliman. The project aims to determine
+        if a hospital's capacity to help its patients, which consists of its bed occupancy, its available staff, and its
+        available medical equipment, directly affects road-related fatality rates. The project mainly looked at the peaks
+        of the the COVID-19 pandemic from early 2020 to the slumps of the COVID-19 pandemic in early 2023. The datasets used
+        for this analysis contains approximately 46000 road incident records spanning from 2016 to 2024, with approximately
+        1 million accompanying Department of Health (DOH) hospital records of occupancy, hospital staff, and medical equipment
+        covering the years 2020 to 2022.
     </p>
     <h2>Background</h2>
     <p>
@@ -52,33 +53,23 @@
     </p>
     <h2>Research Questions</h2>
     <h3>Primary</h3>
-    <p>
-        Did the pandemic significantly affect the amount and quality of hospital care that went into treating
-        road-related casualties and fatalities?
-    </p>
+    <p>To what extent does hospital capacity affect the fatality rate of road incidents?</p>
     <h3>Secondary</h3>
-    <p>
-        What were the trends regarding the nature of road crashes before and during the pandemic (e.g., vehicle type and
-        classification, cause of the accident)?
-    </p>
+    <p>What factors contribute to a hospital's overall capacity to provide care to patients?</p>
     <h2>Hypotheses</h2>
     <h3>Null</h3>
-    <p>
-        There were no observable differences in the overall amount and quality of hospital care received by road-related
-        incident victims.
-    </p>
+    <p>Differences in hospital capacity do not affect road incident fatality rates.</p>
     <h3>Alternative</h3>
-    <p>
-        The pandemic caused hospitals to prioritize COVID-19 afflicted patients, resulting in less care given to
-        road-related incident victims.
-    </p>
+    <p>Some factors of hospital capacity, when insufficient, result in higher road incident fatality rates.</p>
     <h2>Action Plan</h2>
     <p>
-        Examine the frequency and severity of recorded road incidents before and after the implementation of new LTO
-        policy on January 2020. Succeeding the analysis and assessment of road crashes before and after the LTO driver's
-        license issuance changes, we'll provide researchers and government personnel tangible and quantitative proof on
-        the improvements (or lack thereof) brought by these modifications. These may be used by local road and traffic
-        enforcement to see which certain aspects of road safety in the Philippines are lacking, and act accordingly.
+        Examine the fatality rates (ranked in ascending order: uninjured, minor, serious, and fatal) of recorded road
+        incidents starting from the peaks of the pandemic in 2020 to its slumps in 2022, and check the relationship of
+        fatalities with different factors of hospital capacity (bed occupancy, staff availability, and equipment
+        availability). This will then be succeeded by correlations and statistical analysis between fatalities and
+        factors, which will provide the means of answering the research questions and deciding on which hypothesis to
+        accept. Researchers, government officials, and hospital organizations can hopefully use these results to
+        heighten or reduce certain factors of hospital capacity (if needed) to reduce road-related fatalities.
     </p>
     <h2>Data Collection</h2>
     <p>
@@ -136,4 +127,39 @@
         in letter casing, text data will be standardized in lower case or upper case. Either is sufficient as long as
         the scheme is consistent for a particular analysis.
     </p>
+
+    <h2>Results</h2>
+
+    <h3>Research Question 1: To what extent does hospital capacity affect the fatality rate of road incidents?</h3>
+    <div class="grid grid-flow-row grid-cols-2 gap-2">
+        <div class="col-span-full rounded-lg bg-yellow-600 sm:col-span-1">Plot1 (No injuries versus bed occupancy)</div>
+        <div class="col-span-full rounded-lg bg-red-600 sm:col-span-1">Plot2 (Minor injuries versus bed occupancy)</div>
+        <div class="col-span-full rounded-lg bg-blue-600 sm:col-span-1">
+            Plot3 (Serious injuries versus bed occupancy)
+        </div>
+        <div class="col-span-full rounded-lg bg-green-600 sm:col-span-1">
+            Plot4 (Fatal injuries versus bed occupancy)
+        </div>
+        <div class="col-span-full rounded-lg bg-violet-600">Plot5 (Total injuries versus bed occupancy)</div>
+    </div>
+    <p>Insert summary here.</p>
+    <p>Insert conclusion here (disagree with null hypothesis).</p>
+
+    <h3>Research Question 2: What factors contribute to a hospital's overall capacity to provide care to patients?</h3>
+    <div class="grid grid-flow-row grid-cols-2 gap-2">
+        <div class="col-span-full rounded-lg bg-yellow-600">Plot1 (Total injuries versus bed occupancy)</div>
+        <div class="col-span-full rounded-lg bg-red-600 sm:col-span-1">
+            Plot2 (Total injuries versus staff availability)
+        </div>
+        <div class="col-span-full rounded-lg bg-blue-600 sm:col-span-1">
+            Plot3 (Total injuries versus equipment availability)
+        </div>
+    </div>
+    <p>Insert summary here.</p>
+    <p>Insert conclusion here (disagree with null hypothesis).</p>
+
+    <h3>Pilipinas in a Nutshell</h3>
+    <div class="rounded-lg bg-violet-600">Nutshell Plot (injury trends)</div>
+    <p>Insert summary here.</p>
+    <p>Insert conclusion here (disagree with null hypothesis).</p>
 </article>
