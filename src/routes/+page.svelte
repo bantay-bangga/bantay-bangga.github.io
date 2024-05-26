@@ -4,9 +4,12 @@
     import Hero from './Hero.svelte';
     import { Icon } from '@steeze-ui/svelte-icon';
     import Researcher from './Researcher.svelte';
+
     import basti from '$lib/images/basti.png?enhanced';
     import ellis from '$lib/images/ellis.png?enhanced';
     import jelly from '$lib/images/jelly.png?enhanced';
+
+    import nutshell from '$lib/plots/nutshell.png';
 </script>
 
 <Hero />
@@ -83,14 +86,6 @@
         <li><em>To what extent does hospital capacity affect the fatality rate of road incidents?</em></li>
         <li><em>What factors contribute to a hospital's overall capacity to provide care to patients?</em></li>
     </ol>
-    <h2>Hypotheses</h2>
-    <ul>
-        <li><strong>Null:</strong> differences in hospital capacity do not affect road incident fatality rates.</li>
-        <li>
-            <strong>Alternative:</strong> some factors of hospital capacity, when insufficient, result in higher road incident
-            fatality rates.
-        </li>
-    </ul>
     <h2>Action Plan</h2>
     <p>
         We examine the injury types of recorded road incidents starting from the onset of the COVID-19 pandemic in 2020
@@ -185,20 +180,27 @@
     </div>
 
     <h2>Results</h2>
-
     <h3>Research Question 1: To what extent does hospital capacity affect the fatality rate of road incidents?</h3>
-    <div class="grid grid-flow-row grid-cols-2 gap-2">
-        <div class="col-span-full rounded-lg bg-yellow-600 sm:col-span-1">Plot1 (No injuries versus bed occupancy)</div>
-        <div class="col-span-full rounded-lg bg-red-600 sm:col-span-1">Plot2 (Minor injuries versus bed occupancy)</div>
-        <div class="col-span-full rounded-lg bg-blue-600 sm:col-span-1">
-            Plot3 (Serious injuries versus bed occupancy)
-        </div>
-        <div class="col-span-full rounded-lg bg-green-600 sm:col-span-1">
-            Plot4 (Fatal injuries versus bed occupancy)
-        </div>
-        <div class="col-span-full rounded-lg bg-violet-600">Plot5 (Total injuries versus bed occupancy)</div>
-    </div>
-    <p>Insert summary here.</p>
+    <p>
+        To answer this question, we attempted to fit a line to the total number of injuries (nationwide) and the total
+        bed occupancy (nationwide). In doing so, we aim to find a linear relationship between hospital bed occupancy and
+        road crash injuries. Here, we assume that bed occupancy is the definition for hospital capacity. Further work
+        can look into other factors as well.
+    </p>
+    <div class="rounded-lg bg-red-600 sm:col-span-1">Plot2 (Minor injuries versus bed occupancy)</div>
+    <p>
+        In the first plots, the total number of road crash victims with <b>minor</b> injuries is compared to the the
+        total bed occupancy. There is a slight linear relationship between the two (as seen in the plot above), but the
+        correlation coefficient
+        <math xmlns="http://www.w3.org/1998/Math/MathML"><msup><mi>R</mi><mn>2</mn></msup><mo>=</mo><mn>0.014</mn></math
+        >
+        is <em>not</em> statistically significant mostly due to the scale of the data.
+    </p>
+    <div class="rounded-lg bg-blue-600 sm:col-span-1">Plot3 (Serious injuries versus bed occupancy)</div>
+    <p>Hello world!</p>
+    <div class="rounded-lg bg-green-600 sm:col-span-1">Plot4 (Fatal injuries versus bed occupancy)</div>
+    <p>Hello world!</p>
+    <div class="rounded-lg bg-violet-600">Plot5 (Total injuries versus bed occupancy)</div>
     <p>Insert conclusion here (disagree with null hypothesis).</p>
 
     <h3>Research Question 2: What factors contribute to a hospital's overall capacity to provide care to patients?</h3>
@@ -214,9 +216,14 @@
     <p>Insert summary here.</p>
     <p>Insert conclusion here (disagree with null hypothesis).</p>
 
-    <h3>Pilipinas in a Nutshell</h3>
-    <div class="rounded-lg bg-violet-600">Nutshell Plot (injury trends)</div>
-    <p>Insert summary here.</p>
+    <h3>Pilipinas in a Nutshell (PILIPINUTS 2023)</h3>
+    <img src={nutshell} alt="Bantay Bangga plot for PILIPINUTS 2023" />
+    <p>
+        Recorded road incidents in the Philippines reached a peak in November 2019, with 369 cases of minor injuries and
+        38 fatalities. Lessened road traffic following the onset of the pandemic in 2020 led to a decline in these
+        incidents; however, they did not drop to zero. This analysis aims to study the impact of the pandemic on
+        healthcare resources for road incident victims.
+    </p>
     <p>Insert conclusion here (disagree with null hypothesis).</p>
     <h2>About Us</h2>
     <div class="not-prose grid grid-cols-1 gap-4 md:grid-cols-3">
