@@ -3,11 +3,15 @@
     import DataLink from './DataLink.svelte';
     import Hero from './Hero.svelte';
     import { Icon } from '@steeze-ui/svelte-icon';
+    import Researcher from './Researcher.svelte';
+    import basti from '$lib/images/basti.png?enhanced';
+    import ellis from '$lib/images/ellis.png?enhanced';
+    import jelly from '$lib/images/jelly.png?enhanced';
 </script>
 
 <Hero />
 <article class="prose prose-invert max-w-none">
-    <h1>Overview</h1>
+    <h2>Overview</h2>
     <p>
         The <b>Bantay Bangga</b> project is a data science project undertaken in fulfillment of CS 132 during the second
         semester of the academic year 2023-2024 at the
@@ -214,4 +218,21 @@
     <div class="rounded-lg bg-violet-600">Nutshell Plot (injury trends)</div>
     <p>Insert summary here.</p>
     <p>Insert conclusion here (disagree with null hypothesis).</p>
+    <h2>About Us</h2>
+    <div class="not-prose grid grid-cols-1 gap-4 md:grid-cols-3">
+        <Researcher src={ellis} email="josecaluag6@gmail.com" github="Dox-Dev" linkedin="ellis-caluag"
+            >Jose Ellis Miguel C. Caluag</Researcher
+        >
+        <Researcher
+            src={basti}
+            website="bastidood.github.io"
+            email="ortizbasti16@gmail.com"
+            devto="somedood"
+            github="BastiDood"
+            linkedin="basti-ortiz">Sebastian Luis S. Ortiz</Researcher
+        >
+        <Researcher src={jelly} email="jelly.rika.rbr@gmail.com" github="Anjellyrika" linkedin="jelly-raborar"
+            >Angelica Julianne A. Raborar</Researcher
+        >
+    </div>
 </article>
