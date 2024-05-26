@@ -18,13 +18,16 @@
     <div
         class="flex items-center justify-center rounded-lg bg-secondary px-10 py-12 shadow-md transition-transform hover:scale-105 hover:shadow-2xl"
     >
-        <h2 class="w-min text-center font-anon text-4xl font-bold tracking-wider">2016 to 2024</h2>
+        <span>
+        <h2 class="w-min text-center font-anon text-4xl font-bold tracking-wider">2020 to 2022</h2>
+        <p class="text-center text-lg font-raleway">DOH Data</p>
+        </span>
     </div>
     <div
         class="flex items-center justify-center rounded-lg bg-tertiary-400 px-10 py-12 shadow-md transition-transform hover:scale-105 hover:shadow-2xl md:order-last md:col-span-2"
     >
         <p class="w-min text-center font-raleway">
-            Approximately <span class="font-anon text-4xl font-bold md:text-6xl">46209</span> recorded road incidents in
+            Approximately <span class="font-anon text-4xl font-bold md:text-6xl">10047</span> recorded road incidents in
             the Philippines
         </p>
     </div>
