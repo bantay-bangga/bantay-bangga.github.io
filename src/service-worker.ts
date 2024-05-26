@@ -6,9 +6,13 @@
 import { build, files, prerendered, version } from '$service-worker';
 import { assert } from './lib/assert';
 
+/** @see https://kit.svelte.dev/docs/service-workers */
+const sw = self as unknown as ServiceWorkerGlobalScope;
+
 async function addFilesToCache() {
     const cache = await caches.open(version);
     await cache.addAll(build.concat(files).concat(prerendered));
+    await sw.skipWaiting();
 }
 
 async function deleteOldCache() {
@@ -28,8 +32,6 @@ async function fetchCacheFirst(req: Request) {
     return res ?? fetch(req);
 }
 
-/** @see https://kit.svelte.dev/docs/service-workers */
-const sw = self as unknown as ServiceWorkerGlobalScope;
 sw.addEventListener('install', evt => evt.waitUntil(addFilesToCache()));
 sw.addEventListener('activate', evt => evt.waitUntil(deleteOldCache()));
 sw.addEventListener('fetch', evt => evt.respondWith(fetchCacheFirst(evt.request)));
