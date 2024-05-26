@@ -1,77 +1,103 @@
 <script>
+    import { ArrowTopRightOnSquare } from '@steeze-ui/heroicons';
+    import DataLink from './DataLink.svelte';
     import Hero from './Hero.svelte';
+    import { Icon } from '@steeze-ui/svelte-icon';
 </script>
 
 <Hero />
 <article class="prose prose-invert max-w-none">
     <h1>Overview</h1>
     <p>
-        The <b>Bantay Bangga</b> project is a data science initiative undertaken in fulfillment of CS 132 during the second
-        semester of the academic year 2023-2024 at the University of the Philippines - Diliman. The project aims to determine
-        if a hospital's capacity to help its patients, which consists of its bed occupancy, its available staff, and its
-        available medical equipment, directly affects road-related fatality rates. The project mainly looked at the peaks
-        of the the COVID-19 pandemic from early 2020 to the slumps of the COVID-19 pandemic in early 2023. The datasets used
-        for this analysis contains approximately 46000 road incident records spanning from 2016 to 2024, with approximately
-        1 million accompanying Department of Health (DOH) hospital records of occupancy, hospital staff, and medical equipment
-        covering the years 2020 to 2022.
+        The <b>Bantay Bangga</b> project is a data science project undertaken in fulfillment of CS 132 during the second
+        semester of the academic year 2023-2024 at the
+        <a target="_blank" href="https://upd.edu.ph/">University of the Philippines Diliman</a>. The project
+        investigates correlations between road crash injuries (e.g., minor, serious, and fatal) and hospital capacity
+        (for some definition of "capacity" involving bed occupancy, equipment availability, and staff manpower). The
+        analysis relies on two sources of data: (1) approximately 46,000 road incident records spanning from 2016 to
+        2024 and (2) approximately one million records of hospital bed occupancy, human resources, and medical equipment
+        from the Department of Health <dfn><abbr title="Department of Health">(DOH)</abbr></dfn> from 2020 to 2022 during
+        the height of the COVID-19 pandemic.
     </p>
     <h2>Background</h2>
     <p>
-        Recently, the Philippine's Department of Transportation (DOTr) alongside the World Health Organization (WHO)
-        launched the Global Status Report on Road Safety for the year 2023 [1]. In the report, an alarming increase of
-        road-related deaths throughout the past decade was shown. Road traffic deaths increased from 7938 annual deaths
-        in 2011 to 11096 deaths in 2021, which is about a 39% increase. Another important statistical detail would be
-        that road traffic injuries and casualties were estimated to cost approximately 2.6% of the country's gross
-        domestic product. This is a decently sizeable allocation of the country's entire budget. Additionally, the
-        current DOTR Secretary Jaime Bautista concluded that there was definitely a need for upgrading road protection
-        and safety measures. According to him, this would include road safety being integrated into other types of
-        government policy agendas such as child protection.
-    </p>
-    <p>
-        In response to the alarming growth of road and traffic-related incidents over the past years, DOTr and WHO had
-        devised the Philippine Road Safety Action Plan encompassing 2023 to 2028 [2]. This plan seeks to reduce the
-        number of annual road traffic deaths by 35% in the year 2028. To do this and to create an overall safer road
-        environment, the plan focuses on 5 particular aspects: (1) Road safety management, which includes enhancing
-        research, gaining trust from stockholders, and adopting global best practices, (2) Safer roads, which includes
-        improving infrastructure design, road and street maintenance, and addressing safety and mobility needs of
-        vulnerable road users (e.g., cyclists, motorcyclists, pedestrians, children, elderly, persons with
-        disabilities), (3) Safer vehicles, which focuses on enhancing vehicle registration and inspection, as well as
-        regulating compliance with vehicle standards, (4) Safer road users, which emphasizes to increase public
-        awareness and mass support for road safety, which includes the strict enforcement of government laws and the
-        media's perspective on the importance of road safety, (5) Post crash response, which focuses on improving access
-        and timeliness to care and rehabilitation.
-    </p>
-    <p>
+        Recently, the Philippine Department of Transportation <dfn
+            ><abbr title="Department of Transportation">(DOTr)</abbr></dfn
+        >
+        alongside the World Health Organization <dfn><abbr title="World Health Organization">(WHO)</abbr></dfn>
+        launched the
         <a
+            target="_blank"
             href="https://www.who.int/philippines/news/detail/18-12-2023-dotr--who--road-safety-partners-launch-global-status-report-on-road-safety-2023-in-the-philippines"
-            target="_blank">[1]</a
-        >
-        <a
-            href="https://www.who.int/philippines/news/detail/31-05-2023-department-of-transportation--world-health-organization-launch-philippine-road-safety-action-plan-2023-2028"
-            target="_blank">[2]</a
-        >
+            >2023 Global Status Report on Road Safety</a
+        >. The report finds an alarming increase of road-related deaths in the past decade. Road traffic deaths
+        increased from 7,938 annual deaths in 2011 to 11,096 deaths in 2021, which is roughly a 39% increase. Moreover,
+        road traffic injuries and casualties were estimated to cost approximately 2.6% of the country's gross domestic
+        product. This is a rather sizeable allocation of the country's entire budget. Given these results,
+        <abbr title="Department of Transportation">DOTr</abbr> Secretary Jaime Bautista expressed the need to deliver impactful
+        multi-sector improvements by upgrading road protection and safety measures.
     </p>
+    <p>
+        In response to the alarming growth of road and traffic-related incidents over the past years, <abbr
+            title="Department of Transportation">DOTr</abbr
+        >
+        and <abbr title="World Health Organization">WHO</abbr> had devised the
+        <a
+            target="_blank"
+            href="https://www.who.int/philippines/news/detail/31-05-2023-department-of-transportation--world-health-organization-launch-philippine-road-safety-action-plan-2023-2028"
+            >Philippine Road Safety Action Plan</a
+        >, which spans five years of development from 2023 to 2028. This plan seeks to reduce the number of annual road
+        traffic deaths by 35% by the year 2028. To do this and to create an overall safer road environment, the plan
+        focuses on five particular aspects:
+    </p>
+    <ol>
+        <li>
+            <strong>road safety management</strong>, which includes enhancing research, gaining the trust of
+            stockholders, and adopting global best practices.
+        </li>
+        <li>
+            <strong>safer roads</strong>, which includes improving infrastructure design, road and street maintenance,
+            and addressing safety and mobility needs of vulnerable road users (e.g., cyclists, motorcyclists,
+            pedestrians, children, elderly, and persons with disabilities).
+        </li>
+        <li>
+            <strong>safer vehicles</strong>, which focuses on enhancing vehicle registration and inspection, as well as
+            regulating compliance with vehicle standards.
+        </li>
+        <li>
+            <strong>safer road users</strong>, which emphasizes to increase public awareness and mass support for road
+            safety, which includes the strict enforcement of government laws and the media's perspective on the
+            importance of road safety.
+        </li>
+        <li>
+            <strong>post-crash response</strong>, which focuses on improving access and timeliness to care and
+            rehabilitation.
+        </li>
+    </ol>
     <h2>Research Questions</h2>
-    <h3>Primary</h3>
-    <p>To what extent does hospital capacity affect the fatality rate of road incidents?</p>
-    <h3>Secondary</h3>
-    <p>What factors contribute to a hospital's overall capacity to provide care to patients?</p>
+    <ol>
+        <li><em>To what extent does hospital capacity affect the fatality rate of road incidents?</em></li>
+        <li><em>What factors contribute to a hospital's overall capacity to provide care to patients?</em></li>
+    </ol>
     <h2>Hypotheses</h2>
-    <h3>Null</h3>
-    <p>Differences in hospital capacity do not affect road incident fatality rates.</p>
-    <h3>Alternative</h3>
-    <p>Some factors of hospital capacity, when insufficient, result in higher road incident fatality rates.</p>
+    <ul>
+        <li><strong>Null:</strong> differences in hospital capacity do not affect road incident fatality rates.</li>
+        <li>
+            <strong>Alternative:</strong> some factors of hospital capacity, when insufficient, result in higher road incident
+            fatality rates.
+        </li>
+    </ul>
     <h2>Action Plan</h2>
     <p>
-        Examine the fatality rates (ranked in ascending order: uninjured, minor, serious, and fatal) of recorded road
-        incidents starting from the peaks of the pandemic in 2020 to its slumps in 2022, and check the relationship of
-        fatalities with different factors of hospital capacity (bed occupancy, staff availability, and equipment
-        availability). This will then be succeeded by correlations and statistical analysis between fatalities and
-        factors, which will provide the means of answering the research questions and deciding on which hypothesis to
-        accept. Researchers, government officials, and hospital organizations can hopefully use these results to
-        heighten or reduce certain factors of hospital capacity (if needed) to reduce road-related fatalities.
+        We examine the injury types of recorded road incidents starting from the onset of the COVID-19 pandemic in 2020
+        to its slumps in 2022. We then relate the number of minor, serious, and fatal injuries with different factors of
+        hospital capacity (e.g., bed occupancy, staff availability, and equipment availability) using statistical
+        analysis with hypothesis testing. Researchers, government officials, and hospital organizations can use these
+        results to strengthen or deprioritize (if necessary) certain factors of hospital capacity to reduce road-related
+        injuries overall.
     </p>
     <h2>Data Collection</h2>
+    <h3>Road Crash Incidents</h3>
     <p>
         Data on the road crash incidents was obtained from the <a
             href="https://itslab.ncts.upd.edu.ph/create/"
@@ -115,18 +141,44 @@
             totally possible to be involved in a mass collision.
         </li>
     </ul>
-    <a
-        href="https://docs.google.com/spreadsheets/d/11p-dVOkn23gm96M7nfzS0bfT7h5TYGks1wgk4W-c4GY"
-        target="_blank"
-        class="rounded-lg bg-green-700 px-5 py-2.5 text-sm font-medium text-white no-underline hover:bg-green-800 focus:outline-none focus:ring-4 focus:ring-green-300 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800"
-        >See the Data Set with UP Mail</a
-    >
     <p>
         One major limitation of the data set is the ubiquity of null data and misspelled categories. To address these
         concerns, only non-null entries of column-specific analyses will be considered. For misspellings and variations
         in letter casing, text data will be standardized in lower case or upper case. Either is sufficient as long as
         the scheme is consistent for a particular analysis.
     </p>
+    <div class="flex flex-wrap justify-center gap-2">
+        <DataLink href="https://docs.google.com/spreadsheets/d/11p-dVOkn23gm96M7nfzS0bfT7h5TYGks1wgk4W-c4GY">
+            <span>ACDA Road Crash Incidents</span>
+            <Icon src={ArrowTopRightOnSquare} class="inline size-4" />
+        </DataLink>
+    </div>
+    <h3>Hospital Capacity during the COVID-19 Pandemic</h3>
+    <p>
+        The <abbr title="Department of Health">DOH</abbr> maintains a regularly updated data drop of patient and hospital
+        information on the COVID-19 pandemic. This project relates this data with road crash incidents during that time.
+        Specifically, the data analysis used the datasets on bed occupancy, medical staff, and medical equipment. Some data
+        (i.e., medical staff data) has changed columns and data formats over the years, which required appropriate renaming
+        during the data analysis.
+    </p>
+    <div class="flex flex-wrap justify-center gap-2">
+        <DataLink href="https://drive.google.com/file/d/1FbKwqW3Qp8tM-dAcN-yfTZsMB7XtmmH2/view">
+            <span>Bed Occupancy (November 19, 2022)</span>
+            <Icon src={ArrowTopRightOnSquare} class="inline size-4" />
+        </DataLink>
+        <DataLink href="https://drive.google.com/file/d/1az_8HACj8bURqvn_gQLgBuPt-DGcBLyW/view">
+            <span>Medical Staff (December 31, 2021)</span>
+            <Icon src={ArrowTopRightOnSquare} class="inline size-4" />
+        </DataLink>
+        <DataLink href="https://drive.google.com/file/d/1BVm-JeuPJSScawlnKjmmdElYQfPDGz0G/view">
+            <span>Medical Staff (November 19, 2022)</span>
+            <Icon src={ArrowTopRightOnSquare} class="inline size-4" />
+        </DataLink>
+        <DataLink href="https://drive.google.com/file/d/1tbqoHLtWfu4hKakE7HtuNgkr7EiYBg1F/view">
+            <span>Medical Equipment (November 18, 2022)</span>
+            <Icon src={ArrowTopRightOnSquare} class="inline size-4" />
+        </DataLink>
+    </div>
 
     <h2>Results</h2>
 

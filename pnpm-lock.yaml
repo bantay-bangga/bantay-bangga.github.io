@@ -14,6 +14,9 @@ importers:
       '@linthtml/linthtml-config-recommended':
         specifier: ^0.1.0
         version: 0.1.0(@linthtml/linthtml@0.9.6)
+      '@steeze-ui/heroicons':
+        specifier: ^2.3.0
+        version: 2.3.0
       '@steeze-ui/octicons':
         specifier: ^2.1.1
         version: 2.1.1
@@ -456,6 +459,9 @@ packages:
     resolution: {integrity: sha512-UOo5FdvOL0+eIVTgS4tIdbW+TtnBLWg1YBCcU2KWM7nuNwRz9bksDX1bekJJCpu25N1DVWaCwnT39dVQxzqS8g==}
     cpu: [x64]
     os: [win32]
+
+  '@steeze-ui/heroicons@2.3.0':
+    resolution: {integrity: sha512-tVOamjAd9ZzXgDwVKwbA3K+o86Z1ks/IMvqdgoCf9hKeGINVUIlAlGhM3wdpSmt7brIoBLgR70wlnsXGytZk9g==}
 
   '@steeze-ui/octicons@2.1.1':
     resolution: {integrity: sha512-HDfk+IElAXFXU0BGgoMqXWJK2Tcukle7fwkLnKmKhh7fQzOp5vwvaRRxBi4r2p/6ccO66kdRhGCj1xy79mZOCg==}
@@ -2632,6 +2638,8 @@ snapshots:
 
   '@rollup/rollup-win32-x64-msvc@4.18.0':
     optional: true
+
+  '@steeze-ui/heroicons@2.3.0': {}
 
   '@steeze-ui/octicons@2.1.1': {}
 
