@@ -306,6 +306,23 @@
     <h4>Staff Resources vs. Fatal Injuries</h4>
 
     <h4>Medical Equipment vs. Minor Injuries</h4>
+    <div class="rounded-lg bg-red-600 sm:col-span-1">Plot2 (Minor injuries versus medical equipment)</div>
+    <p>
+        Here, the total number of road crash victims who sustained <b>minor</b> injuries is compared to the weekly total medical equipment.
+        Looking at the plot would reveal a slight linear relationship between the two variables with a correlation coefficient of
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <mi>R</mi><mo>^</mo><mn>2</mn><mo>=</mo><mn>0</mn><mi>.</mi><mn>0247</mn>
+        </math>
+        and a <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>p</mi></math>-value of
+        <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>0</mn><mi>.</mi><mn>2655</mn></mrow></math>.
+        These results are unfortunately insufficient to conclude any statistical significance given our proposed significance level of 95%.
+        Thus, for this, we fail to reject the null hypothesis: the total number of minor injuries is not linearly related to the weekly total medical equipment.
+    </p>
+    <p>
+        Looking at the multivariate linear regression did not conclude any promising results, with there being no predictors (i.e., specific medical equipment) that was within the desired significance level.
+        There is no statistically significant way to linearly relate the weekly total medical equipment with the total weekly number of minor injuries in road crash incidents.
+    </p>
+
 
     <h4>Medical Equipment vs. Serious Injuries</h4>
 
