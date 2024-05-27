@@ -325,6 +325,46 @@
 
 
     <h4>Medical Equipment vs. Serious Injuries</h4>
+    <div class="rounded-lg bg-red-600 sm:col-span-1">Plot2 (Minor injuries versus medical equipment)</div>
+    <p>
+        Plotting the total number of road crash victims with <b>serious</b> injuries in relation to weekly total medical equipment shows a linear relationship between the two,
+        with a correlation coefficient of 
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <mrow><msup><mi>R</mi><mn>2</mn></msup><mo>=</mo><mn>0</mn><mi>.</mi><mn>1480</mn></mrow>
+        </math>
+        and a <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>p</mi></math>-value of
+        <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>0</mn><mi>.</mi><mn>0048</mn></mrow></math>.
+        These results fall under the proposed 95% significance level set by the researchers, and thus we reject our null hypothesis. 
+        <i>In fact, opposite to what was predicted by the hypothesese, as the total number of medical equipment increases, the number of weekly total road crash incidents increase as well.</i>
+    </p>
+    <p>
+        Following that, a multivariate linear regression confirms our predictions with some interesting and promising results. 
+        More specifically, the predictors being gloves, face shields, and surgical masks all scored well within the 95% significance level with 
+        <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>p</mi></math>-values of
+        <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>0</mn><mi>.</mi><mn>0174</mn></mrow></math>,
+        <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>0</mn><mi>.</mi><mn>0035</mn></mrow></math>, and
+        <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>0</mn><mi>.</mi><mn>0209</mn></mrow></math>, 
+        respectively. 
+        
+        They scored 
+        <math xmlns="http://www.w3.org/1998/Math/MathML"
+            ><mi>R</mi>
+        </math> values of 
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <mrow><msup><mi>R</mi><mn>2</mn></msup><mo>=</mo><mn>0</mn><mi>.</mi><mn>1078</mn></mrow>
+        </math>,
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <mn>0</mn><mi>.</mi><mn>1579</mn>
+        </math>, and
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <mn>0</mn><mi>.</mi><mn>1020</mn>
+        </math>, respectively.
+    <p>
+    <p>
+        These three variables are also well-within the 95% significance level, meaning the weekly total of gloves, face shields, and surgical masks all
+        form a linear combination that determines the total weekly number of serious injuries in road crash incidents.
+    </p>
+    
 
     <h4>Medical Equipment vs. Fatal Injuries</h4>
 
