@@ -9,6 +9,8 @@
     import ellis from '$lib/images/ellis.png?enhanced';
     import jelly from '$lib/images/jelly.png?enhanced';
 
+    import nutshell from '$lib/images/Bantay-Bangga-Nutshell.png?enhanced';
+
     import icu_o_c_vs_fatal from '$lib/plots/icu-o-c_vs_fatal.png?enhanced';
     import nonicu_o_c_vs_fatal from '$lib/plots/nonicu-o-c_vs_fatal.png?enhanced';
     import total_vs_fatal from '$lib/plots/totalbeds_vs_fatal.png?enhanced';
@@ -599,11 +601,9 @@
     </p>
 
     <h3>Pilipinas in a Nutshell (PILIPINUTS 2023)</h3>
+    <enhanced:img src={nutshell} alt="Bantay Bangga plot for Pilipinuts 2023" />
     <p>
-        Recorded road incidents in the Philippines reached a peak in November 2019, with 369 cases of minor injuries and
-        38 fatalities. Lessened road traffic following the onset of the pandemic in 2020 led to a decline in these
-        incidents; however, they did not drop to zero. This analysis aims to study the impact of the pandemic on
-        healthcare resources for road incident victims.
+        INSERT DESCRIPTION
     </p>
 
     <h2>About Us</h2>
