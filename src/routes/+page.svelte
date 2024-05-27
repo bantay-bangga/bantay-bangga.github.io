@@ -279,8 +279,8 @@
         <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>p</mi></math>-value of
         <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>0</mn><mi>.</mi><mn>0094</mn></mrow></math>. At a
         significance level of 95%, we may reject the null hypothesis with statistical certainty: the two variables are
-        indeed linearly related. When the weekly total number of occupied <abbr title="Intensive Care Unit">ICU</abbr> beds
-        with COVID-19 patients increase,
+        indeed linearly related.
+        <!-- TODO: Describe the trend. "When the X decreases, Y increases." -->
     </p>
     <p>
         Finally, with the weekly total number of occupied non-<abbr title="Intensive Care Unit">ICU</abbr> beds by
@@ -297,13 +297,94 @@
         <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>0</mn><mi>.</mi><mn>0327</mn></mrow></math>. At a
         significance level of 95%, we may reject the null hypothesis with statistical certainty: the two variables are
         indeed linearly related.
+        <!-- TODO: Describe the trend. "When the X decreases, Y increases." -->
     </p>
 
     <h4>Staff Resources vs. Minor Injuries</h4>
+    <p>
+        Plotting the weekly total number of staff members (i.e., doctors, nurses, and support staff) versus the weekly
+        total number of minor injuries from road crash incidents yields <math xmlns="http://www.w3.org/1998/Math/MathML"
+            ><mrow
+                ><msup><mi>R</mi><mn>2</mn></msup><mo>&#x2248;</mo><mn>0</mn><mo separator="true">.</mo><mrow
+                    ><mn>0000</mn></mrow
+                ></mrow
+            ></math
+        >
+        with a <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>p</mi></math>-value of
+        <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>0</mn><mi>.</mi><mn>9902</mn></mrow></math>. From
+        these results alone, it is apparent that there is no linear relationship between these two variables. A similar
+        analysis into the weekly total number of doctors, nurses, and support staff (individually) yields no better
+        conclusions. That is, staff resources are not a good predictor for the weekly total number of minor injuries in
+        road crash incidents.
+    </p>
 
     <h4>Staff Resources vs. Serious Injuries</h4>
+    <p>
+        Plotting the weekly total number of staff members (i.e., doctors, nurses, and support staff) versus the weekly
+        total number of serious injuries from road crash incidents yields <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+            ><mrow
+                ><msup><mi>R</mi><mn>2</mn></msup><mo>&#x2248;</mo><mn>0</mn><mo separator="true">.</mo><mrow
+                    ><mn>0029</mn></mrow
+                ></mrow
+            ></math
+        >
+        with a <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>p</mi></math>-value of
+        <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>0</mn><mi>.</mi><mn>6668</mn></mrow></math>. From
+        these results alone, it is apparent that there is no linear relationship between these two variables. A similar
+        analysis into the weekly total number of doctors, nurses, and support staff (individually) yields no better
+        conclusions. That is, staff resources are not a good predictor for the weekly total number of serious injuries
+        in road crash incidents.
+    </p>
 
     <h4>Staff Resources vs. Fatal Injuries</h4>
+    <p>
+        Plotting the weekly total number of staff members (i.e., doctors, nurses, and support staff) versus the weekly
+        total number of fatal injuries from road crash incidents yields <math xmlns="http://www.w3.org/1998/Math/MathML"
+            ><mrow
+                ><msup><mi>R</mi><mn>2</mn></msup><mo>&#x2248;</mo><mn>0</mn><mo separator="true">.</mo><mrow
+                    ><mn>0564</mn></mrow
+                ></mrow
+            ></math
+        >
+        with a <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>p</mi></math>-value of
+        <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>0</mn><mi>.</mi><mn>0549</mn></mrow></math>. From
+        these results alone, it is apparent that there is no linear relationship between these two variables. However, a
+        similar analysis into the weekly total number of doctors, nurses, and support staff (individually) yields better
+        conclusions in multivariate linear regression.
+    </p>
+    <p>
+        With the weekly total number of doctors as the metric for hospital capacity, we obtain a correlation with
+        <math xmlns="http://www.w3.org/1998/Math/MathML"
+            ><mrow
+                ><msup><mi>R</mi><mn>2</mn></msup><mo>&#x2248;</mo><mn>0</mn><mo separator="true">.</mo><mrow
+                    ><mn>0907</mn></mrow
+                ></mrow
+            ></math
+        >
+        and a
+        <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>p</mi></math>-value of
+        <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>0</mn><mi>.</mi><mn>0140</mn></mrow></math>. At a
+        significance level of 95%, we may reject the null hypothesis with statistical certainty: the two variables are
+        indeed linearly related.
+        <!-- TODO: Describe the trend. "When the X decreases, Y increases." -->
+    </p>
+    <p>
+        With the weekly total number of nurses as the metric for hospital capacity, we obtain a correlation with
+        <math xmlns="http://www.w3.org/1998/Math/MathML"
+            ><mrow
+                ><msup><mi>R</mi><mn>2</mn></msup><mo>&#x2248;</mo><mn>0</mn><mo separator="true">.</mo><mrow
+                    ><mn>0615</mn></mrow
+                ></mrow
+            ></math
+        >
+        and a
+        <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>p</mi></math>-value of
+        <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>0</mn><mi>.</mi><mn>0447</mn></mrow></math>. At a
+        significance level of 95%, we may reject the null hypothesis with statistical certainty: the two variables are
+        indeed linearly related.
+        <!-- TODO: Describe the trend. "When the X decreases, Y increases." -->
+    </p>
 
     <h4>Medical Equipment vs. Minor Injuries</h4>
 
