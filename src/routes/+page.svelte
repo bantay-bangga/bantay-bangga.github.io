@@ -179,12 +179,7 @@
 
     <h2>Results</h2>
     <h3>Research Question 1: To what extent does hospital capacity affect the fatality rate of road incidents?</h3>
-    <p>
-        To answer this question, we attempted to fit a line to the total number of injuries (nationwide) and the total
-        bed occupancy (nationwide). In doing so, we aim to find a linear relationship between hospital bed occupancy and
-        road crash injuries. Here, in the meantime, we suppose that <strong>bed occupancy</strong> is the working definition
-        for hospital capacity. work can look into other factors as well.
-    </p>
+    <h4>Bed Occupancy vs. Minor Injuries</h4>
     <div class="rounded-lg bg-red-600 sm:col-span-1">Plot2 (Minor injuries versus bed occupancy)</div>
     <p>
         First, the total number of road crash victims with <b>minor</b> injuries is compared to the total bed occupancy.
@@ -225,12 +220,51 @@
         certainty. That is, the total number of COVID-19 patients in ICU beds and non-ICU beds forms a linear
         combination that determines the total number of minor injuries in road crash incidents.
     </p>
+
+    <h4>Bed Occupancy vs. Serious Injuries</h4>
     <div class="rounded-lg bg-blue-600 sm:col-span-1">Plot3 (Serious injuries versus bed occupancy)</div>
-    <p>Hello world!</p>
+    <p>
+        A similar analysis can be done for serious injuries. Plotting the weekly total number of beds versus the weekly
+        total number of serious injuries yields the scatter plot above. The regression results in <math
+            xmlns="http://www.w3.org/1998/Math/MathML"
+            ><mrow><msup><mi>R</mi><mn>2</mn></msup><mo>&#x2248;</mo><mn>0</mn><mi>.</mi><mn>0133</mn></mrow></math
+        >
+        with a <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>p</mi></math>-value of
+        <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>0</mn><mi>.</mi><mn>3449</mn></mrow></math>. Again,
+        these results are not statistically significant. We thus fail to reject the null hypothesis that these two
+        variables are linearly related.
+    </p>
+    <p>
+        Unfortunately, searching for a stronger correlation involving COVID-19 patients and ICU beds (just like in the
+        previous section) leads to the same negative results. There is no statistically significant way to linearly
+        relate the weekly total bed occupancy with the total weekly number of serious injuries in road crash incidents.
+    </p>
+
+    <h4>Bed Occupancy vs. Fatal Injuries</h4>
     <div class="rounded-lg bg-green-600 sm:col-span-1">Plot4 (Fatal injuries versus bed occupancy)</div>
     <p>Hello world!</p>
+
+    <h4>Bed Occupancy vs. Total Injuries</h4>
     <div class="rounded-lg bg-violet-600">Plot5 (Total injuries versus bed occupancy)</div>
     <p>Insert conclusion here (disagree with null hypothesis).</p>
+
+    <h4>Bed Occupancy vs. Total Injuries</h4>
+
+    <h4>Staff Resources vs. Minor Injuries</h4>
+
+    <h4>Staff Resources vs. Serious Injuries</h4>
+
+    <h4>Staff Resources vs. Fatal Injuries</h4>
+
+    <h4>Staff Resources vs. Total Injuries</h4>
+
+    <h4>Medical Equipment vs. Minor Injuries</h4>
+
+    <h4>Medical Equipment vs. Serious Injuries</h4>
+
+    <h4>Medical Equipment vs. Fatal Injuries</h4>
+
+    <h4>Medical Equipment vs. Total Injuries</h4>
 
     <h3>Research Question 2: What factors contribute to a hospital's overall capacity to provide care to patients?</h3>
     <div class="grid grid-flow-row grid-cols-2 gap-2">

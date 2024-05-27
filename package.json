@@ -36,7 +36,6 @@
         "eslint-config-prettier": "^9.1.0",
         "eslint-plugin-svelte": "^2.39.0",
         "htmlnano": "^2.1.1",
-        "mathlive": "^0.98.6",
         "prettier": "^3.2.5",
         "prettier-plugin-svelte": "^3.2.3",
         "prettier-plugin-tailwindcss": "^0.5.14",
