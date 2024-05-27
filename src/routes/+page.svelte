@@ -293,7 +293,7 @@
     </div>
     <p>
         For fatal injuries, the correlation with hospital capacity is stronger. With the weekly total number of occupied
-        beds being the metric for hospital capacity, we obtain a correlation with
+        beds being the metric for hospital capacity, we obtain a (negative) correlation with
         <math xmlns="http://www.w3.org/1998/Math/MathML"
             ><mrow
                 ><msup><mi>R</mi><mn>2</mn></msup><mo>&#x2248;</mo><mn>0</mn><mo separator="true">.</mo><mrow
@@ -313,7 +313,7 @@
     </p>
     <p>
         Meanwhile, with the weekly total number of occupied <abbr title="Intensive Care Unit">ICU</abbr> beds by
-        COVID-19 patients as the metric for hospital capacity, we obtain a correlation with
+        COVID-19 patients as the metric for hospital capacity, we obtain a (negative) correlation with
         <math xmlns="http://www.w3.org/1998/Math/MathML"
             ><mrow
                 ><msup><mi>R</mi><mn>2</mn></msup><mo>&#x2248;</mo><mn>0</mn><mo separator="true">.</mo><mrow
@@ -325,8 +325,9 @@
         <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>p</mi></math>-value of
         <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>0</mn><mi>.</mi><mn>0094</mn></mrow></math>. At a
         significance level of 95%, we may reject the null hypothesis with statistical certainty: the two variables are
-        indeed linearly related.
-        <!-- TODO: Describe the trend. "When the X decreases, Y increases." -->
+        indeed linearly related. In other words, when the weekly total number of occupied
+        <abbr title="Intensive Care Unit">ICU</abbr>
+        beds (by COVID-19 patient) increase, the weekly total number of fatal injuries in road crash incidents decrease.
     </p>
     <p>
         Finally, with the weekly total number of occupied non-<abbr title="Intensive Care Unit">ICU</abbr> beds by
@@ -342,8 +343,10 @@
         <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>p</mi></math>-value of
         <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>0</mn><mi>.</mi><mn>0327</mn></mrow></math>. At a
         significance level of 95%, we may reject the null hypothesis with statistical certainty: the two variables are
-        indeed linearly related.
-        <!-- TODO: Describe the trend. "When the X decreases, Y increases." -->
+        indeed linearly related. In other words, when the weekly total number of occupied non-<abbr
+            title="Intensive Care Unit">ICU</abbr
+        >
+        beds (by COVID-19 patient) increase, the weekly total number of fatal injuries in road crash incidents decrease.
     </p>
     <h4>Bed Occupancy vs. Total Injuries</h4>
     <enhanced:img
@@ -351,7 +354,6 @@
         alt="A scatter plot of total occupied hospital bed percentage vs overall total road incident injuries"
         class="mx-auto block max-w-2xl"
     />
-    <p>Insert conclusion here (disagree with null hypothesis).</p>
 
     <h4>Staff Resources vs. Minor Injuries</h4>
     <enhanced:img
@@ -529,9 +531,9 @@
         <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>0</mn><mi>.</mi><mn>0048</mn></mrow></math>. These
         results fall under the proposed 95% significance level set by the researchers, and thus we reject our null
         hypothesis.
-        <i
-            >In fact, opposite to what was predicted by the hypothesese, as the total number of medical equipment
-            increases, the number of weekly total road crash incidents increase as well.</i
+        <em
+            >In fact, opposite to what was predicted by the hypotheses, as the total number of medical equipment
+            increases, the number of weekly total road crash incidents increase as well.</em
         >
     </p>
     <p>
@@ -606,9 +608,7 @@
 
     <h3>Pilipinas in a Nutshell (PILIPINUTS 2023)</h3>
     <enhanced:img src={nutshell} alt="Bantay Bangga plot for Pilipinuts 2023" />
-    <p>
-        INSERT DESCRIPTION
-    </p>
+    <p>INSERT DESCRIPTION</p>
 
     <h2>About Us</h2>
     <div class="not-prose grid grid-cols-1 gap-4 md:grid-cols-3">
