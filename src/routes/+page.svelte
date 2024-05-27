@@ -190,7 +190,7 @@
         and a <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>p</mi></math>-value to be
         <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>0</mn><mi>.</mi><mn>5849</mn></mrow></math>. However,
         these results are unfortunately not statistically significant at a significance level of 90%. That is, we fail
-        to reject the null hypothesis that the total number of minor injuries is linearly related to the total bed
+        to reject the null hypothesis: the total number of minor injuries is not linearly related to the total bed
         occupancy.
     </p>
     <p>
@@ -217,8 +217,9 @@
         and
         <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>0</mn><mi>.</mi><mn>0381</mn></mrow></math>,
         respectively. At a significance level of 95%, the null hypothesis may therefore be rejected with statistical
-        certainty. That is, the total number of COVID-19 patients in ICU beds and non-ICU beds forms a linear
-        combination that determines the total number of minor injuries in road crash incidents.
+        certainty. That is, the total number of COVID-19 patients in <abbr title="Intensive Care Unit">ICU</abbr> beds
+        and non-<abbr title="Intensive Care Unit">ICU</abbr> beds form a linear combination that determines the total number
+        of minor injuries in road crash incidents.
     </p>
 
     <h4>Bed Occupancy vs. Serious Injuries</h4>
@@ -231,24 +232,72 @@
         >
         with a <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>p</mi></math>-value of
         <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>0</mn><mi>.</mi><mn>3449</mn></mrow></math>. Again,
-        these results are not statistically significant. We thus fail to reject the null hypothesis that these two
-        variables are linearly related.
+        these results are not statistically significant. We thus fail to reject the null hypothesis: these two variables
+        are not linearly related.
     </p>
     <p>
-        Unfortunately, searching for a stronger correlation involving COVID-19 patients and ICU beds (just like in the
-        previous section) leads to the same negative results. There is no statistically significant way to linearly
-        relate the weekly total bed occupancy with the total weekly number of serious injuries in road crash incidents.
+        Unfortunately, searching for a stronger correlation involving COVID-19 patients and <abbr
+            title="Intensive Care Unit">ICU</abbr
+        > beds (just like in the previous section) leads to the same negative results. There is no statistically significant
+        way to linearly relate the weekly total bed occupancy with the total weekly number of serious injuries in road crash
+        incidents.
     </p>
 
     <h4>Bed Occupancy vs. Fatal Injuries</h4>
     <div class="rounded-lg bg-green-600 sm:col-span-1">Plot4 (Fatal injuries versus bed occupancy)</div>
-    <p>Hello world!</p>
-
-    <h4>Bed Occupancy vs. Total Injuries</h4>
-    <div class="rounded-lg bg-violet-600">Plot5 (Total injuries versus bed occupancy)</div>
-    <p>Insert conclusion here (disagree with null hypothesis).</p>
-
-    <h4>Bed Occupancy vs. Total Injuries</h4>
+    <p>
+        For fatal injuries, the correlation with hospitcal capacity is stronger. With the weekly total number of
+        occupied beds being the metric for hospital capacity, we obtain a correlation with
+        <math xmlns="http://www.w3.org/1998/Math/MathML"
+            ><mrow
+                ><msup><mi>R</mi><mn>2</mn></msup><mo>&#x2248;</mo><mn>0</mn><mo separator="true">.</mo><mrow
+                    ><mn>0941</mn></mrow
+                ></mrow
+            ></math
+        >
+        and a
+        <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>p</mi></math>-value of
+        <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>0</mn><mi>.</mi><mn>0104</mn></mrow></math>. At a
+        significance level of 95%, we may reject the null hypothesis with statistical certainty: the two variables are
+        indeed linearly related.
+        <em
+            >Contrary to our initial hypotheses, when the weekly total number of occupied beds increase, the weekly
+            total number of fatal road crash incidents decreases.</em
+        >
+    </p>
+    <p>
+        Meanwhile, with the weekly total number of occupied <abbr title="Intensive Care Unit">ICU</abbr> beds by
+        COVID-19 patients as the metric for hospital capacity, we obtain a correlation with
+        <math xmlns="http://www.w3.org/1998/Math/MathML"
+            ><mrow
+                ><msup><mi>R</mi><mn>2</mn></msup><mo>&#x2248;</mo><mn>0</mn><mo separator="true">.</mo><mrow
+                    ><mn>0964</mn></mrow
+                ></mrow
+            ></math
+        >
+        and a
+        <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>p</mi></math>-value of
+        <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>0</mn><mi>.</mi><mn>0094</mn></mrow></math>. At a
+        significance level of 95%, we may reject the null hypothesis with statistical certainty: the two variables are
+        indeed linearly related. When the weekly total number of occupied <abbr title="Intensive Care Unit">ICU</abbr> beds
+        with COVID-19 patients increase,
+    </p>
+    <p>
+        Finally, with the weekly total number of occupied non-<abbr title="Intensive Care Unit">ICU</abbr> beds by
+        COVID-19 patients as the metric for hospital capacity, we obtain a negative correlation with
+        <math xmlns="http://www.w3.org/1998/Math/MathML"
+            ><mrow
+                ><msup><mi>R</mi><mn>2</mn></msup><mo>&#x2248;</mo><mn>0</mn><mo separator="true">.</mo><mrow
+                    ><mn>0663</mn></mrow
+                ></mrow
+            ></math
+        >
+        with a
+        <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>p</mi></math>-value of
+        <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>0</mn><mi>.</mi><mn>0327</mn></mrow></math>. At a
+        significance level of 95%, we may reject the null hypothesis with statistical certainty: the two variables are
+        indeed linearly related.
+    </p>
 
     <h4>Staff Resources vs. Minor Injuries</h4>
 
@@ -256,15 +305,11 @@
 
     <h4>Staff Resources vs. Fatal Injuries</h4>
 
-    <h4>Staff Resources vs. Total Injuries</h4>
-
     <h4>Medical Equipment vs. Minor Injuries</h4>
 
     <h4>Medical Equipment vs. Serious Injuries</h4>
 
     <h4>Medical Equipment vs. Fatal Injuries</h4>
-
-    <h4>Medical Equipment vs. Total Injuries</h4>
 
     <h3>Research Question 2: What factors contribute to a hospital's overall capacity to provide care to patients?</h3>
     <div class="grid grid-flow-row grid-cols-2 gap-2">
