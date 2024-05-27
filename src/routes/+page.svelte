@@ -182,17 +182,48 @@
     <p>
         To answer this question, we attempted to fit a line to the total number of injuries (nationwide) and the total
         bed occupancy (nationwide). In doing so, we aim to find a linear relationship between hospital bed occupancy and
-        road crash injuries. Here, we assume that bed occupancy is the definition for hospital capacity. Further work
-        can look into other factors as well.
+        road crash injuries. Here, in the meantime, we suppose that <strong>bed occupancy</strong> is the working definition
+        for hospital capacity. work can look into other factors as well.
     </p>
     <div class="rounded-lg bg-red-600 sm:col-span-1">Plot2 (Minor injuries versus bed occupancy)</div>
     <p>
-        In the first plots, the total number of road crash victims with <b>minor</b> injuries is compared to the the
-        total bed occupancy. Eyeballing the plot shows a slight linear relationship between the two variables, but the
-        correlation coefficient
-        <math xmlns="http://www.w3.org/1998/Math/MathML"><msup><mi>R</mi><mn>2</mn></msup><mo>=</mo><mn>0.011</mn></math
+        First, the total number of road crash victims with <b>minor</b> injuries is compared to the total bed occupancy.
+        Eyeballing the plot shows a slight linear relationship between the two variables with a correlation coefficient
+        <math xmlns="http://www.w3.org/1998/Math/MathML"
+            ><mrow><msup><mi>R</mi><mn>2</mn></msup><mo>=</mo><mn>0</mn><mi>.</mi><mn>0045</mn></mrow></math
         >
-        is <em>not</em> too impressive.
+        and a <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>p</mi></math>-value to be
+        <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>0</mn><mi>.</mi><mn>5849</mn></mrow></math>. However,
+        these results are unfortunately not statistically significant at a significance level of 90%. That is, we fail
+        to reject the null hypothesis that the total number of minor injuries is linearly related to the total bed
+        occupancy.
+    </p>
+    <p>
+        However, a multivariate linear regression shows more promising results. The best and simplest set of predictors
+        involve the beds occupied by COVID-19 patients. Specifically, these two variables are:
+    </p>
+    <ol>
+        <li>
+            The total number of COVID-19 patients in <dfn
+                >Intensive Care Unit <abbr title="Intensive Care Unit">(ICU)</abbr></dfn
+            >
+            beds
+        </li>
+        <li>
+            The total number of COVID-19 patients in non-<abbr title="Intensive Care Unit">ICU</abbr> beds.
+        </li>
+    </ol>
+    <p>
+        These two variables yield <math xmlns="http://www.w3.org/1998/Math/MathML"
+            ><mrow><msup><mi>R</mi><mn>2</mn></msup><mo>&#x2248;</mo><mn>0</mn><mi>.</mi><mn>0666</mn></mrow></math
+        >
+        with the <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>p</mi></math>-values
+        <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>0</mn><mi>.</mi><mn>0341</mn></mrow></math>
+        and
+        <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>0</mn><mi>.</mi><mn>0381</mn></mrow></math>,
+        respectively. At a significance level of 95%, the null hypothesis may therefore be rejected with statistical
+        certainty. That is, the total number of COVID-19 patients in ICU beds and non-ICU beds forms a linear
+        combination that determines the total number of minor injuries in road crash incidents.
     </p>
     <div class="rounded-lg bg-blue-600 sm:col-span-1">Plot3 (Serious injuries versus bed occupancy)</div>
     <p>Hello world!</p>
