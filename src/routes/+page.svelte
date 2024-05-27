@@ -455,9 +455,11 @@
     <h4>Medical Equipment vs. Fatal Injuries</h4>
     <div class="rounded-lg bg-red-600 sm:col-span-1">Plot2 (Fatal injuries versus medical equipment)</div>
     <p>
-        Plotting the weekly total number of medical equipment (i.e., gown, gloves, head_cover, goggles, coverall,
-        shoe_cover, face_shield, surgmask, n95mask) versus the weekly total number of fatal injuries from road crash
-        incidents yields <math xmlns="http://www.w3.org/1998/Math/MathML"
+        Plotting the weekly total number of medical equipment (i.e., <code>gown</code>, <code>gloves</code>,
+        <code>head_cover</code>, <code>goggles</code>,
+        <code>coverall</code>, <code>shoe_cover</code>, <code>face_shield</code>, <code>surgmask</code>,
+        <code>n95mask</code>) versus the weekly total number of fatal injuries from road crash incidents yields
+        <math xmlns="http://www.w3.org/1998/Math/MathML"
             ><mrow
                 ><msup><mi>R</mi><mn>2</mn></msup><mo>&#x2248;</mo><mn>0</mn><mo separator="true">.</mo><mrow
                     ><mn>0558</mn></mrow
