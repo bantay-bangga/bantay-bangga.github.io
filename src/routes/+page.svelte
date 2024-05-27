@@ -434,7 +434,8 @@
         conclusions in multivariate linear regression.
     </p>
     <p>
-        With the weekly total number of doctors as the metric for hospital capacity, we obtain a correlation with
+        With the weekly total number of doctors as the metric for hospital capacity, we obtain a positive correlation
+        with
         <math xmlns="http://www.w3.org/1998/Math/MathML"
             ><mrow
                 ><msup><mi>R</mi><mn>2</mn></msup><mo>&#x2248;</mo><mn>0</mn><mo separator="true">.</mo><mrow
@@ -446,11 +447,13 @@
         <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>p</mi></math>-value of
         <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>0</mn><mi>.</mi><mn>0140</mn></mrow></math>. At a
         significance level of 95%, we may reject the null hypothesis with statistical certainty: the two variables are
-        indeed linearly related.
-        <!-- TODO: Describe the trend. "When the X decreases, Y increases." -->
+        indeed linearly related. Interestingly, when the weekly total number of doctors increase, so do the weekly total
+        number of fatal injuries in road crash incidents. An alternate interpretation is that the weekly total number of
+        nurses increase when the weekly total number of fatal injuries also increase (to meet the demand).
     </p>
     <p>
-        With the weekly total number of nurses as the metric for hospital capacity, we obtain a correlation with
+        With the weekly total number of nurses as the metric for hospital capacity, we obtain a positive correlation
+        with
         <math xmlns="http://www.w3.org/1998/Math/MathML"
             ><mrow
                 ><msup><mi>R</mi><mn>2</mn></msup><mo>&#x2248;</mo><mn>0</mn><mo separator="true">.</mo><mrow
@@ -462,8 +465,9 @@
         <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>p</mi></math>-value of
         <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>0</mn><mi>.</mi><mn>0447</mn></mrow></math>. At a
         significance level of 95%, we may reject the null hypothesis with statistical certainty: the two variables are
-        indeed linearly related.
-        <!-- TODO: Describe the trend. "When the X decreases, Y increases." -->
+        indeed linearly related. Interestingly, when the weekly total number of nurses increase, so do the weekly total
+        number of fatal injuries in road crash incidents. An alternate interpretation is that the weekly total number of
+        nurses increase when the weekly total number of fatal injuries also increase (to meet the demand).
     </p>
 
     <h4>Medical Equipment vs. Minor Injuries</h4>
