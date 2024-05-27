@@ -440,9 +440,7 @@
         with
         <math xmlns="http://www.w3.org/1998/Math/MathML"
             ><mrow
-                ><msup><mi>R</mi><mn>2</mn></msup><mo>&#x2248;</mo><mn>0</mn><mo separator="true">.</mo><mrow
-                    ><mn>0907</mn></mrow
-                ></mrow
+                ><msup><mi>R</mi><mn>2</mn></msup><mo>&#x2248;</mo><mn>0</mn><mo>.</mo><mrow><mn>0907</mn></mrow></mrow
             ></math
         >
         and a
@@ -458,9 +456,7 @@
         with
         <math xmlns="http://www.w3.org/1998/Math/MathML"
             ><mrow
-                ><msup><mi>R</mi><mn>2</mn></msup><mo>&#x2248;</mo><mn>0</mn><mo separator="true">.</mo><mrow
-                    ><mn>0615</mn></mrow
-                ></mrow
+                ><msup><mi>R</mi><mn>2</mn></msup><mo>&#x2248;</mo><mn>0</mn><mo>.</mo><mrow><mn>0615</mn></mrow></mrow
             ></math
         >
         and a
@@ -482,9 +478,11 @@
         Here, the total number of road crash victims who sustained <b>minor</b> injuries is compared to the weekly total
         medical equipment. Looking at the plot would reveal a slight linear relationship between the two variables with
         a correlation coefficient of
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-            <mi>R</mi><mo>^</mo><mn>2</mn><mo>=</mo><mn>0</mn><mi>.</mi><mn>0247</mn>
-        </math>
+        <math xmlns="http://www.w3.org/1998/Math/MathML"
+            ><mrow
+                ><msup><mi>R</mi><mn>2</mn></msup><mo>&#x2248;</mo><mn>0</mn><mo>.</mo><mrow><mn>0247</mn></mrow></mrow
+            ></math
+        >
         and a <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>p</mi></math>-value of
         <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>0</mn><mi>.</mi><mn>2655</mn></mrow></math>. These
         results are unfortunately insufficient to conclude any statistical significance given our proposed significance
