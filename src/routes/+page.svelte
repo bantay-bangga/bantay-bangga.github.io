@@ -393,17 +393,22 @@
     <h4>Medical Equipment vs. Fatal Injuries</h4>
 
     <h3>Research Question 2: What factors contribute to a hospital's overall capacity to provide care to patients?</h3>
-    <div class="grid grid-flow-row grid-cols-2 gap-2">
-        <div class="col-span-full rounded-lg bg-yellow-600">Plot1 (Total injuries versus bed occupancy)</div>
-        <div class="col-span-full rounded-lg bg-red-600 sm:col-span-1">
-            Plot2 (Total injuries versus staff availability)
-        </div>
-        <div class="col-span-full rounded-lg bg-blue-600 sm:col-span-1">
-            Plot3 (Total injuries versus equipment availability)
-        </div>
-    </div>
-    <p>Insert summary here.</p>
-    <p>Insert conclusion here (disagree with null hypothesis).</p>
+    <p>
+        As seen in the previous section, there are several factors that contribute to a hospital's overall capacity to
+        provide care to its patients. During the pandemic, the bed occupancy of COVID-19 patients is one of the more
+        statistically significant predictors for the eventual severity of road crash injuries (namely that of minor and
+        fatal injuries).
+    </p>
+    <p>
+        Meanwhile, the total number of medical staff plays little to no role when predicting the severity of injuries.
+        The only exception occurs with fatal injuries, where the weekly total number of doctors and nurses are
+        statistically significant predictors.
+    </p>
+    <p>
+        Finally, the available medical equipment also plays little to no role when predicting the severity of injuries.
+        The only exception occurs with serious injuries, where the weekly total number of gloves, surgical masks, and
+        face shields interestingly are statistically significant predictors.
+    </p>
 
     <h3>Pilipinas in a Nutshell (PILIPINUTS 2023)</h3>
     <p>
@@ -412,7 +417,7 @@
         incidents; however, they did not drop to zero. This analysis aims to study the impact of the pandemic on
         healthcare resources for road incident victims.
     </p>
-    <p>Insert conclusion here (disagree with null hypothesis).</p>
+
     <h2>About Us</h2>
     <div class="not-prose grid grid-cols-1 gap-4 md:grid-cols-3">
         <Researcher
