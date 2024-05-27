@@ -8,6 +8,28 @@
     import basti from '$lib/images/basti.png?enhanced';
     import ellis from '$lib/images/ellis.png?enhanced';
     import jelly from '$lib/images/jelly.png?enhanced';
+
+    import nutshell from '$lib/images/Bantay-Bangga-Nutshell.png?enhanced';
+
+    import icu_o_c_vs_fatal from '$lib/plots/icu-o-c_vs_fatal.png?enhanced';
+    import nonicu_o_c_vs_fatal from '$lib/plots/nonicu-o-c_vs_fatal.png?enhanced';
+    import total_vs_fatal from '$lib/plots/totalbeds_vs_fatal.png?enhanced';
+    import total_vs_minor from '$lib/plots/totalbeds_vs_minor.png?enhanced';
+    import total_vs_serious from '$lib/plots/totalbeds_vs_serious.png?enhanced';
+    import total_vs_totalinjury from '$lib/plots/totalbeds_vs_totalinjury.png?enhanced';
+
+    import doc_vs_fatal from '$lib/plots/doc_vs_fatal.png?enhanced';
+    import nurse_vs_fatal from '$lib/plots/nurse_vs_fatal.png?enhanced';
+    import staff_vs_fatal from '$lib/plots/staff_vs_fatal.png?enhanced';
+    import staff_vs_minor from '$lib/plots/staff_vs_minor.png?enhanced';
+    import staff_vs_serious from '$lib/plots/staff_vs_serious.png?enhanced';
+
+    import equip_vs_fatal from '$lib/plots/equip_vs_fatal.png?enhanced';
+    import equip_vs_minor from '$lib/plots/equip_vs_minor.png?enhanced';
+    import equip_vs_serious from '$lib/plots/equip_vs_serious.png?enhanced';
+    import faceshield_vs_serious from '$lib/plots/faceshield_vs_serious.png?enhanced';
+    import gloves_vs_serious from '$lib/plots/gloves_vs_serious.png?enhanced';
+    import surgmask_vs_serious from '$lib/plots/surgmask_vs_serious.png?enhanced';
 </script>
 
 <Hero />
@@ -180,7 +202,11 @@
     <h2>Results</h2>
     <h3>Research Question 1: To what extent does hospital capacity affect the fatality rate of road incidents?</h3>
     <h4>Bed Occupancy vs. Minor Injuries</h4>
-    <div class="rounded-lg bg-red-600 sm:col-span-1">Plot2 (Minor injuries versus bed occupancy)</div>
+    <enhanced:img
+        src={total_vs_minor}
+        alt="A scatter plot of total occupied hospital bed percentage vs minor road incident injuries"
+        class="mx-auto block max-w-2xl"
+    />
     <p>
         First, the total number of road crash victims with <b>minor</b> injuries is compared to the total bed occupancy.
         Eyeballing the plot shows a slight linear relationship between the two variables with a correlation coefficient
@@ -223,7 +249,11 @@
     </p>
 
     <h4>Bed Occupancy vs. Serious Injuries</h4>
-    <div class="rounded-lg bg-blue-600 sm:col-span-1">Plot3 (Serious injuries versus bed occupancy)</div>
+    <enhanced:img
+        src={total_vs_serious}
+        alt="A scatter plot of total occupied hospital bed percentage vs serious road incident injuries"
+        class="mx-auto block max-w-2xl"
+    />
     <p>
         A similar analysis can be done for serious injuries. Plotting the weekly total number of beds versus the weekly
         total number of serious injuries yields the scatter plot above. The regression results in <math
@@ -244,10 +274,26 @@
     </p>
 
     <h4>Bed Occupancy vs. Fatal Injuries</h4>
-    <div class="rounded-lg bg-green-600 sm:col-span-1">Plot4 (Fatal injuries versus bed occupancy)</div>
+    <enhanced:img
+        src={total_vs_fatal}
+        alt="A scatter plot of total occupied hospital bed percentage vs fatal road incident injuries"
+        class="mx-auto block max-w-2xl"
+    />
+    <div class="grid grid-flow-col gap-2">
+        <enhanced:img
+            src={icu_o_c_vs_fatal}
+            alt="A scatter plot of occupied ICUs vs fatal road incident injuries"
+            class="mx-auto block max-w-xl"
+        />
+        <enhanced:img
+            src={nonicu_o_c_vs_fatal}
+            alt="A scatter plot of occupied non-ICU rooms vs fatal road incident injuries"
+            class="mx-auto block max-w-xl"
+        />
+    </div>
     <p>
         For fatal injuries, the correlation with hospital capacity is stronger. With the weekly total number of occupied
-        beds being the metric for hospital capacity, we obtain a correlation with
+        beds being the metric for hospital capacity, we obtain a (negative) correlation with
         <math xmlns="http://www.w3.org/1998/Math/MathML"
             ><mrow
                 ><msup><mi>R</mi><mn>2</mn></msup><mo>&#x2248;</mo><mn>0</mn><mo separator="true">.</mo><mrow
@@ -267,7 +313,7 @@
     </p>
     <p>
         Meanwhile, with the weekly total number of occupied <abbr title="Intensive Care Unit">ICU</abbr> beds by
-        COVID-19 patients as the metric for hospital capacity, we obtain a correlation with
+        COVID-19 patients as the metric for hospital capacity, we obtain a (negative) correlation with
         <math xmlns="http://www.w3.org/1998/Math/MathML"
             ><mrow
                 ><msup><mi>R</mi><mn>2</mn></msup><mo>&#x2248;</mo><mn>0</mn><mo separator="true">.</mo><mrow
@@ -279,8 +325,9 @@
         <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>p</mi></math>-value of
         <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>0</mn><mi>.</mi><mn>0094</mn></mrow></math>. At a
         significance level of 95%, we may reject the null hypothesis with statistical certainty: the two variables are
-        indeed linearly related.
-        <!-- TODO: Describe the trend. "When the X decreases, Y increases." -->
+        indeed linearly related. In other words, when the weekly total number of occupied
+        <abbr title="Intensive Care Unit">ICU</abbr>
+        beds (by COVID-19 patient) increase, the weekly total number of fatal injuries in road crash incidents decrease.
     </p>
     <p>
         Finally, with the weekly total number of occupied non-<abbr title="Intensive Care Unit">ICU</abbr> beds by
@@ -296,11 +343,24 @@
         <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>p</mi></math>-value of
         <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>0</mn><mi>.</mi><mn>0327</mn></mrow></math>. At a
         significance level of 95%, we may reject the null hypothesis with statistical certainty: the two variables are
-        indeed linearly related.
-        <!-- TODO: Describe the trend. "When the X decreases, Y increases." -->
+        indeed linearly related. In other words, when the weekly total number of occupied non-<abbr
+            title="Intensive Care Unit">ICU</abbr
+        >
+        beds (by COVID-19 patient) increase, the weekly total number of fatal injuries in road crash incidents decrease.
     </p>
+    <h4>Bed Occupancy vs. Total Injuries</h4>
+    <enhanced:img
+        src={total_vs_totalinjury}
+        alt="A scatter plot of total occupied hospital bed percentage vs overall total road incident injuries"
+        class="mx-auto block max-w-2xl"
+    />
 
     <h4>Staff Resources vs. Minor Injuries</h4>
+    <enhanced:img
+        src={staff_vs_minor}
+        alt="A scatter plot of total medical staff on duty vs minor road incident injuries"
+        class="mx-auto block max-w-2xl"
+    />
     <p>
         Plotting the weekly total number of staff members (i.e., doctors, nurses, and support staff) versus the weekly
         total number of minor injuries from road crash incidents yields <math xmlns="http://www.w3.org/1998/Math/MathML"
@@ -319,6 +379,11 @@
     </p>
 
     <h4>Staff Resources vs. Serious Injuries</h4>
+    <enhanced:img
+        src={staff_vs_serious}
+        alt="A scatter plot of total medical staff on duty vs serious road incident injuries"
+        class="mx-auto block max-w-2xl"
+    />
     <p>
         Plotting the weekly total number of staff members (i.e., doctors, nurses, and support staff) versus the weekly
         total number of serious injuries from road crash incidents yields <math
@@ -338,6 +403,23 @@
     </p>
 
     <h4>Staff Resources vs. Fatal Injuries</h4>
+    <enhanced:img
+        src={staff_vs_fatal}
+        alt="A scatter plot of total medical staff on duty vs fatal road incident injuries"
+        class="mx-auto block max-w-2xl"
+    />
+    <div class="grid grid-flow-col gap-2">
+        <enhanced:img
+            src={doc_vs_fatal}
+            alt="A scatter plot of total doctors on duty vs fatal road incident injuries"
+            class="mx-auto block max-w-xl"
+        />
+        <enhanced:img
+            src={nurse_vs_fatal}
+            alt="A scatter plot of total nurses on duty vs fatal road incident injuries"
+            class="mx-auto block max-w-xl"
+        />
+    </div>
     <p>
         Plotting the weekly total number of staff members (i.e., doctors, nurses, and support staff) versus the weekly
         total number of fatal injuries from road crash incidents yields <math xmlns="http://www.w3.org/1998/Math/MathML"
@@ -354,7 +436,8 @@
         conclusions in multivariate linear regression.
     </p>
     <p>
-        With the weekly total number of doctors as the metric for hospital capacity, we obtain a correlation with
+        With the weekly total number of doctors as the metric for hospital capacity, we obtain a positive correlation
+        with
         <math xmlns="http://www.w3.org/1998/Math/MathML"
             ><mrow
                 ><msup><mi>R</mi><mn>2</mn></msup><mo>&#x2248;</mo><mn>0</mn><mo separator="true">.</mo><mrow
@@ -366,11 +449,13 @@
         <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>p</mi></math>-value of
         <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>0</mn><mi>.</mi><mn>0140</mn></mrow></math>. At a
         significance level of 95%, we may reject the null hypothesis with statistical certainty: the two variables are
-        indeed linearly related.
-        <!-- TODO: Describe the trend. "When the X decreases, Y increases." -->
+        indeed linearly related. Interestingly, when the weekly total number of doctors increase, so do the weekly total
+        number of fatal injuries in road crash incidents. An alternate interpretation is that the weekly total number of
+        nurses increase when the weekly total number of fatal injuries also increase (to meet the demand).
     </p>
     <p>
-        With the weekly total number of nurses as the metric for hospital capacity, we obtain a correlation with
+        With the weekly total number of nurses as the metric for hospital capacity, we obtain a positive correlation
+        with
         <math xmlns="http://www.w3.org/1998/Math/MathML"
             ><mrow
                 ><msup><mi>R</mi><mn>2</mn></msup><mo>&#x2248;</mo><mn>0</mn><mo separator="true">.</mo><mrow
@@ -382,12 +467,17 @@
         <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>p</mi></math>-value of
         <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>0</mn><mi>.</mi><mn>0447</mn></mrow></math>. At a
         significance level of 95%, we may reject the null hypothesis with statistical certainty: the two variables are
-        indeed linearly related.
-        <!-- TODO: Describe the trend. "When the X decreases, Y increases." -->
+        indeed linearly related. Interestingly, when the weekly total number of nurses increase, so do the weekly total
+        number of fatal injuries in road crash incidents. An alternate interpretation is that the weekly total number of
+        nurses increase when the weekly total number of fatal injuries also increase (to meet the demand).
     </p>
 
     <h4>Medical Equipment vs. Minor Injuries</h4>
-    <div class="rounded-lg bg-red-600 sm:col-span-1">Plot2 (Minor injuries versus medical equipment)</div>
+    <enhanced:img
+        src={equip_vs_minor}
+        alt="A scatter plot of total medical equipment vs minor road incident injuries"
+        class="mx-auto block max-w-2xl"
+    />
     <p>
         Here, the total number of road crash victims who sustained <b>minor</b> injuries is compared to the weekly total
         medical equipment. Looking at the plot would reveal a slight linear relationship between the two variables with
@@ -409,7 +499,28 @@
     </p>
 
     <h4>Medical Equipment vs. Serious Injuries</h4>
-    <div class="rounded-lg bg-red-600 sm:col-span-1">Plot2 (Minor injuries versus medical equipment)</div>
+    <div class="grid grid-flow-col grid-rows-2 gap-2">
+        <enhanced:img
+            src={equip_vs_serious}
+            alt="A scatter plot of total medical equipment vs serious road incident injuries"
+            class="mx-auto block max-w-xl"
+        />
+        <enhanced:img
+            src={gloves_vs_serious}
+            alt="A scatter plot of total medical gloves in stock vs fatal road incident injuries"
+            class="mx-auto block max-w-xl"
+        />
+        <enhanced:img
+            src={faceshield_vs_serious}
+            alt="A scatter plot of total face shields in stock vs fatal road incident injuries"
+            class="mx-auto block max-w-xl"
+        />
+        <enhanced:img
+            src={surgmask_vs_serious}
+            alt="A scatter plot of total surgical masks in stock vs fatal road incident injuries"
+            class="mx-auto block max-w-xl"
+        />
+    </div>
     <p>
         Plotting the total number of road crash victims with <b>serious</b> injuries in relation to weekly total medical
         equipment shows a linear relationship between the two, with a correlation coefficient of
@@ -420,9 +531,9 @@
         <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>0</mn><mi>.</mi><mn>0048</mn></mrow></math>. These
         results fall under the proposed 95% significance level set by the researchers, and thus we reject our null
         hypothesis.
-        <i
-            >In fact, opposite to what was predicted by the hypothesese, as the total number of medical equipment
-            increases, the number of weekly total road crash incidents increase as well.</i
+        <em
+            >In fact, opposite to what was predicted by the hypotheses, as the total number of medical equipment
+            increases, the number of weekly total road crash incidents increase as well.</em
         >
     </p>
     <p>
@@ -453,7 +564,11 @@
     </p>
 
     <h4>Medical Equipment vs. Fatal Injuries</h4>
-    <div class="rounded-lg bg-red-600 sm:col-span-1">Plot2 (Fatal injuries versus medical equipment)</div>
+    <enhanced:img
+        src={equip_vs_fatal}
+        alt="A scatter plot of total medical equipment vs fatal road incident injuries"
+        class="mx-auto block max-w-2xl"
+    />
     <p>
         Plotting the weekly total number of medical equipment (i.e., <code>gown</code>, <code>gloves</code>,
         <code>head_cover</code>, <code>goggles</code>,
@@ -492,6 +607,7 @@
     </p>
 
     <h3>Pilipinas in a Nutshell (PILIPINUTS 2023)</h3>
+    <enhanced:img src={nutshell} alt="Bantay Bangga plot for Pilipinuts 2023" />
     <p>
         Road incidents in the Philippines are constantly recorded on the daily, with fatality rates ranging from
         non-injured to fatal. Hospital capacity and quality of care should be kept at a sufficient level for these road
