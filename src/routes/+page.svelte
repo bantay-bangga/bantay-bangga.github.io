@@ -246,8 +246,8 @@
     <h4>Bed Occupancy vs. Fatal Injuries</h4>
     <div class="rounded-lg bg-green-600 sm:col-span-1">Plot4 (Fatal injuries versus bed occupancy)</div>
     <p>
-        For fatal injuries, the correlation with hospital capacity is stronger. With the weekly total number of
-        occupied beds being the metric for hospital capacity, we obtain a correlation with
+        For fatal injuries, the correlation with hospital capacity is stronger. With the weekly total number of occupied
+        beds being the metric for hospital capacity, we obtain a correlation with
         <math xmlns="http://www.w3.org/1998/Math/MathML"
             ><mrow
                 ><msup><mi>R</mi><mn>2</mn></msup><mo>&#x2248;</mo><mn>0</mn><mo separator="true">.</mo><mrow
@@ -389,50 +389,54 @@
     <h4>Medical Equipment vs. Minor Injuries</h4>
     <div class="rounded-lg bg-red-600 sm:col-span-1">Plot2 (Minor injuries versus medical equipment)</div>
     <p>
-        Here, the total number of road crash victims who sustained <b>minor</b> injuries is compared to the weekly total medical equipment.
-        Looking at the plot would reveal a slight linear relationship between the two variables with a correlation coefficient of
+        Here, the total number of road crash victims who sustained <b>minor</b> injuries is compared to the weekly total
+        medical equipment. Looking at the plot would reveal a slight linear relationship between the two variables with
+        a correlation coefficient of
         <math xmlns="http://www.w3.org/1998/Math/MathML">
             <mi>R</mi><mo>^</mo><mn>2</mn><mo>=</mo><mn>0</mn><mi>.</mi><mn>0247</mn>
         </math>
         and a <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>p</mi></math>-value of
-        <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>0</mn><mi>.</mi><mn>2655</mn></mrow></math>.
-        These results are unfortunately insufficient to conclude any statistical significance given our proposed significance level of 95%.
-        Thus, for this, we fail to reject the null hypothesis: the total number of minor injuries is not linearly related to the weekly total medical equipment.
+        <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>0</mn><mi>.</mi><mn>2655</mn></mrow></math>. These
+        results are unfortunately insufficient to conclude any statistical significance given our proposed significance
+        level of 95%. Thus, for this, we fail to reject the null hypothesis: the total number of minor injuries is not
+        linearly related to the weekly total medical equipment.
     </p>
     <p>
-        Looking at the multivariate linear regression did not conclude any promising results, with there being no predictors (i.e., specific medical equipment) that was within the desired significance level.
-        There is no statistically significant way to linearly relate the weekly total medical equipment with the total weekly number of minor injuries in road crash incidents.
+        Looking at the multivariate linear regression did not conclude any promising results, with there being no
+        predictors (i.e., specific medical equipment) that was within the desired significance level. There is no
+        statistically significant way to linearly relate the weekly total medical equipment with the total weekly number
+        of minor injuries in road crash incidents.
     </p>
-
 
     <h4>Medical Equipment vs. Serious Injuries</h4>
     <div class="rounded-lg bg-red-600 sm:col-span-1">Plot2 (Minor injuries versus medical equipment)</div>
     <p>
-        Plotting the total number of road crash victims with <b>serious</b> injuries in relation to weekly total medical equipment shows a linear relationship between the two,
-        with a correlation coefficient of 
+        Plotting the total number of road crash victims with <b>serious</b> injuries in relation to weekly total medical
+        equipment shows a linear relationship between the two, with a correlation coefficient of
         <math xmlns="http://www.w3.org/1998/Math/MathML">
             <mrow><msup><mi>R</mi><mn>2</mn></msup><mo>=</mo><mn>0</mn><mi>.</mi><mn>1480</mn></mrow>
         </math>
         and a <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>p</mi></math>-value of
-        <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>0</mn><mi>.</mi><mn>0048</mn></mrow></math>.
-        These results fall under the proposed 95% significance level set by the researchers, and thus we reject our null hypothesis. 
-        <i>In fact, opposite to what was predicted by the hypothesese, as the total number of medical equipment increases, the number of weekly total road crash incidents increase as well.</i>
+        <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>0</mn><mi>.</mi><mn>0048</mn></mrow></math>. These
+        results fall under the proposed 95% significance level set by the researchers, and thus we reject our null
+        hypothesis.
+        <i
+            >In fact, opposite to what was predicted by the hypothesese, as the total number of medical equipment
+            increases, the number of weekly total road crash incidents increase as well.</i
+        >
     </p>
     <p>
-        Following that, a multivariate linear regression confirms our predictions with some interesting and promising results. 
-        More specifically, the predictors being gloves, face shields, and surgical masks all scored well within the 95% significance level with 
+        Following that, a multivariate linear regression confirms our predictions with some interesting and promising
+        results. More specifically, the predictors being gloves, face shields, and surgical masks all scored well within
+        the 95% significance level with
         <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>p</mi></math>-values of
         <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>0</mn><mi>.</mi><mn>0174</mn></mrow></math>,
         <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>0</mn><mi>.</mi><mn>0035</mn></mrow></math>, and
-        <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>0</mn><mi>.</mi><mn>0209</mn></mrow></math>, 
-        respectively. 
-        
-        They scored 
-        <math xmlns="http://www.w3.org/1998/Math/MathML"
-            ><mi>R</mi>
-        </math> values of 
+        <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>0</mn><mi>.</mi><mn>0209</mn></mrow></math>,
+        respectively. They scored
+        <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>R</mi> </math> values of
         <math xmlns="http://www.w3.org/1998/Math/MathML">
-        <mrow><msup><mi>R</mi><mn>2</mn></msup><mo>=</mo><mn>0</mn><mi>.</mi><mn>1078</mn></mrow>
+            <mrow><msup><mi>R</mi><mn>2</mn></msup><mo>=</mo><mn>0</mn><mi>.</mi><mn>1078</mn></mrow>
         </math>,
         <math xmlns="http://www.w3.org/1998/Math/MathML">
             <mn>0</mn><mi>.</mi><mn>1579</mn>
@@ -440,18 +444,20 @@
         <math xmlns="http://www.w3.org/1998/Math/MathML">
             <mn>0</mn><mi>.</mi><mn>1020</mn>
         </math>, respectively.
-    <p>
-    <p>
-        These three variables are also well-within the 95% significance level, meaning the weekly total of gloves, face shields, and surgical masks all
-        form a linear combination that determines the total weekly number of serious injuries in road crash incidents.
     </p>
-
+    <p></p>
+    <p>
+        These three variables are also well-within the 95% significance level, meaning the weekly total of gloves, face
+        shields, and surgical masks all form a linear combination that determines the total weekly number of serious
+        injuries in road crash incidents.
+    </p>
 
     <h4>Medical Equipment vs. Fatal Injuries</h4>
     <div class="rounded-lg bg-red-600 sm:col-span-1">Plot2 (Fatal injuries versus medical equipment)</div>
     <p>
-        Plotting the weekly total number of medical equipment (i.e., gown, gloves, head_cover, goggles, coverall, shoe_cover, face_shield, surgmask, n95mask) versus the weekly
-        total number of fatal injuries from road crash incidents yields <math xmlns="http://www.w3.org/1998/Math/MathML"
+        Plotting the weekly total number of medical equipment (i.e., gown, gloves, head_cover, goggles, coverall,
+        shoe_cover, face_shield, surgmask, n95mask) versus the weekly total number of fatal injuries from road crash
+        incidents yields <math xmlns="http://www.w3.org/1998/Math/MathML"
             ><mrow
                 ><msup><mi>R</mi><mn>2</mn></msup><mo>&#x2248;</mo><mn>0</mn><mo separator="true">.</mo><mrow
                     ><mn>0558</mn></mrow
@@ -459,10 +465,10 @@
             ></math
         >
         with a <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>p</mi></math>-value of
-        <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>0</mn><mi>.</mi><mn>0915</mn></mrow></math>. 
-        From the results alone, it is apparent that there is no linear relationship between these two variables. 
-        A similar analysis into weekly totals of each individual equipment type yields no better conclusions.
-        That is, medical equipment are not good predictors for the weekly total number of fatal injuries in road crash incidents.
+        <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>0</mn><mi>.</mi><mn>0915</mn></mrow></math>. From the
+        results alone, it is apparent that there is no linear relationship between these two variables. A similar
+        analysis into weekly totals of each individual equipment type yields no better conclusions. That is, medical
+        equipment are not good predictors for the weekly total number of fatal injuries in road crash incidents.
     </p>
 
     <h3>Research Question 2: What factors contribute to a hospital's overall capacity to provide care to patients?</h3>
