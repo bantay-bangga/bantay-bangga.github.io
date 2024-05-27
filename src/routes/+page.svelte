@@ -224,8 +224,12 @@
     <p>Insert conclusion here (disagree with null hypothesis).</p>
     <h2>About Us</h2>
     <div class="not-prose grid grid-cols-1 gap-4 md:grid-cols-3">
-        <Researcher src={ellis} email="josecaluag6@gmail.com" github="Dox-Dev" linkedin="ellis-caluag"
-            >Jose Ellis Miguel C. Caluag</Researcher
+        <Researcher
+            src={ellis}
+            email="josecaluag6@gmail.com"
+            github="Dox-Dev"
+            linkedin="ellis-caluag"
+            alt="picture of Ellis Caluag with headphones against a red backdrop">Jose Ellis Miguel C. Caluag</Researcher
         >
         <Researcher
             src={basti}
@@ -233,9 +237,15 @@
             email="ortizbasti16@gmail.com"
             devto="somedood"
             github="BastiDood"
-            linkedin="basti-ortiz">Sebastian Luis S. Ortiz</Researcher
+            linkedin="basti-ortiz"
+            alt="picture of Basti Ortiz against a grassy background">Sebastian Luis S. Ortiz</Researcher
         >
-        <Researcher src={jelly} email="jelly.rika.rbr@gmail.com" github="Anjellyrika" linkedin="jelly-raborar"
+        <Researcher
+            src={jelly}
+            email="jelly.rika.rbr@gmail.com"
+            github="Anjellyrika"
+            linkedin="jelly-raborar"
+            alt="picture of Jelly Raborar against a background with a lot of trees"
             >Angelica Julianne A. Raborar</Researcher
         >
     </div>

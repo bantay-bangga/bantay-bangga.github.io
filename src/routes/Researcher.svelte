@@ -5,6 +5,8 @@
 
     // eslint-disable-next-line init-declarations
     export let src: string;
+    // eslint-disable-next-line init-declarations
+    export let alt: string;
     // eslint-disable-next-line no-undefined
     export let email = undefined as string | undefined;
     // eslint-disable-next-line no-undefined
@@ -18,7 +20,7 @@
 </script>
 
 <div class="inline-block space-y-2 rounded-lg border border-surface-200 bg-surface-900 p-6 shadow hover:bg-surface-800">
-    <enhanced:img {src} class="mx-auto block size-32 rounded-full border-4 border-primary" />
+    <enhanced:img {src} {alt} class="mx-auto block size-32 rounded-full border-4 border-primary" />
     <h4 class="text-center text-2xl font-bold tracking-tight text-surface-50"><slot /></h4>
     <ol class="align-middle underline">
         {#if email}
