@@ -607,7 +607,8 @@
     <h3>Pilipinas in a Nutshell (PILIPINUTS 2023)</h3>
     <enhanced:img src={nutshell} alt="Bantay Bangga plot for Pilipinuts 2023" />
     <p>
-        Road incidents in the Philippines are constantly recorded with fatality rates ranging from non-injured to fatal.
+        Road incidents in the Philippines are commonly reported. A fatality rate of 25% of incidents was recorded in
+        November 2020, in addition to widespread cases of minor and serious injuries resulting from road incidents.
         Hospital capacity and quality of care should be kept at a sufficient level for these road crash victims.
         However, as the COVID-19 pandemic demanded the world's full attention, this unique situation poses an
         interesting inquiry into what could possibly affect road crash incident fatalities and their possible avenues
