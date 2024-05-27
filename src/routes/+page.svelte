@@ -15,6 +15,12 @@
     import total_vs_minor from '$lib/plots/totalbeds_vs_minor.png?enhanced';
     import total_vs_serious from '$lib/plots/totalbeds_vs_serious.png?enhanced';
     import total_vs_totalinjury from '$lib/plots/totalbeds_vs_totalinjury.png?enhanced';
+
+    import doc_vs_fatal from '$lib/plots/doc_vs_fatal.png?enhanced';
+    import nurse_vs_fatal from '$lib/plots/nurse_vs_fatal.png?enhanced';
+    import staff_vs_fatal from '$lib/plots/staff_vs_fatal.png?enhanced';
+    import staff_vs_minor from '$lib/plots/staff_vs_minor.png?enhanced';
+    import staff_vs_serious from '$lib/plots/staff_vs_serious.png?enhanced';
 </script>
 
 <Hero />
@@ -339,6 +345,11 @@
     <p>Insert conclusion here (disagree with null hypothesis).</p>
 
     <h4>Staff Resources vs. Minor Injuries</h4>
+    <enhanced:img
+        src={staff_vs_minor}
+        alt="A scatter plot of total medical staff on duty vs minor road incident injuries"
+        class="mx-auto block max-w-2xl"
+    />
     <p>
         Plotting the weekly total number of staff members (i.e., doctors, nurses, and support staff) versus the weekly
         total number of minor injuries from road crash incidents yields <math xmlns="http://www.w3.org/1998/Math/MathML"
@@ -357,6 +368,11 @@
     </p>
 
     <h4>Staff Resources vs. Serious Injuries</h4>
+    <enhanced:img
+        src={staff_vs_serious}
+        alt="A scatter plot of total medical staff on duty vs serious road incident injuries"
+        class="mx-auto block max-w-2xl"
+    />
     <p>
         Plotting the weekly total number of staff members (i.e., doctors, nurses, and support staff) versus the weekly
         total number of serious injuries from road crash incidents yields <math
@@ -376,6 +392,23 @@
     </p>
 
     <h4>Staff Resources vs. Fatal Injuries</h4>
+    <enhanced:img
+        src={staff_vs_fatal}
+        alt="A scatter plot of total medical staff on duty vs fatal road incident injuries"
+        class="mx-auto block max-w-2xl"
+    />
+    <div class="grid grid-flow-col gap-2">
+        <enhanced:img
+            src={doc_vs_fatal}
+            alt="A scatter plot of total doctors on duty vs fatal road incident injuries"
+            class="mx-auto block max-w-xl"
+        />
+        <enhanced:img
+            src={nurse_vs_fatal}
+            alt="A scatter plot of total nurses on duty vs fatal road incident injuries"
+            class="mx-auto block max-w-xl"
+        />
+    </div>
     <p>
         Plotting the weekly total number of staff members (i.e., doctors, nurses, and support staff) versus the weekly
         total number of fatal injuries from road crash incidents yields <math xmlns="http://www.w3.org/1998/Math/MathML"
