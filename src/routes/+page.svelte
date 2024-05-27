@@ -246,7 +246,7 @@
     <h4>Bed Occupancy vs. Fatal Injuries</h4>
     <div class="rounded-lg bg-green-600 sm:col-span-1">Plot4 (Fatal injuries versus bed occupancy)</div>
     <p>
-        For fatal injuries, the correlation with hospitcal capacity is stronger. With the weekly total number of
+        For fatal injuries, the correlation with hospital capacity is stronger. With the weekly total number of
         occupied beds being the metric for hospital capacity, we obtain a correlation with
         <math xmlns="http://www.w3.org/1998/Math/MathML"
             ><mrow
