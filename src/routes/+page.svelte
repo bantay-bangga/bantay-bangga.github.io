@@ -572,7 +572,7 @@
     <p>
         Plotting the weekly total number of medical equipment (i.e., <code>gown</code>, <code>gloves</code>,
         <code>head_cover</code>, <code>goggles</code>,
-        <code>coverall</code>, <code>shoe_cover</code>, <code>face_shield</code>, <code>surgmask</code>,
+        <code>coverall</code>, <code>shoe_cover</code>, <code>face_shield</code>, <code>surgmask</code>, and
         <code>n95mask</code>) versus the weekly total number of fatal injuries from road crash incidents yields
         <math xmlns="http://www.w3.org/1998/Math/MathML"
             ><mrow
