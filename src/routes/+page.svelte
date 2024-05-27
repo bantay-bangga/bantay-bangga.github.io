@@ -493,10 +493,16 @@
 
     <h3>Pilipinas in a Nutshell (PILIPINUTS 2023)</h3>
     <p>
-        Recorded road incidents in the Philippines reached a peak in November 2019, with 369 cases of minor injuries and
-        38 fatalities. Lessened road traffic following the onset of the pandemic in 2020 led to a decline in these
-        incidents; however, they did not drop to zero. This analysis aims to study the impact of the pandemic on
-        healthcare resources for road incident victims.
+        Road incidents in the Philippines are constantly recorded on the daily, with fatality rates ranging from non-injured to fatal. 
+        Hospital capacity and quality of care should be kept at a sufficient level for these road crash victims.
+        However, interestingly enough, the COVID-19 pandemic brought with it a challenge: no other sicknesses or injuries were being focused as much with the widespread infectious nature of the virus.
+        This provides an interesting view onto what could possibly affect road crash accident fatalities and their possible avenues of recovery in a time where something else was being focused on.
+        The features include hospital bed occupancy (with COVID-19 and non-COVID-19 beds being noted), hospital staff availability, and medical equipment availability.
+        A significance level of 95% was set as the standard to see linear relationships between features of hospital capacity and road-related fatality rates.
+        Amongst these, hospital bed occupancy is linearly related with minor and fatal injuries through a linear combination consisting of the total number of COVID-19 patients in both <code>Intensive Care Unit (ICU) beds</code> and <code>non-ICU beds</code>.
+        Unfortunately, staff resources showed no linear relationship with any of the fatality types and cannot be considered a predictor.
+        Medical equipment is linearly related with serious injuries through a linear combination of <code>surgical masks</code>, <code>gloves</code>, and <code>face shields</code>.
+        All of the features mentioned above have a significance level of at least 95%, which is sufficient for determining the potential of these features as predictors.
     </p>
 
     <h2>About Us</h2>
