@@ -21,6 +21,13 @@
     import staff_vs_fatal from '$lib/plots/staff_vs_fatal.png?enhanced';
     import staff_vs_minor from '$lib/plots/staff_vs_minor.png?enhanced';
     import staff_vs_serious from '$lib/plots/staff_vs_serious.png?enhanced';
+
+    import equip_vs_fatal from '$lib/plots/equip_vs_fatal.png?enhanced';
+    import equip_vs_minor from '$lib/plots/equip_vs_minor.png?enhanced';
+    import equip_vs_serious from '$lib/plots/equip_vs_serious.png?enhanced';
+    import faceshield_vs_serious from '$lib/plots/faceshield_vs_serious.png?enhanced';
+    import gloves_vs_serious from '$lib/plots/gloves_vs_serious.png?enhanced';
+    import surgmask_vs_serious from '$lib/plots/surgmask_vs_serious.png?enhanced';
 </script>
 
 <Hero />
@@ -458,7 +465,11 @@
     </p>
 
     <h4>Medical Equipment vs. Minor Injuries</h4>
-    <div class="rounded-lg bg-red-600 sm:col-span-1">Plot2 (Minor injuries versus medical equipment)</div>
+    <enhanced:img
+        src={equip_vs_minor}
+        alt="A scatter plot of total medical equipment vs minor road incident injuries"
+        class="mx-auto block max-w-2xl"
+    />
     <p>
         Here, the total number of road crash victims who sustained <b>minor</b> injuries is compared to the weekly total
         medical equipment. Looking at the plot would reveal a slight linear relationship between the two variables with
@@ -480,7 +491,28 @@
     </p>
 
     <h4>Medical Equipment vs. Serious Injuries</h4>
-    <div class="rounded-lg bg-red-600 sm:col-span-1">Plot2 (Minor injuries versus medical equipment)</div>
+    <div class="grid grid-flow-col grid-rows-2 gap-2">
+        <enhanced:img
+            src={equip_vs_serious}
+            alt="A scatter plot of total medical equipment vs serious road incident injuries"
+            class="mx-auto block max-w-xl"
+        />
+        <enhanced:img
+            src={gloves_vs_serious}
+            alt="A scatter plot of total medical gloves in stock vs fatal road incident injuries"
+            class="mx-auto block max-w-xl"
+        />
+        <enhanced:img
+            src={faceshield_vs_serious}
+            alt="A scatter plot of total face shields in stock vs fatal road incident injuries"
+            class="mx-auto block max-w-xl"
+        />
+        <enhanced:img
+            src={surgmask_vs_serious}
+            alt="A scatter plot of total surgical masks in stock vs fatal road incident injuries"
+            class="mx-auto block max-w-xl"
+        />
+    </div>
     <p>
         Plotting the total number of road crash victims with <b>serious</b> injuries in relation to weekly total medical
         equipment shows a linear relationship between the two, with a correlation coefficient of
@@ -524,7 +556,11 @@
     </p>
 
     <h4>Medical Equipment vs. Fatal Injuries</h4>
-    <div class="rounded-lg bg-red-600 sm:col-span-1">Plot2 (Fatal injuries versus medical equipment)</div>
+    <enhanced:img
+        src={equip_vs_fatal}
+        alt="A scatter plot of total medical equipment vs fatal road incident injuries"
+        class="mx-auto block max-w-2xl"
+    />
     <p>
         Plotting the weekly total number of medical equipment (i.e., <code>gown</code>, <code>gloves</code>,
         <code>head_cover</code>, <code>goggles</code>,
