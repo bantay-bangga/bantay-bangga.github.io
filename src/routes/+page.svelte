@@ -8,6 +8,11 @@
     import basti from '$lib/images/basti.png?enhanced';
     import ellis from '$lib/images/ellis.png?enhanced';
     import jelly from '$lib/images/jelly.png?enhanced';
+
+    import total_vs_minor from '$lib/plots/totalbeds_vs_minor.png?enhanced';
+    import total_vs_serious from '$lib/plots/totalbeds_vs_serious.png?enhanced';
+    import total_vs_fatal from '$lib/plots/totalbeds_vs_fatal.png?enhanced';
+    import total_vs_totalinjury from '$lib/plots/totalbeds_vs_totalinjury.png?enhanced';
 </script>
 
 <Hero />
@@ -180,7 +185,7 @@
     <h2>Results</h2>
     <h3>Research Question 1: To what extent does hospital capacity affect the fatality rate of road incidents?</h3>
     <h4>Bed Occupancy vs. Minor Injuries</h4>
-    <div class="rounded-lg bg-red-600 sm:col-span-1">Plot2 (Minor injuries versus bed occupancy)</div>
+    <enhanced:img src={total_vs_minor} alt="A scatter plot of total occupied hospital bed percentage vs minor road incident injuries" class="max-w-2xl block mx-auto"/>
     <p>
         First, the total number of road crash victims with <b>minor</b> injuries is compared to the total bed occupancy.
         Eyeballing the plot shows a slight linear relationship between the two variables with a correlation coefficient
@@ -223,7 +228,7 @@
     </p>
 
     <h4>Bed Occupancy vs. Serious Injuries</h4>
-    <div class="rounded-lg bg-blue-600 sm:col-span-1">Plot3 (Serious injuries versus bed occupancy)</div>
+    <enhanced:img src={total_vs_serious} alt="A scatter plot of total occupied hospital bed percentage vs serious road incident injuries" class="max-w-2xl block mx-auto"/>
     <p>
         A similar analysis can be done for serious injuries. Plotting the weekly total number of beds versus the weekly
         total number of serious injuries yields the scatter plot above. The regression results in <math
@@ -244,7 +249,7 @@
     </p>
 
     <h4>Bed Occupancy vs. Fatal Injuries</h4>
-    <div class="rounded-lg bg-green-600 sm:col-span-1">Plot4 (Fatal injuries versus bed occupancy)</div>
+    <enhanced:img src={total_vs_fatal} alt="A scatter plot of total occupied hospital bed percentage vs fatal road incident injuries" class="max-w-2xl block mx-auto"/>
     <p>
         For fatal injuries, the correlation with hospital capacity is stronger. With the weekly total number of occupied
         beds being the metric for hospital capacity, we obtain a correlation with
@@ -299,6 +304,11 @@
         indeed linearly related.
         <!-- TODO: Describe the trend. "When the X decreases, Y increases." -->
     </p>
+    <h4>Bed Occupancy vs. Total Injuries</h4>
+    <enhanced:img src={total_vs_totalinjury} alt="A scatter plot of total occupied hospital bed percentage vs overall total road incident injuries" class="max-w-2xl block mx-auto"/>
+    <p>Insert conclusion here (disagree with null hypothesis).</p>
+
+    <h4>Bed Occupancy vs. Total Injuries</h4>
 
     <h4>Staff Resources vs. Minor Injuries</h4>
     <p>
