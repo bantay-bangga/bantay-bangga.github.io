@@ -364,9 +364,25 @@
         These three variables are also well-within the 95% significance level, meaning the weekly total of gloves, face shields, and surgical masks all
         form a linear combination that determines the total weekly number of serious injuries in road crash incidents.
     </p>
-    
+
 
     <h4>Medical Equipment vs. Fatal Injuries</h4>
+    <div class="rounded-lg bg-red-600 sm:col-span-1">Plot2 (Fatal injuries versus medical equipment)</div>
+    <p>
+        Plotting the weekly total number of medical equipment (i.e., gown, gloves, head_cover, goggles, coverall, shoe_cover, face_shield, surgmask, n95mask) versus the weekly
+        total number of fatal injuries from road crash incidents yields <math xmlns="http://www.w3.org/1998/Math/MathML"
+            ><mrow
+                ><msup><mi>R</mi><mn>2</mn></msup><mo>&#x2248;</mo><mn>0</mn><mo separator="true">.</mo><mrow
+                    ><mn>0558</mn></mrow
+                ></mrow
+            ></math
+        >
+        with a <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>p</mi></math>-value of
+        <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>0</mn><mi>.</mi><mn>0915</mn></mrow></math>. 
+        From the results alone, it is apparent that there is no linear relationship between these two variables. 
+        A similar analysis into weekly totals of each individual equipment type yields no better conclusions.
+        That is, medical equipment are not good predictors for the weekly total number of fatal injuries in road crash incidents.
+    </p>
 
     <h3>Research Question 2: What factors contribute to a hospital's overall capacity to provide care to patients?</h3>
     <div class="grid grid-flow-row grid-cols-2 gap-2">
