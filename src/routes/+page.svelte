@@ -4,6 +4,10 @@
     import Hero from './Hero.svelte';
     import { Icon } from '@steeze-ui/svelte-icon';
     import Researcher from './Researcher.svelte';
+
+    import basti from '$lib/images/basti.png?enhanced';
+    import ellis from '$lib/images/ellis.png?enhanced';
+    import jelly from '$lib/images/jelly.png?enhanced';
 </script>
 
 <Hero />
@@ -604,14 +608,14 @@
     <h2>About Us</h2>
     <div class="not-prose grid grid-cols-1 gap-4 md:grid-cols-3">
         <Researcher
-            src="$lib/images/ellis.png"
+            src={ellis}
             email="josecaluag6@gmail.com"
             github="Dox-Dev"
             linkedin="ellis-caluag"
             alt="picture of Ellis Caluag with headphones against a red backdrop">Jose Ellis Miguel C. Caluag</Researcher
         >
         <Researcher
-            src="$lib/images/basti.png"
+            src={basti}
             website="bastidood.github.io"
             email="ortizbasti16@gmail.com"
             devto="somedood"
@@ -620,7 +624,7 @@
             alt="picture of Basti Ortiz against a grassy background">Sebastian Luis S. Ortiz</Researcher
         >
         <Researcher
-            src="$lib/images/jelly.png"
+            src={jelly}
             email="jelly.rika.rbr@gmail.com"
             github="Anjellyrika"
             linkedin="jelly-raborar"
