@@ -3,10 +3,9 @@
     "compilerOptions": {
         "esModuleInterop": true,
         "skipLibCheck": true,
-        "target": "ESNext",
         "verbatimModuleSyntax": true,
         "allowJs": true,
-        "moduleDetection": "force",
+        "checkJs": true,
         "strict": true,
         "noUncheckedIndexedAccess": true,
     },

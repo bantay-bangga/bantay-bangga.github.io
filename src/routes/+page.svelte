@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
     import { ArrowTopRightOnSquare } from '@steeze-ui/heroicons';
     import DataLink from './DataLink.svelte';
     import Hero from './Hero.svelte';
