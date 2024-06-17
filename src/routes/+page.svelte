@@ -4,32 +4,6 @@
     import Hero from './Hero.svelte';
     import { Icon } from '@steeze-ui/svelte-icon';
     import Researcher from './Researcher.svelte';
-
-    import basti from '$lib/images/basti.png?enhanced';
-    import ellis from '$lib/images/ellis.png?enhanced';
-    import jelly from '$lib/images/jelly.png?enhanced';
-
-    import nutshell from '$lib/images/Bantay-Bangga-Nutshell.png?enhanced';
-
-    import icu_o_c_vs_fatal from '$lib/plots/icu-o-c_vs_fatal.png?enhanced';
-    import nonicu_o_c_vs_fatal from '$lib/plots/nonicu-o-c_vs_fatal.png?enhanced';
-    import total_vs_fatal from '$lib/plots/totalbeds_vs_fatal.png?enhanced';
-    import total_vs_minor from '$lib/plots/totalbeds_vs_minor.png?enhanced';
-    import total_vs_serious from '$lib/plots/totalbeds_vs_serious.png?enhanced';
-    import total_vs_totalinjury from '$lib/plots/totalbeds_vs_totalinjury.png?enhanced';
-
-    import doc_vs_fatal from '$lib/plots/doc_vs_fatal.png?enhanced';
-    import nurse_vs_fatal from '$lib/plots/nurse_vs_fatal.png?enhanced';
-    import staff_vs_fatal from '$lib/plots/staff_vs_fatal.png?enhanced';
-    import staff_vs_minor from '$lib/plots/staff_vs_minor.png?enhanced';
-    import staff_vs_serious from '$lib/plots/staff_vs_serious.png?enhanced';
-
-    import equip_vs_fatal from '$lib/plots/equip_vs_fatal.png?enhanced';
-    import equip_vs_minor from '$lib/plots/equip_vs_minor.png?enhanced';
-    import equip_vs_serious from '$lib/plots/equip_vs_serious.png?enhanced';
-    import faceshield_vs_serious from '$lib/plots/faceshield_vs_serious.png?enhanced';
-    import gloves_vs_serious from '$lib/plots/gloves_vs_serious.png?enhanced';
-    import surgmask_vs_serious from '$lib/plots/surgmask_vs_serious.png?enhanced';
 </script>
 
 <Hero />
@@ -203,7 +177,7 @@
     <h3>Research Question 1: To what extent does hospital capacity affect the fatality rate of road incidents?</h3>
     <h4>Bed Occupancy vs. Minor Injuries</h4>
     <enhanced:img
-        src={total_vs_minor}
+        src="$lib/plots/totalbeds_vs_minor.png"
         alt="A scatter plot of total occupied hospital bed percentage vs minor road incident injuries"
         class="mx-auto block max-w-2xl"
     />
@@ -250,7 +224,7 @@
 
     <h4>Bed Occupancy vs. Serious Injuries</h4>
     <enhanced:img
-        src={total_vs_serious}
+        src="$lib/plots/totalbeds_vs_serious.png"
         alt="A scatter plot of total occupied hospital bed percentage vs serious road incident injuries"
         class="mx-auto block max-w-2xl"
     />
@@ -275,18 +249,18 @@
 
     <h4>Bed Occupancy vs. Fatal Injuries</h4>
     <enhanced:img
-        src={total_vs_fatal}
+        src="$lib/plots/totalbeds_vs_fatal.png"
         alt="A scatter plot of total occupied hospital bed percentage vs fatal road incident injuries"
         class="mx-auto block max-w-2xl"
     />
     <div class="grid grid-flow-col gap-2">
         <enhanced:img
-            src={icu_o_c_vs_fatal}
+            src="$lib/plots/icu-o-c_vs_fatal.png"
             alt="A scatter plot of occupied ICUs vs fatal road incident injuries"
             class="mx-auto block max-w-xl"
         />
         <enhanced:img
-            src={nonicu_o_c_vs_fatal}
+            src="$lib/plots/nonicu-o-c_vs_fatal.png"
             alt="A scatter plot of occupied non-ICU rooms vs fatal road incident injuries"
             class="mx-auto block max-w-xl"
         />
@@ -350,14 +324,14 @@
     </p>
     <h4>Bed Occupancy vs. Total Injuries</h4>
     <enhanced:img
-        src={total_vs_totalinjury}
+        src="$lib/plots/totalbeds_vs_totalinjury.png"
         alt="A scatter plot of total occupied hospital bed percentage vs overall total road incident injuries"
         class="mx-auto block max-w-2xl"
     />
 
     <h4>Staff Resources vs. Minor Injuries</h4>
     <enhanced:img
-        src={staff_vs_minor}
+        src="$lib/plots/staff_vs_minor.png"
         alt="A scatter plot of total medical staff on duty vs minor road incident injuries"
         class="mx-auto block max-w-2xl"
     />
@@ -380,7 +354,7 @@
 
     <h4>Staff Resources vs. Serious Injuries</h4>
     <enhanced:img
-        src={staff_vs_serious}
+        src="$lib/plots/staff_vs_serious.png"
         alt="A scatter plot of total medical staff on duty vs serious road incident injuries"
         class="mx-auto block max-w-2xl"
     />
@@ -404,18 +378,18 @@
 
     <h4>Staff Resources vs. Fatal Injuries</h4>
     <enhanced:img
-        src={staff_vs_fatal}
+        src="$lib/plots/staff_vs_fatal.png"
         alt="A scatter plot of total medical staff on duty vs fatal road incident injuries"
         class="mx-auto block max-w-2xl"
     />
     <div class="grid grid-flow-col gap-2">
         <enhanced:img
-            src={doc_vs_fatal}
+            src="$lib/plots/doc_vs_fatal.png"
             alt="A scatter plot of total doctors on duty vs fatal road incident injuries"
             class="mx-auto block max-w-xl"
         />
         <enhanced:img
-            src={nurse_vs_fatal}
+            src="$lib/plots/nurse_vs_fatal.png"
             alt="A scatter plot of total nurses on duty vs fatal road incident injuries"
             class="mx-auto block max-w-xl"
         />
@@ -470,7 +444,7 @@
 
     <h4>Medical Equipment vs. Minor Injuries</h4>
     <enhanced:img
-        src={equip_vs_minor}
+        src="$lib/plots/equip_vs_minor.png"
         alt="A scatter plot of total medical equipment vs minor road incident injuries"
         class="mx-auto block max-w-2xl"
     />
@@ -499,22 +473,22 @@
     <h4>Medical Equipment vs. Serious Injuries</h4>
     <div class="grid grid-flow-col grid-rows-2 gap-2">
         <enhanced:img
-            src={equip_vs_serious}
+            src="$lib/plots/equip_vs_serious.png"
             alt="A scatter plot of total medical equipment vs serious road incident injuries"
             class="mx-auto block max-w-xl"
         />
         <enhanced:img
-            src={gloves_vs_serious}
+            src="$lib/plots/gloves_vs_serious.png"
             alt="A scatter plot of total medical gloves in stock vs fatal road incident injuries"
             class="mx-auto block max-w-xl"
         />
         <enhanced:img
-            src={faceshield_vs_serious}
+            src="$lib/plots/faceshield_vs_serious.png"
             alt="A scatter plot of total face shields in stock vs fatal road incident injuries"
             class="mx-auto block max-w-xl"
         />
         <enhanced:img
-            src={surgmask_vs_serious}
+            src="$lib/plots/surgmask_vs_serious.png"
             alt="A scatter plot of total surgical masks in stock vs fatal road incident injuries"
             class="mx-auto block max-w-xl"
         />
@@ -563,7 +537,7 @@
 
     <h4>Medical Equipment vs. Fatal Injuries</h4>
     <enhanced:img
-        src={equip_vs_fatal}
+        src="$lib/plots/equip_vs_fatal.png"
         alt="A scatter plot of total medical equipment vs fatal road incident injuries"
         class="mx-auto block max-w-2xl"
     />
@@ -605,7 +579,7 @@
     </p>
 
     <h3>Pilipinas in a Nutshell (PILIPINUTS 2023)</h3>
-    <enhanced:img src={nutshell} alt="Bantay Bangga plot for Pilipinuts 2023" />
+    <enhanced:img src="$lib/images/Bantay-Bangga-Nutshell.png" alt="Bantay Bangga plot for Pilipinuts 2023" />
     <p>
         Road incidents in the Philippines are commonly reported. A fatality rate of 25% of incidents was recorded in
         November 2020, in addition to widespread cases of minor and serious injuries resulting from road incidents.
@@ -630,14 +604,14 @@
     <h2>About Us</h2>
     <div class="not-prose grid grid-cols-1 gap-4 md:grid-cols-3">
         <Researcher
-            src={ellis}
+            src="$lib/images/ellis.png"
             email="josecaluag6@gmail.com"
             github="Dox-Dev"
             linkedin="ellis-caluag"
             alt="picture of Ellis Caluag with headphones against a red backdrop">Jose Ellis Miguel C. Caluag</Researcher
         >
         <Researcher
-            src={basti}
+            src="$lib/images/basti.png"
             website="bastidood.github.io"
             email="ortizbasti16@gmail.com"
             devto="somedood"
@@ -646,7 +620,7 @@
             alt="picture of Basti Ortiz against a grassy background">Sebastian Luis S. Ortiz</Researcher
         >
         <Researcher
-            src={jelly}
+            src="$lib/images/jelly.png"
             email="jelly.rika.rbr@gmail.com"
             github="Anjellyrika"
             linkedin="jelly-raborar"
