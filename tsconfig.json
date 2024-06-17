@@ -6,12 +6,9 @@
         "target": "ESNext",
         "verbatimModuleSyntax": true,
         "allowJs": true,
-        "checkJs": true,
         "moduleDetection": "force",
         "strict": true,
         "noUncheckedIndexedAccess": true,
-        "moduleResolution": "Node16",
-        "module": "Node16",
     },
     // Path aliases are handled by https://kit.svelte.dev/docs/configuration#alias.
 }
