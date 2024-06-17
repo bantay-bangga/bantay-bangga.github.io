@@ -12,7 +12,6 @@
         "noUncheckedIndexedAccess": true,
         "moduleResolution": "Node16",
         "module": "Node16",
-        "typeRoots": ["types"],
     },
     // Path aliases are handled by https://kit.svelte.dev/docs/configuration#alias.
 }
