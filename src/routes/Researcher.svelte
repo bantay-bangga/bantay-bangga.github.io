@@ -2,9 +2,10 @@
     import { Devdotto, Github, Linkedin } from '@steeze-ui/simple-icons';
     import { Envelope, Link } from '@steeze-ui/heroicons';
     import { Icon } from '@steeze-ui/svelte-icon';
+    import type { Picture } from 'vite-imagetools';
 
     // eslint-disable-next-line init-declarations
-    export let src: string;
+    export let src: Picture | string;
     // eslint-disable-next-line init-declarations
     export let alt: string;
     // eslint-disable-next-line no-undefined
