@@ -30,8 +30,8 @@ importers:
         specifier: ^3.0.2
         version: 3.0.2(@sveltejs/kit@2.5.16(@sveltejs/vite-plugin-svelte@3.1.1(svelte@4.2.18)(vite@5.3.1(terser@5.31.1)))(svelte@4.2.18)(vite@5.3.1(terser@5.31.1)))
       '@sveltejs/enhanced-img':
-        specifier: ^0.3.0
-        version: 0.3.0(rollup@4.18.0)(svelte@4.2.18)
+        specifier: 0.2.0
+        version: 0.2.0(rollup@4.18.0)(svelte@4.2.18)
       '@sveltejs/kit':
         specifier: ^2.5.16
         version: 2.5.16(@sveltejs/vite-plugin-svelte@3.1.1(svelte@4.2.18)(vite@5.3.1(terser@5.31.1)))(svelte@4.2.18)(vite@5.3.1(terser@5.31.1))
@@ -612,8 +612,8 @@ packages:
     peerDependencies:
       '@sveltejs/kit': ^2.0.0
 
-  '@sveltejs/enhanced-img@0.3.0':
-    resolution: {integrity: sha512-o8FdEUyJR/+LjUUl4sgB9QeM9rSGpOzTO6/CH0AmO/FgwWkcJdj/MwVNtr2F/AtaPgNfzvRpnExjklmuuDOtPA==}
+  '@sveltejs/enhanced-img@0.2.0':
+    resolution: {integrity: sha512-W6wG0RxQYoL13LmUl8IBHeQatMXSd2ybrjg/WQuE5EoIJq+wUkf1hUDaMp9PHe4ubpnzWK/c0QaE5Ls+zjHimA==}
 
   '@sveltejs/kit@2.5.16':
     resolution: {integrity: sha512-09Ypy+ibuhTCTpRFRnR+cDI3VARiu16o7vVSjETAA43ZCLtqvrNrVxUkJ/fKHrAjx2peKWilcHE8+SbW2Z/AsQ==}
@@ -2921,7 +2921,7 @@ snapshots:
     dependencies:
       '@sveltejs/kit': 2.5.16(@sveltejs/vite-plugin-svelte@3.1.1(svelte@4.2.18)(vite@5.3.1(terser@5.31.1)))(svelte@4.2.18)(vite@5.3.1(terser@5.31.1))
 
-  '@sveltejs/enhanced-img@0.3.0(rollup@4.18.0)(svelte@4.2.18)':
+  '@sveltejs/enhanced-img@0.2.0(rollup@4.18.0)(svelte@4.2.18)':
     dependencies:
       magic-string: 0.30.10
       svelte-parse-markup: 0.1.5(svelte@4.2.18)
