@@ -130,20 +130,40 @@
         </table>
     </div>
 
-    <h2>Research Questions</h2>
-    <ol>
-        <li><em>To what extent does hospital capacity affect the fatality rate of road incidents?</em></li>
-        <li><em>What factors contribute to a hospital's overall capacity to provide care to patients?</em></li>
-    </ol>
-    <h2>Action Plan</h2>
-    <p>
-        We examine the injury types of recorded road incidents starting from the onset of the COVID-19 pandemic in 2020
-        to its slumps in 2022. We then relate the number of minor, serious, and fatal injuries with different factors of
-        hospital capacity (e.g., bed occupancy, staff availability, and equipment availability) using statistical
-        analysis with hypothesis testing. Researchers, government officials, and hospital organizations can use these
-        results to strengthen or deprioritize (if necessary) certain factors of hospital capacity to reduce road-related
-        injuries overall.
-    </p>
+    <div class="grid md:grid-cols-[1.75fr_1.25fr] gap-x-20">
+        <div class="grid gap-2">
+            <h2 class="col-span-2">Action Plan</h2>
+            <span>✔</span>
+            <p>
+                We examine the injury types of recorded road incidents starting from the onset of the COVID-19 pandemic in 2020
+                to its slumps in 2022.
+            </p>
+            <span>✔</span>
+            <p>
+                We then relate the number of minor, serious, and fatal injuries with different factors of
+                hospital capacity (e.g., bed occupancy, staff availability, and equipment availability) using statistical
+                analysis with hypothesis testing.
+            </p>
+            <span>✔</span>
+            <p>
+                Researchers, government officials, and hospital organizations can use these
+                results to strengthen or deprioritize (if necessary) certain factors of hospital capacity to reduce road-related
+                injuries overall.
+            </p>
+        </div>
+        <div class="grid auto-rows-min gap-2">
+            <h2 class="col-span-2">Research Questions</h2>
+            <span>❓</span>
+            <p>
+                To what extent does hospital capacity affect the fatality rate of road incidents?
+            </p>
+            <span>❓</span>
+            <p>
+                What factors contribute to a hospital's overall capacity to provide care to patients?
+            </p>
+        </div>
+    </div>
+
     <h2>Data Collection</h2>
     <h3>Road Crash Incidents</h3>
     <p>
