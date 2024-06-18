@@ -1,8 +1,6 @@
 <script>
-    import { ArrowTopRightOnSquare } from '@steeze-ui/heroicons';
-    import DataLink from './DataLink.svelte';
     import Hero from './Hero.svelte';
-    import { Icon } from '@steeze-ui/svelte-icon';
+    import DataCollection from './DataCollection.svelte';
     import Researcher from './Researcher.svelte';
 
     import basti from '$lib/images/basti.png?enhanced';
@@ -151,88 +149,7 @@
     </div>
 
     <h2>Data Collection</h2>
-    <h3>Road Crash Incidents</h3>
-    <p>
-        Data on the road crash incidents was obtained from the <a
-            href="https://itslab.ncts.upd.edu.ph/create/"
-            target="_blank"
-            >Project <abbr title="Collection, Recording, and Analysis of Traffic Incidence Data">CREATE</abbr></a
-        >
-        SQL databases of the
-        <a href="https://itslab.ncts.upd.edu.ph/" target="_blank"
-            >Intelligent Transport Systems Laboratory <dfn
-                ><abbr title="Intelligent Transport Systems Laboratory">(ITSLab)</abbr></dfn
-            ></a
-        >
-        at the
-        <a href="https://ncts.upd.edu.ph/" target="_blank"
-            >National Center for Transportation Studies <dfn
-                ><abbr title="National Center for Transportation Studies">(NCTS)</abbr></dfn
-            ></a
-        >. As of writing, the data set includes incidents as far back as 2016 up to 2024, which amounts to
-        <strong>46,209 road crash incidents</strong> in total. Each data point records pertinent information on the nature
-        of the road crash: date of incident, time of incident, collision type, incident location, weather condition, and
-        light condition. Moreover, for each road crash incident, the data set notes each person involved (e.g., drivers,
-        passengers, pedestrians, and witnesses) with their respective ages, sexes, sustained injuries, resulting fatalities,
-        and usage of safety equipment (e.g., seatbelts and helmets). Finally, for each road crash incident, the data set
-        also encodes the model and make of each vehicle involved in the incident as well as their intended function (e.g.,
-        private, public, government, or for-hire).
-    </p>
-    <p>
-        Out of respect for the privacy of the individuals involved (sometimes fatally) in these road crash incidents,
-        personally identifiable columns such as names, plate numbers, license numbers, addresses, and hospitals have
-        been intentionally redacted from the original databases. Although these are readily available from the raw
-        databases, Bantay Bangga deems this data unnecessary and irrelevant to the data analysis.
-    </p>
-    <p>The resulting data set is a left-join of all the one-to-many relationships represented by the database.</p>
-    <ul>
-        <li>
-            One incident is to many involved persons. Note that these include drivers, passengers, pedestrians, and
-            witnesses.
-        </li>
-        <li>
-            One incident is to many involved vehicles. Note that most collisions occur between two vehicles, but it is
-            totally possible to be involved in a mass collision.
-        </li>
-    </ul>
-    <p>
-        One major limitation of the data set is the ubiquity of null data and misspelled categories. To address these
-        concerns, only non-null entries of column-specific analyses will be considered. For misspellings and variations
-        in letter casing, text data will be standardized in lower case or upper case. Either is sufficient as long as
-        the scheme is consistent for a particular analysis.
-    </p>
-    <div class="flex flex-wrap justify-center gap-2">
-        <DataLink href="https://docs.google.com/spreadsheets/d/11p-dVOkn23gm96M7nfzS0bfT7h5TYGks1wgk4W-c4GY">
-            <span>ACDA Road Crash Incidents</span>
-            <Icon src={ArrowTopRightOnSquare} class="inline size-4" />
-        </DataLink>
-    </div>
-    <h3>Hospital Capacity during the COVID-19 Pandemic</h3>
-    <p>
-        The <abbr title="Department of Health">DOH</abbr> maintains a regularly updated data drop of patient and hospital
-        information on the COVID-19 pandemic. This project relates this data with road crash incidents during that time.
-        Specifically, the data analysis used the datasets on bed occupancy, medical staff, and medical equipment. Some data
-        (i.e., medical staff data) has changed columns and data formats over the years, which required appropriate renaming
-        during the data analysis.
-    </p>
-    <div class="flex flex-wrap justify-center gap-2">
-        <DataLink href="https://drive.google.com/file/d/1FbKwqW3Qp8tM-dAcN-yfTZsMB7XtmmH2/view">
-            <span>Bed Occupancy (November 19, 2022)</span>
-            <Icon src={ArrowTopRightOnSquare} class="inline size-4" />
-        </DataLink>
-        <DataLink href="https://drive.google.com/file/d/1az_8HACj8bURqvn_gQLgBuPt-DGcBLyW/view">
-            <span>Medical Staff (December 31, 2021)</span>
-            <Icon src={ArrowTopRightOnSquare} class="inline size-4" />
-        </DataLink>
-        <DataLink href="https://drive.google.com/file/d/1BVm-JeuPJSScawlnKjmmdElYQfPDGz0G/view">
-            <span>Medical Staff (November 19, 2022)</span>
-            <Icon src={ArrowTopRightOnSquare} class="inline size-4" />
-        </DataLink>
-        <DataLink href="https://drive.google.com/file/d/1tbqoHLtWfu4hKakE7HtuNgkr7EiYBg1F/view">
-            <span>Medical Equipment (November 18, 2022)</span>
-            <Icon src={ArrowTopRightOnSquare} class="inline size-4" />
-        </DataLink>
-    </div>
+    <DataCollection />
 
     <h2>Results</h2>
     <h3>Research Question 1: To what extent does hospital capacity affect the fatality rate of road incidents?</h3>
