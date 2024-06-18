@@ -238,7 +238,7 @@
         ],
         "type": "scatter",
         "name": "gloves",
-        "line": { "color": "rgb(201.75, 104.625, 92.375)" }
+        "line": { "color": "rgb(184.5, 107.25, 95.75)" }
     },
     {
         "x": [
@@ -358,7 +358,7 @@
         ],
         "type": "scatter",
         "name": "head_cover",
-        "line": { "color": "rgb(184.5, 107.25, 95.75)" }
+        "line": { "color": "rgb(150.0, 112.5, 102.5)" }
     },
     {
         "x": [
@@ -477,7 +477,7 @@
         ],
         "type": "scatter",
         "name": "goggles",
-        "line": { "color": "rgb(167.25, 109.875, 99.125)" }
+        "line": { "color": "rgb(115.5, 117.75, 109.25)" }
     },
     {
         "x": [
@@ -597,7 +597,7 @@
         ],
         "type": "scatter",
         "name": "coverall",
-        "line": { "color": "rgb(150.0, 112.5, 102.5)" }
+        "line": { "color": "rgb(81.0, 123.0, 116.0)" }
     },
     {
         "x": [
@@ -717,7 +717,7 @@
         ],
         "type": "scatter",
         "name": "shoe_cover",
-        "line": { "color": "rgb(132.75, 115.125, 105.875)" }
+        "line": { "color": "rgb(81.0, 123.0, 116.0)" }
     },
     {
         "x": [
@@ -837,7 +837,7 @@
         ],
         "type": "scatter",
         "name": "face_shield",
-        "line": { "color": "rgb(115.5, 117.75, 109.25)" }
+        "line": { "color": "rgb(123.75, 147.5, 121.75)" }
     },
     {
         "x": [
@@ -958,7 +958,7 @@
         ],
         "type": "scatter",
         "name": "surgmask",
-        "line": { "color": "rgb(98.25, 120.375, 112.625)" }
+        "line": { "color": "rgb(166.5, 172.0, 127.5)" }
     },
     {
         "x": [
@@ -1078,6 +1078,6 @@
         ],
         "type": "scatter",
         "name": "n95mask",
-        "line": { "color": "rgb(81.0, 123.0, 116.0)" }
+        "line": { "color": "rgb(209.25, 196.5, 133.25)" }
     }
 ]
