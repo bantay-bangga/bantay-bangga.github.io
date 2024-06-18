@@ -1,4 +1,6 @@
 <script>
+    import PlotlyLine from '$lib/components/PlotlyLine.svelte';
+    import weekly_injury_data from '$lib/plots/data/weekly_injuries.json';
 </script>
 
 <h3>Weekly Trends</h3>
