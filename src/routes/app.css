@@ -27,8 +27,21 @@
         @apply text-surface-50;
     }
 
+    h2,
+    h3 {
+        @apply font-anon;
+    }
+
     h2 {
-        @apply my-8 font-anon text-4xl;
+        @apply my-8 text-4xl;
+    }
+
+    h3 {
+        @apply my-4 text-2xl tracking-wider;
+    }
+
+    h4 {
+        @apply my-2 font-raleway text-xl tracking-wide text-surface-300;
     }
 
     p {
