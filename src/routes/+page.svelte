@@ -1,7 +1,7 @@
 <script>
-    import Hero from './Hero.svelte';
     import DataCollection from './DataCollection.svelte';
     import DataExploration from './DataExploration.svelte';
+    import Hero from './Hero.svelte';
     import Researcher from './Researcher.svelte';
 
     import basti from '$lib/images/basti.png?enhanced';

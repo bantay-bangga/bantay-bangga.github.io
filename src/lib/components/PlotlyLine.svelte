@@ -1,7 +1,9 @@
 <script lang="ts">
     import { onMount } from 'svelte';
-    let target: any;
-    export let data;
+
+    // eslint-disable-next-line init-declarations
+    let target: HTMLDivElement;
+    export let data = [{}];
 
     onMount(async () => {
         const Plotly = await import('plotly.js-dist-min');
