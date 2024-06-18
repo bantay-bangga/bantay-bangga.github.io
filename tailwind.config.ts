@@ -9,9 +9,13 @@ export default {
     theme: {
         extend: {
             colors: {
-                primary: '#F9AE22',
+                primary: { 400: '#F9AE22', 500: '#F38D0D' },
                 secondary: '#DB6659',
-                tertiary: { 50: '#EBF0F0', 400: '#7C999B' },
+                tertiary: {
+                    '50': '#F5F8F7',
+                    '300': '#92B6AE',
+                    '600': '#426661',
+                },
                 surface: {
                     '50': '#f5f6f6',
                     '100': '#e5e8e8',
