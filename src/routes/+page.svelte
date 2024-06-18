@@ -74,93 +74,79 @@
         </div>
     </div>
     <p>
-        In response, <abbr title="Department of Transportation">DOTr</abbr> and <abbr title="World Health Organization">WHO</abbr>
-        had devised the <a
+        In response, <abbr title="Department of Transportation">DOTr</abbr> and
+        <abbr title="World Health Organization">WHO</abbr>
+        had devised the
+        <a
             target="_blank"
             href="https://www.who.int/philippines/news/detail/31-05-2023-department-of-transportation--world-health-organization-launch-philippine-road-safety-action-plan-2023-2028"
             >Philippine Road Safety Action Plan</a
         >. This plan seeks to reduce annual road traffic deaths by 35% by the year 2028 by focusing on five aspects:
     </p>
 
-    <div class="overflow-x-auto rounded-lg shadow-md m-4">
-        <table class="w-auto text-sm text-left tracking-wide font-raleway">
+    <div class="m-4 overflow-x-auto rounded-lg shadow-md">
+        <table class="w-auto text-left font-raleway text-sm tracking-wide">
             <tbody>
                 <tr class="border-b border-surface-500">
-                    <th scope="row" class="px-4 py-2 bg-surface-900">
-                        Road safety management
-                    </th>
+                    <th scope="row" class="bg-surface-900 px-4 py-2"> Road safety management </th>
                     <td class="px-6 py-4">
                         enhancing research, gaining the trust of stockholders, adopting global best practices
                     </td>
                 </tr>
                 <tr class="border-b border-surface-500">
-                    <th scope="row" class="px-4 py-2 bg-surface-900">
-                        Safer roads
-                    </th>
+                    <th scope="row" class="bg-surface-900 px-4 py-2"> Safer roads </th>
                     <td class="px-6 py-4">
-                        improving infrastructure, road maintenance, addressing the needs of vulnerable road users
-                        (e.g., cyclists, motorcyclists, pedestrians, children, elderly, PWD)
+                        improving infrastructure, road maintenance, addressing the needs of vulnerable road users (e.g.,
+                        cyclists, motorcyclists, pedestrians, children, elderly, PWD)
                     </td>
                 </tr>
                 <tr class="border-b border-surface-500">
-                    <th scope="row" class="px-4 py-2 bg-surface-900">
-                        Safer vehicles
-                    </th>
+                    <th scope="row" class="bg-surface-900 px-4 py-2"> Safer vehicles </th>
                     <td class="px-6 py-4">
                         enhancing vehicle registration, inspection, and regulation in compliance with vehicle standards
                     </td>
                 </tr>
                 <tr class="border-b border-surface-500">
-                    <th scope="row" class="px-4 py-2 bg-surface-900">
-                        Safer road users
-                    </th>
+                    <th scope="row" class="bg-surface-900 px-4 py-2"> Safer road users </th>
                     <td class="px-6 py-4">
                         increasing public awareness of road safety, enforcement of government laws
                     </td>
                 </tr>
                 <tr>
-                    <th scope="row" class="px-4 py-2 bg-surface-900">
-                        Post-crash response
-                    </th>
-                    <td class="px-6 py-4 font-bold">
-                        improving access and timeliness to care and rehabilitation
-                    </td>
+                    <th scope="row" class="bg-surface-900 px-4 py-2"> Post-crash response </th>
+                    <td class="px-6 py-4 font-bold"> improving access and timeliness to care and rehabilitation </td>
                 </tr>
             </tbody>
         </table>
     </div>
 
-    <div class="grid md:grid-cols-[1.75fr_1.25fr] gap-x-20">
+    <div class="grid gap-x-20 md:grid-cols-[1.75fr_1.25fr]">
         <div class="grid gap-2">
             <h2 class="col-span-2">Action Plan</h2>
             <span>✔</span>
             <p>
-                We examine the injury types of recorded road incidents starting from the onset of the COVID-19 pandemic in 2020
-                to its slumps in 2022.
+                We examine the injury types of recorded road incidents starting from the onset of the COVID-19 pandemic
+                in 2020 to its slumps in 2022.
             </p>
             <span>✔</span>
             <p>
-                We then relate the number of minor, serious, and fatal injuries with different factors of
-                hospital capacity (e.g., bed occupancy, staff availability, and equipment availability) using statistical
+                We then relate the number of minor, serious, and fatal injuries with different factors of hospital
+                capacity (e.g., bed occupancy, staff availability, and equipment availability) using statistical
                 analysis with hypothesis testing.
             </p>
             <span>✔</span>
             <p>
-                Researchers, government officials, and hospital organizations can use these
-                results to strengthen or deprioritize (if necessary) certain factors of hospital capacity to reduce road-related
-                injuries overall.
+                Researchers, government officials, and hospital organizations can use these results to strengthen or
+                deprioritize (if necessary) certain factors of hospital capacity to reduce road-related injuries
+                overall.
             </p>
         </div>
         <div class="grid auto-rows-min gap-2">
             <h2 class="col-span-2">Research Questions</h2>
             <span>❓</span>
-            <p>
-                To what extent does hospital capacity affect the fatality rate of road incidents?
-            </p>
+            <p>To what extent does hospital capacity affect the fatality rate of road incidents?</p>
             <span>❓</span>
-            <p>
-                What factors contribute to a hospital's overall capacity to provide care to patients?
-            </p>
+            <p>What factors contribute to a hospital's overall capacity to provide care to patients?</p>
         </div>
     </div>
 
