@@ -36,6 +36,7 @@
         "eslint-config-prettier": "^9.1.0",
         "eslint-plugin-svelte": "^2.39.4",
         "htmlnano": "^2.1.1",
+        "plotly.js-dist-min": "^2.33.0",
         "prettier": "^3.3.2",
         "prettier-plugin-svelte": "^3.2.4",
         "prettier-plugin-tailwindcss": "^0.6.4",
@@ -50,5 +51,8 @@
         "vite": "^5.3.1",
         "vite-imagetools": "^7.0.2",
         "vite-plugin-tailwind-purgecss": "^0.3.3"
+    },
+    "dependencies": {
+        "@types/plotly.js-dist-min": "^2.3.4"
     }
 }
