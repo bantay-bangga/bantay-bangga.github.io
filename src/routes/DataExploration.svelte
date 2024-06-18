@@ -1,6 +1,9 @@
 <script>
     import PlotlyLine from '$lib/components/PlotlyLine.svelte';
     import weekly_injury_data from '$lib/plots/data/weekly_injuries.json';
+    import weekly_bed_data from '$lib/plots/data/weekly_bed_occupancy.json';
+    import weekly_staff_data from '$lib/plots/data/weekly_staff.json';
+    import weekly_equip_data from '$lib/plots/data/weekly_equip.json';
 </script>
 
 <h3>Weekly Trends</h3>
@@ -19,15 +22,15 @@
     and vacant). The data is then aggregated by week and by month by getting the mean occupancy percentage for the
     week/month. We show the weekly trend in bed occupancy percentage:
 </p>
-<div class="bg-blue-500">weekly TREND</div>
+<PlotlyLine data={weekly_bed_data} />
 
 <h4>Average Medical Staff Availability by Day, Week, and Month</h4>
 <p>The medical staff data is aggregated as a sum per day, and by the mean per week/month. We show the weekly trend:</p>
-<div class="bg-green-500">weekly TREND</div>
+<PlotlyLine data={weekly_staff_data} />
 
 <h4>Total Medical Equipment by Day, Week, and Month</h4>
 <p>The medical equipment data is aggregated as a sum per day, week and month. We show the weekly trend:</p>
-<div class="bg-purple-500">weekly TREND</div>
+<PlotlyLine data={weekly_equip_data} />
 
 <h3>Research Question 1: To what extent does hospital capacity affect the fatality rate of road incidents?</h3>
 <h4>Bed Occupancy vs. Minor Injuries</h4>
