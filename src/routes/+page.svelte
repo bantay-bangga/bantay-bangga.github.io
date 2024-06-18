@@ -14,10 +14,10 @@
 <article class="prose prose-invert max-w-none">
     <h2>Overview</h2>
     <p>
-        The <b>Bantay Bangga</b> project is a data science project undertaken in fulfillment of CS 132 during the second
+        The <b>Bantay Bangga</b> project is a data science project undertaken in fulfillment of CS 132 under Professor Paul Regonia during the second
         semester of the academic year 2023-2024 at the
         <a target="_blank" href="https://upd.edu.ph/">University of the Philippines Diliman</a>. The project
-        investigates correlations between road crash injuries (e.g., minor, serious, and fatal) and hospital capacity
+        investigates correlations between road crash injuries of varying severity (e.g., minor, serious, and fatal) and hospital capacity
         (for some definition of "capacity" involving bed occupancy, equipment availability, and staff manpower). The
         analysis relies on two sources of data: (1) approximately 46,000 road incident records spanning from 2016 to
         2024 and (2) approximately one million records of hospital bed occupancy, human resources, and medical equipment
