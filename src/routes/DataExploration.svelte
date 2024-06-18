@@ -1,6 +1,35 @@
 <script>
 </script>
 
+<h3>Weekly Trends</h3>
+<h4>Road Injury Types by Day, Week, and Month</h4>
+<p>
+    The road incident data set is first aggregated by each recorded date, accounting for the number of minor injuries,
+    serious injuries, fatal injuries, and total injuries on that day. The rate of each incident severity is also
+    computed using the number of incidents of a particular severity over the total number of incidents. The data is then
+    aggregated by week and by month. We show the weekly trend in injury numbers below:
+</p>
+<div class="bg-red-500">weekly TREND</div>
+
+<h4>Bed Occupancy Percentage by Day, Week, and Month</h4>
+<p>
+    The hospital bed occupancy data is aggregated as a percentage, occupied beds over the total beds (sum of occupied
+    and vacant). The data is then aggregated by week and by month by getting the mean occupancy percentage for the
+    week/month. We show the weekly trend in bed occupancy percentage below:
+</p>
+<div class="bg-blue-500">weekly TREND</div>
+
+<h4>Average Medical Staff Availability by Day, Week, and Month</h4>
+<p>
+    The medical staff data is aggregated as a sum per day, and by the mean per week/month. We show the weekly trend
+    below:
+</p>
+<div class="bg-green-500">weekly TREND</div>
+
+<h4>Total Medical Equipment by Day, Week, and Month</h4>
+<p>The medical equipment data is aggregated as a sum per day, week and month. We show the weekly trend below:</p>
+<div class="bg-purple-500">weekly TREND</div>
+
 <h3>Research Question 1: To what extent does hospital capacity affect the fatality rate of road incidents?</h3>
 <h4>Bed Occupancy vs. Minor Injuries</h4>
 <enhanced:img
