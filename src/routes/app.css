@@ -28,7 +28,7 @@
     }
 
     h2 {
-        @apply font-anon;
+        @apply my-8 font-anon text-4xl;
     }
 
     p,
