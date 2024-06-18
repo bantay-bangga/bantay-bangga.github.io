@@ -25,13 +25,10 @@
 </p>
 <ol>
     <li>
-        The total number of COVID-19 patients in <dfn
-            >Intensive Care Unit <abbr title="Intensive Care Unit">(ICU)</abbr></dfn
-        >
-        beds
+        The total number of COVID-19 patients in <abbr title="Intensive Care Unit">(ICU)</abbr> beds
     </li>
     <li>
-        The total number of COVID-19 patients in non-<abbr title="Intensive Care Unit">ICU</abbr> beds.
+        The total number of COVID-19 patients in non-<abbr title="Intensive Care Unit">ICU</abbr> beds
     </li>
 </ol>
 <p>

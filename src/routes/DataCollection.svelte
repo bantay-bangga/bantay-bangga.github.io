@@ -131,8 +131,11 @@
         <p>
             <strong>Bed occupancy.</strong>
             The data set contains daily updates on the number of hospital beds occupied in a facility, for each type of bed:
-            ICU, non-ICU, ICU for non-COVID patients, non-ICU for non-COVID patients, as well as mechanical ventilators in
-            use.
+            <dfn>Intensive Care Unit <abbr title="Intensive Care Unit">(ICU)</abbr></dfn>, non-<abbr
+                title="Intensive Care Unit">ICU</abbr
+            >, <abbr title="Intensive Care Unit">ICU</abbr> for non-COVID patients, non-<abbr
+                title="Intensive Care Unit">ICU</abbr
+            > for non-COVID patients, as well as mechanical ventilators in use.
         </p>
         <p>
             <strong>Medical staff.</strong>
