@@ -31,8 +31,11 @@
         @apply my-8 font-anon text-4xl;
     }
 
-    p,
-    a {
+    p {
         @apply font-raleway tracking-wide;
+    }
+
+    a {
+        @apply underline decoration-1 underline-offset-2;
     }
 }
