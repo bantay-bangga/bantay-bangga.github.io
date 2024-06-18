@@ -40,61 +40,96 @@
             </p>
         </div>
     </div>
+
     <h2>Background</h2>
     <p>
-        Recently, the Philippine Department of Transportation <dfn
-            ><abbr title="Department of Transportation">(DOTr)</abbr></dfn
-        >
-        alongside the World Health Organization <dfn><abbr title="World Health Organization">(WHO)</abbr></dfn>
-        launched the
+        The past decade has seen an alarming 39% increase in road-related deaths from 2011-2021, according to the
         <a
             target="_blank"
             href="https://www.who.int/philippines/news/detail/18-12-2023-dotr--who--road-safety-partners-launch-global-status-report-on-road-safety-2023-in-the-philippines"
             >2023 Global Status Report on Road Safety</a
-        >. The report finds an alarming increase of road-related deaths in the past decade. Road traffic deaths
-        increased from 7,938 annual deaths in 2011 to 11,096 deaths in 2021, which is roughly a 39% increase. Moreover,
-        road traffic injuries and casualties were estimated to cost approximately 2.6% of the country's gross domestic
-        product. This is a rather sizeable allocation of the country's entire budget. Given these results,
-        <abbr title="Department of Transportation">DOTr</abbr> Secretary Jaime Bautista expressed the need to deliver impactful
-        multi-sector improvements by upgrading road protection and safety measures.
-    </p>
-    <p>
-        In response to the alarming growth of road and traffic-related incidents over the past years, <abbr
-            title="Department of Transportation">DOTr</abbr
         >
-        and <abbr title="World Health Organization">WHO</abbr> had devised the
-        <a
+        by the Department of Transportation <dfn><abbr title="Department of Transportation">(DOTr)</abbr></dfn>
+        alongside the World Health Organization <dfn><abbr title="World Health Organization">(WHO)</abbr></dfn>.
+    </p>
+    <div class="m-4 flex flex-row flex-wrap justify-around gap-4">
+        <div class="grid-rows-auto grid text-center">
+            <p class="text-lg">Increase in annual road casualties in the PH</p>
+            <div class="grid-cols-auto grid grid-flow-col">
+                <div class="grid-rows-auto grid p-2">
+                    <p class="font-anon text-4xl font-bold">7938</p>
+                    <p>in 2011</p>
+                </div>
+                <div class="self-center">to</div>
+                <div class="grid-rows-auto grid p-2">
+                    <p class="font-anon text-4xl font-bold">11096</p>
+                    <p>in 2021</p>
+                </div>
+            </div>
+        </div>
+        <div class="grid-rows-auto grid text-center">
+            <p class="text-lg">Road injuries cost approx.</p>
+            <p class="font-anon text-4xl font-bold">2.6%</p>
+            <p class="text-lg">of the country's GDP</p>
+        </div>
+    </div>
+    <p>
+        In response, <abbr title="Department of Transportation">DOTr</abbr> and <abbr title="World Health Organization">WHO</abbr>
+        had devised the <a
             target="_blank"
             href="https://www.who.int/philippines/news/detail/31-05-2023-department-of-transportation--world-health-organization-launch-philippine-road-safety-action-plan-2023-2028"
             >Philippine Road Safety Action Plan</a
-        >, which spans five years of development from 2023 to 2028. This plan seeks to reduce the number of annual road
-        traffic deaths by 35% by the year 2028. To do this and to create an overall safer road environment, the plan
-        focuses on five particular aspects:
+        >. This plan seeks to reduce annual road traffic deaths by 35% by the year 2028 by focusing on five aspects:
     </p>
-    <ol>
-        <li>
-            <strong>road safety management</strong>, which includes enhancing research, gaining the trust of
-            stockholders, and adopting global best practices.
-        </li>
-        <li>
-            <strong>safer roads</strong>, which includes improving infrastructure design, road and street maintenance,
-            and addressing safety and mobility needs of vulnerable road users (e.g., cyclists, motorcyclists,
-            pedestrians, children, elderly, and persons with disabilities).
-        </li>
-        <li>
-            <strong>safer vehicles</strong>, which focuses on enhancing vehicle registration and inspection, as well as
-            regulating compliance with vehicle standards.
-        </li>
-        <li>
-            <strong>safer road users</strong>, which emphasizes to increase public awareness and mass support for road
-            safety, which includes the strict enforcement of government laws and the media's perspective on the
-            importance of road safety.
-        </li>
-        <li>
-            <strong>post-crash response</strong>, which focuses on improving access and timeliness to care and
-            rehabilitation.
-        </li>
-    </ol>
+
+    <div class="overflow-x-auto rounded-lg shadow-md m-4">
+        <table class="w-auto text-sm text-left tracking-wide font-raleway">
+            <tbody>
+                <tr class="border-b border-surface-500">
+                    <th scope="row" class="px-4 py-2 bg-surface-900">
+                        Road safety management
+                    </th>
+                    <td class="px-6 py-4">
+                        enhancing research, gaining the trust of stockholders, adopting global best practices
+                    </td>
+                </tr>
+                <tr class="border-b border-surface-500">
+                    <th scope="row" class="px-4 py-2 bg-surface-900">
+                        Safer roads
+                    </th>
+                    <td class="px-6 py-4">
+                        improving infrastructure, road maintenance, addressing the needs of vulnerable road users
+                        (e.g., cyclists, motorcyclists, pedestrians, children, elderly, PWD)
+                    </td>
+                </tr>
+                <tr class="border-b border-surface-500">
+                    <th scope="row" class="px-4 py-2 bg-surface-900">
+                        Safer vehicles
+                    </th>
+                    <td class="px-6 py-4">
+                        enhancing vehicle registration, inspection, and regulation in compliance with vehicle standards
+                    </td>
+                </tr>
+                <tr class="border-b border-surface-500">
+                    <th scope="row" class="px-4 py-2 bg-surface-900">
+                        Safer road users
+                    </th>
+                    <td class="px-6 py-4">
+                        increasing public awareness of road safety, enforcement of government laws
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row" class="px-4 py-2 bg-surface-900">
+                        Post-crash response
+                    </th>
+                    <td class="px-6 py-4 font-bold">
+                        improving access and timeliness to care and rehabilitation
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
     <h2>Research Questions</h2>
     <ol>
         <li><em>To what extent does hospital capacity affect the fatality rate of road incidents?</em></li>
