@@ -275,7 +275,7 @@
         ],
         "type": "scatter",
         "name": "tot_nurse",
-        "line": { "color": "#DB6659" }
+        "line": { "color": "#F38D0D" }
     },
     {
         "x": [
@@ -414,6 +414,6 @@
         ],
         "type": "scatter",
         "name": "tot_support",
-        "line": { "color": "#517B74" }
+        "line": { "color": "#F38D0D" }
     }
 ]

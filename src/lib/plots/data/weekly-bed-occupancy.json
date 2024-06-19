@@ -301,6 +301,6 @@
         ],
         "type": "scatter",
         "name": "mechvents_used",
-        "line": { "color": "#517B74" }
+        "line": { "color": "#F38D0D" }
     }
 ]

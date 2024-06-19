@@ -811,7 +811,7 @@
         ],
         "type": "scatter",
         "name": "fatal",
-        "line": { "color": "#DB6659" }
+        "line": { "color": "#F38D0D" }
     },
     {
         "x": [
@@ -1083,6 +1083,6 @@
         ],
         "type": "scatter",
         "name": "total",
-        "line": { "color": "#517B74" }
+        "line": { "color": "#F38D0D" }
     }
 ]
