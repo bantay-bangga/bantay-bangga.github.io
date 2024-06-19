@@ -26,8 +26,8 @@
                     l: 60,
                     pad: 2,
                 },
-                paper_bgcolor: '#cdd2d4',
-                plot_bgcolor: '#cdd2d4',
+                paper_bgcolor: '#F5F8F7',
+                plot_bgcolor: '#F5F8F7',
             },
             { responsive: true },
         );
