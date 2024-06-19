@@ -89,10 +89,23 @@
                 </div>
                 <p>
                     <strong>Addressing null/misspelled entries.</strong>
-                    One major limitation of the data set is the ubiquity of null data and misspelled categories. To address
-                    these concerns, only non-null entries of column-specific analyses will be considered. For misspellings
-                    and variations in letter casing, text data will be standardized in lower case or upper case. Either is
-                    sufficient as long as the scheme is consistent for a particular analysis.
+                    <span>
+                        One major limitation of the data set is the ubiquity of null data and misspelled categories. To
+                        address these concerns, only non-null entries of column-specific analyses will be considered.
+                        For misspellings and variations in letter casing, text data will be standardized in lower case
+                        or upper case. Either is sufficient as long as the scheme is consistent for a particular
+                        analysis.
+                    </span>
+                </p>
+                <p>
+                    <strong>More pre-pandemic data is available.</strong>
+                    <span>
+                        Given the disruptive effects of a global pandemic, data collection on road crash incidents
+                        considerably ramped down during the COVID-19 pandemic. The resulting dataset is thus heavily
+                        biased in availability towards pre-pandemic times. There are much fewer data points from 2021
+                        onwards compared to its 2016-2020 counterparts. As such, we disclaim that the conclusions from
+                        the data are mostly relevant in <em>recent</em> times rather than <em>present</em> times.
+                    </span>
                 </p>
             </div>
         </DetailsCollapsible>
