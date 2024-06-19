@@ -7,7 +7,7 @@
 </script>
 
 <h3>Weekly Trends</h3>
-<h4>Road Injury Types by Day, Week, and Month</h4>
+<h4>Road Injury Types by Week</h4>
 <p>
     The road incident data set is first aggregated by each recorded date, accounting for the number of minor injuries,
     serious injuries, fatal injuries, and total injuries on that day. The rate of each incident severity is also
@@ -16,19 +16,22 @@
 </p>
 <PlotlyLine data={weekly_injury_data} />
 
-<h4>Bed Occupancy Percentage by Day, Week, and Month</h4>
+<h4>Bed Occupancy Percentage by Week</h4>
 <p>
-    The hospital bed occupancy data is aggregated as a percentage, occupied beds over the total beds (sum of occupied
+    The hospital bed occupancy data is aggregated as a percentage: occupied beds over the total beds (sum of occupied
     and vacant). The data is then aggregated by week and by month by getting the mean occupancy percentage for the
     week/month. We show the weekly trend in bed occupancy percentage:
 </p>
 <PlotlyLine data={weekly_bed_data} />
 
-<h4>Average Medical Staff Availability by Day, Week, and Month</h4>
-<p>The medical staff data is aggregated as a sum per day, and by the mean per week/month. We show the weekly trend:</p>
+<h4>Average Medical Staff Availability by Week</h4>
+<p>
+    The medical staff data is aggregated as a sum per day, and by the mean per week and per month. We show the weekly
+    trend:
+</p>
 <PlotlyLine data={weekly_staff_data} />
 
-<h4>Total Medical Equipment by Day, Week, and Month</h4>
+<h4>Total Medical Equipment by Week</h4>
 <p>The medical equipment data is aggregated as a sum per day, week and month. We show the weekly trend:</p>
 <PlotlyLine data={weekly_equip_data} />
 
