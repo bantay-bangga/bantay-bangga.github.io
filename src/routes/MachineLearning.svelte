@@ -32,7 +32,7 @@
             >);
         </li>
         <li>the weekly total number of vacant beds dedicated to COVID-19 patients (<code>total_covid_v</code>);</li>
-        <li>and the weekly total number of used mechanical ventilation units (<code>mechvents_used</code>) .</li>
+        <li>and the weekly total number of used mechanical ventilation units (<code>mechvents_used</code>).</li>
     </ol>
     <p>
         It turns out that this subset of features yields the least <abbr title="Root Mean-Squared Error">RMSE</abbr>
