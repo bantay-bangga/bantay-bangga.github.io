@@ -30,8 +30,8 @@
                 },
                 paper_bgcolor: '#F5F8F7',
                 plot_bgcolor: '#F5F8F7',
-                xaxis: {title: { text: xaxisLabel, standoff: 15 }, automargin:true},
-                yaxis: {title: yaxisLabel},
+                xaxis: { title: { text: xaxisLabel, standoff: 15 }, automargin: true },
+                yaxis: { title: yaxisLabel },
             },
             { responsive: true },
         );
