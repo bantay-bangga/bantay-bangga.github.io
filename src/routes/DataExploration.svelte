@@ -23,8 +23,8 @@
     import WeeklyStaffData from '$lib/plots/data/weekly-staff.json';
 </script>
 
-<h3>Weekly Trends</h3>
-<h4>Road Injury Types by Week</h4>
+<h3 class="not-prose">Weekly Trends</h3>
+<h4 class="not-prose">Road Injury Types by Week</h4>
 <p>
     The road incident data set is first aggregated by each recorded date, accounting for the number of minor injuries,
     serious injuries, fatal injuries, and total injuries on that day. The rate of each incident severity is also
@@ -33,7 +33,7 @@
 </p>
 <PlotlyScatter data={WeeklyInjuryData} />
 
-<h4>Bed Occupancy Percentage by Week</h4>
+<h4 class="not-prose">Bed Occupancy Percentage by Week</h4>
 <p>
     The hospital bed occupancy data is aggregated as a percentage: occupied beds over the total beds (sum of occupied
     and vacant). The data is then aggregated by week and by month by getting the mean occupancy percentage for the
@@ -41,19 +41,21 @@
 </p>
 <PlotlyScatter data={WeeklyBedData} />
 
-<h4>Average Medical Staff Availability by Week</h4>
+<h4 class="not-prose">Average Medical Staff Availability by Week</h4>
 <p>
     The medical staff data is aggregated as a sum per day, and by the mean per week and per month. We show the weekly
     trend:
 </p>
 <PlotlyScatter data={WeeklyStaffData} />
 
-<h4>Total Medical Equipment by Week</h4>
+<h4 class="not-prose">Total Medical Equipment by Week</h4>
 <p>The medical equipment data is aggregated as a sum per day, week and month. We show the weekly trend:</p>
 <PlotlyScatter data={WeeklyEquipData} />
 
-<h3>Research Question 1: To what extent does hospital capacity affect the fatality rate of road incidents?</h3>
-<h4>Bed Occupancy vs. Minor Injuries</h4>
+<h3 class="not-prose">
+    Research Question 1: To what extent does hospital capacity affect the fatality rate of road incidents?
+</h3>
+<h4 class="not-prose">Bed Occupancy vs. Minor Injuries</h4>
 <PlotlyScatter data={BedsvsMinor} showLegend={false} xaxisLabel="Total beds occupied" yaxisLabel="Minor injuries" />
 <p>
     First, the total number of road crash victims with <b>minor</b> injuries is compared to the total bed occupancy.
@@ -92,7 +94,7 @@
     injuries in road crash incidents.
 </p>
 
-<h4>Bed Occupancy vs. Serious Injuries</h4>
+<h4 class="not-prose">Bed Occupancy vs. Serious Injuries</h4>
 <PlotlyScatter data={BedsvsSerious} showLegend={false} xaxisLabel="Total beds occupied" yaxisLabel="Serious injuries" />
 <p>
     A similar analysis can be done for serious injuries. Plotting the weekly total number of beds versus the weekly
@@ -113,7 +115,7 @@
     incidents.
 </p>
 
-<h4>Bed Occupancy vs. Fatal Injuries</h4>
+<h4 class="not-prose">Bed Occupancy vs. Fatal Injuries</h4>
 <PlotlyScatter data={BedsvsFatal} showLegend={false} xaxisLabel="Total beds occupied" yaxisLabel="Fatal injuries" />
 <div class="grid grid-flow-col gap-2">
     <PlotlyScatter
@@ -186,10 +188,10 @@
     >
     beds (by COVID-19 patient) increase, the weekly total number of fatal injuries in road crash incidents decrease.
 </p>
-<h4>Bed Occupancy vs. Total Injuries</h4>
+<h4 class="not-prose">Bed Occupancy vs. Total Injuries</h4>
 <PlotlyScatter data={BedsvsTotal} showLegend={false} xaxisLabel="Total beds occupied" yaxisLabel="Total injuries" />
 
-<h4>Staff Resources vs. Minor Injuries</h4>
+<h4 class="not-prose">Staff Resources vs. Minor Injuries</h4>
 <PlotlyScatter data={StaffvsMinor} showLegend={false} xaxisLabel="Total medical staff" yaxisLabel="Minor injuries" />
 <p>
     Plotting the weekly total number of staff members (i.e., doctors, nurses, and support staff) versus the weekly total
@@ -207,7 +209,7 @@
     is, staff resources are not a good predictor for the weekly total number of minor injuries in road crash incidents.
 </p>
 
-<h4>Staff Resources vs. Serious Injuries</h4>
+<h4 class="not-prose">Staff Resources vs. Serious Injuries</h4>
 <PlotlyScatter
     data={StaffvsSerious}
     showLegend={false}
@@ -231,7 +233,7 @@
     incidents.
 </p>
 
-<h4>Staff Resources vs. Fatal Injuries</h4>
+<h4 class="not-prose">Staff Resources vs. Fatal Injuries</h4>
 <PlotlyScatter data={StaffvsFatal} showLegend={false} xaxisLabel="Total medical staff" yaxisLabel="Fatal injuries" />
 <div class="grid grid-flow-col gap-2">
     <PlotlyScatter data={DoctorvsFatal} showLegend={false} xaxisLabel="Total doctors" yaxisLabel="Fatal injuries" />
@@ -281,7 +283,7 @@
     nurses increase when the weekly total number of fatal injuries also increase (to meet the demand).
 </p>
 
-<h4>Medical Equipment vs. Minor Injuries</h4>
+<h4 class="not-prose">Medical Equipment vs. Minor Injuries</h4>
 <PlotlyScatter
     data={EquipvsMinor}
     showLegend={false}
@@ -309,7 +311,7 @@
     in road crash incidents.
 </p>
 
-<h4>Medical Equipment vs. Serious Injuries</h4>
+<h4 class="not-prose">Medical Equipment vs. Serious Injuries</h4>
 <div class="grid grid-flow-col grid-rows-2 gap-2">
     <PlotlyScatter
         data={EquipvsSerious}
@@ -378,7 +380,7 @@
     injuries in road crash incidents.
 </p>
 
-<h4>Medical Equipment vs. Fatal Injuries</h4>
+<h4 class="not-prose">Medical Equipment vs. Fatal Injuries</h4>
 <PlotlyScatter
     data={EquipvsFatal}
     showLegend={false}
@@ -404,7 +406,9 @@
     not good predictors for the weekly total number of fatal injuries in road crash incidents.
 </p>
 
-<h3>Research Question 2: What factors contribute to a hospital's overall capacity to provide care to patients?</h3>
+<h3 class="not-prose">
+    Research Question 2: What factors contribute to a hospital's overall capacity to provide care to patients?
+</h3>
 <p>
     As seen in the previous section, there are several factors that contribute to a hospital's overall capacity to
     provide care to its patients. During the pandemic, the bed occupancy of COVID-19 patients is one of the more

@@ -150,37 +150,38 @@
         </div>
     </div>
 
-    <h2>Data Collection</h2>
-    <DataCollection />
-
-    <h2>Data Exploration</h2>
-    <DataExploration />
-
-    <h2>Ordinary Least-Squares Linear Regression</h2>
-    <MachineLearning />
-
-    <h3>Pilipinas in a Nutshell (PILIPINUTS 2023)</h3>
-    <enhanced:img src="$lib/images/Bantay-Bangga-Nutshell.png" alt="Bantay Bangga plot for Pilipinuts 2023" />
-    <p>
-        Road incidents in the Philippines are commonly reported. A fatality rate of 25% of incidents was recorded in
-        November 2020, in addition to widespread cases of minor and serious injuries resulting from road incidents.
-        Hospital capacity and quality of care should be kept at a sufficient level for these road crash victims.
-        However, as the COVID-19 pandemic demanded the world's full attention, this unique situation poses an
-        interesting inquiry into what could possibly affect road crash incident fatalities and their possible avenues
-        for recovery in a time where something else (i.e., the pandemic) was the top priority.
-    </p>
-    <p>
-        The features include hospital bed occupancy (with COVID-19 and non-COVID-19 beds being noted), hospital staff
-        availability, and medical equipment availability. A significance level of 95% was set as the standard to see
-        linear relationships between features of hospital capacity and road-related fatality rates. Among these
-        features, hospital bed occupancy is linearly related with minor and fatal injuries through a linear combination
-        consisting of the total number of COVID-19 patients in both <abbr title="Intensive Care Unit">ICU</abbr>
-        beds and non-<abbr title="Intensive Care Unit">ICU</abbr>
-        beds. Unfortunately, staff resources showed no linear relationship with any of the fatality types and cannot be considered
-        a predictor. Medical equipment is linearly related with serious injuries through a linear combination of surgical
-        masks, gloves, and face shields. All of the features mentioned above have a significance level of at least 95%, which
-        is sufficient for determining the potential of these features as predictors.
-    </p>
+    <div class="prose prose-invert max-w-none">
+        <h2 class="not-prose">Data Collection</h2>
+        <DataCollection />
+        <h2 class="not-prose">Data Exploration</h2>
+        <DataExploration />
+        <h2 class="not-prose">Ordinary Least-Squares Linear Regression</h2>
+        <MachineLearning />
+        <h3 class="not-prose">Pilipinas in a Nutshell (PILIPINUTS 2023)</h3>
+        <enhanced:img src="$lib/images/Bantay-Bangga-Nutshell.png" alt="Bantay Bangga plot for Pilipinuts 2023" />
+        <p>
+            Road incidents in the Philippines are commonly reported. A fatality rate of 25% of incidents was recorded in
+            November 2020, in addition to widespread cases of minor and serious injuries resulting from road incidents.
+            Hospital capacity and quality of care should be kept at a sufficient level for these road crash victims.
+            However, as the COVID-19 pandemic demanded the world's full attention, this unique situation poses an
+            interesting inquiry into what could possibly affect road crash incident fatalities and their possible
+            avenues for recovery in a time where something else (i.e., the pandemic) was the top priority.
+        </p>
+        <p>
+            The features include hospital bed occupancy (with COVID-19 and non-COVID-19 beds being noted), hospital
+            staff availability, and medical equipment availability. A significance level of 95% was set as the standard
+            to see linear relationships between features of hospital capacity and road-related fatality rates. Among
+            these features, hospital bed occupancy is linearly related with minor and fatal injuries through a linear
+            combination consisting of the total number of COVID-19 patients in both <abbr title="Intensive Care Unit"
+                >ICU</abbr
+            >
+            beds and non-<abbr title="Intensive Care Unit">ICU</abbr>
+            beds. Unfortunately, staff resources showed no linear relationship with any of the fatality types and cannot
+            be considered a predictor. Medical equipment is linearly related with serious injuries through a linear combination
+            of surgical masks, gloves, and face shields. All of the features mentioned above have a significance level of
+            at least 95%, which is sufficient for determining the potential of these features as predictors.
+        </p>
+    </div>
 
     <h2>About Us</h2>
     <div class="not-prose grid grid-cols-1 gap-4 md:grid-cols-3">
