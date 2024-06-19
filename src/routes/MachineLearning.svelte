@@ -30,21 +30,21 @@
             >icu_o_c</code
         >);
     </li>
-    <li>the weekly total number of available medical gowns (<code>gowns</code>);</li>
-    <li>and the weekly total number of available medical gloves (<code>gloves</code>) .</li>
+    <li>the weekly total number of vacant beds dedicated to COVID-19 patients (<code>total_covid_v</code>);</li>
+    <li>and the weekly total number of used mechanical ventilation units (<code>mechvents_used</code>).</li>
 </ol>
 <p>
     It turns out that this subset of features yields the least <abbr title="Root Mean-Squared Error">RMSE</abbr>
     out of the other subsets that have been exhaustively tried. A 10-fold cross-validation of the model reports
-    <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>3</mn><mi>.</mi><mn>7850</mn></mrow></math>
+    <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>3</mn><mi>.</mi><mn>4178</mn></mrow></math>
     as the
     <abbr title="Root Mean-Squared Error">RMSE</abbr> and
     <math xmlns="http://www.w3.org/1998/Math/MathML"
-        ><mrow><mo>&#x2212;</mo><mn>8</mn><mi>.</mi><mn>0940</mn></mrow></math
+        ><mrow><mo>&#x2212;</mo><mn>8</mn><mi>.</mi><mn>4825</mn></mrow></math
     >
     as the <math xmlns="http://www.w3.org/1998/Math/MathML"><msup><mi>R</mi><mn>2</mn></msup></math> score. Note that
     the <abbr title="Root Mean-Squared Error">RMSE</abbr> of the
-    <abbr title="Ordinary Least-Squares Regression">OLS</abbr> model is slightly better than that of the null model.
+    <abbr title="Ordinary Least-Squares Regression">OLS</abbr> model is better than that of the null model.
     Unfortunately, the negative
     <math xmlns="http://www.w3.org/1998/Math/MathML"><msup><mi>R</mi><mn>2</mn></msup></math> score is an indicator for a
     poorly fitted model, but this is the best that can be done with the data.
@@ -69,22 +69,22 @@
 <p>In accordance with the findings in the previous section, the selected features for hospital capacity are:</p>
 <ol>
     <li>
-        the weekly total number of <abbr title="Intensive Care Unit">ICU</abbr> beds occupied by COVID-19 patients (<code
-            >icu_o_c</code
+        the weekly total number of <abbr title="Intensive Care Unit">ICU</abbr> beds occupied by non-COVID-19 patients (<code
+            >icu_o_nc</code
         >);
     </li>
-    <li>the weekly total number of available face shields (<code>face_shield</code>);</li>
-    <li>the weekly total number of available goggles (<code>goggles</code>);</li>
+    <li>the weekly total number of available beds (both ICU and non-ICU) (<code>total_beds_v</code>);</li>
+    <li>the weekly total number of vacant mechanical ventilation units (<code>total_mechvent_v</code>);</li>
     <li>and the weekly total number of available surgical masks (<code>surgmask</code>).</li>
 </ol>
 <p>
     A 10-fold cross-validation of the model reports an <abbr title="Root Mean-Squared Error">RMSE</abbr> of
-    <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>1</mn><mi>.</mi><mn>0432</mn></mrow></math>
+    <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>0</mn><mi>.</mi><mn>9627</mn></mrow></math>
     and an
     <math xmlns="http://www.w3.org/1998/Math/MathML"><msup><mi>R</mi><mn>2</mn></msup></math>
     score of
     <math xmlns="http://www.w3.org/1998/Math/MathML"
-        ><mrow><mo>&#x2212;</mo><mn>0</mn><mi>.</mi><mn>8334</mn></mrow></math
+        ><mrow><mo>&#x2212;</mo><mn>0</mn><mi>.</mi><mn>4616</mn></mrow></math
     >
     given this subset of features. An exhaustive search over all possible feature subsets shows that this yields the best
     metrics. Just like in the previous model, although the
@@ -112,21 +112,19 @@
 </p>
 <p>In accordance with the findings in the previous section, the selected features for hospital capacity are:</p>
 <ol>
-    <li>
-        the weekly total number of <abbr title="Intensive Care Unit">ICU</abbr> beds occupied by COVID-19 patients (<code
-            >icu_o_c</code
-        >);
-    </li>
-    <li>and the weekly total number of available surgical masks (<code>surgmask</code>).</li>
+    <li>the weekly total number of occupied beds (both ICU and non-ICU) (<code>total_beds_o</code>);</li>
+    <li>the weekly total number of used mechanical ventilation units (<code>mechvents_used</code>);</li>
+    <li>the weekly total number of available surgical masks (<code>surgmask</code>);</li>
+    <li>and the weekly total number of available N95 masks (<code>n95</code>).</li>
 </ol>
 <p>
     A 10-fold cross-validation of the model reports an <abbr title="Root Mean-Squared Error">RMSE</abbr> of
-    <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>0</mn><mi>.</mi><mn>9796</mn></mrow></math>
+    <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>0</mn><mi>.</mi><mn>9143</mn></mrow></math>
     and an
     <math xmlns="http://www.w3.org/1998/Math/MathML"><msup><mi>R</mi><mn>2</mn></msup></math>
     score of
     <math xmlns="http://www.w3.org/1998/Math/MathML"
-        ><mrow><mo>&#x2212;</mo><mn>0</mn><mi>.</mi><mn>9456</mn></mrow></math
+        ><mrow><mo>&#x2212;</mo><mn>0</mn><mi>.</mi><mn>6221</mn></mrow></math
     >
     given this subset of features. An exhaustive search over all possible feature subsets shows that this yields the best
     metrics. Just like in the previous model, although the
