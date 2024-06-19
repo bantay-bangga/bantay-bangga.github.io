@@ -162,7 +162,7 @@
             <div class="grid grid-cols-[auto_1fr] items-center gap-4">
                 <Icon src={PresentationChartLine} class="inline size-8" />
                 <p>
-                    We train an ordinary least-squares (<abbr title="ordinary least-squares regression">OLS</abbr>)
+                    We train an ordinary least-squares (<abbr title="Ordinary Least-Squares Regression">OLS</abbr>)
                     regression model to predict the number and severity of road incident injuries given the state of the
                     nationwide hospital capacity at that time.
                 </p>
@@ -202,24 +202,38 @@
         <p>
             Road incidents in the Philippines are commonly reported. A fatality rate of 25% of incidents was recorded in
             November 2020, in addition to widespread cases of minor and serious injuries resulting from road incidents.
-            Hospital capacity and quality of care should be kept at a sufficient level for these road crash victims.
+            To avoid unnecessary fatalities, hospital capacity and quality of care should be kept at a sufficient level
+            for these road crash victims.
+        </p>
+        <p>
             However, as the COVID-19 pandemic demanded the world's full attention, this unique situation poses an
             interesting inquiry into what could possibly affect road crash incident fatalities and their possible
             avenues for recovery in a time where something else (i.e., the pandemic) was the top priority.
         </p>
         <p>
-            The features include hospital bed occupancy (with COVID-19 and non-COVID-19 beds being noted), hospital
-            staff availability, and medical equipment availability. A significance level of 95% was set as the standard
-            to see linear relationships between features of hospital capacity and road-related fatality rates. Among
-            these features, hospital bed occupancy is linearly related with minor and fatal injuries through a linear
+            Throughout the data analysis, the following features were of interest to the researchers: hospital bed
+            occupancy (with COVID-19 and non-COVID-19 beds being noted), hospital staff availability, and medical
+            equipment availability. A significance level of 95% was set as the threshold for deciding on whether to
+            consider linear relationships between features of hospital capacity and road-related fatality rates.
+        </p>
+        <p>
+            Among these features, minor and fatal injuries are related to the hospital bed occupancy through a linear
             combination consisting of the total number of COVID-19 patients in both <abbr title="Intensive Care Unit"
                 >ICU</abbr
             >
             beds and non-<abbr title="Intensive Care Unit">ICU</abbr>
-            beds. Unfortunately, staff resources showed no linear relationship with any of the fatality types and cannot
-            be considered a predictor. Medical equipment is linearly related with serious injuries through a linear combination
-            of surgical masks, gloves, and face shields. All of the features mentioned above have a significance level of
-            at least 95%, which is sufficient for determining the potential of these features as predictors.
+            beds, which possibly hints at the larger role of beds in hospital decongestion. Unfortunately, staff resources
+            showed no linear relationship with any of the injury types and cannot be considered a predictor. Perhaps more
+            data is required here. Meanwhile, medical equipment is linearly related with serious injuries through a linear
+            combination of surgical masks, gloves, and face shields.
+        </p>
+        <p>
+            These aforementioned features are used in an <abbr title="Ordinary Least-Squares Regression">OLS</abbr> regression
+            model to predict the weekly total number of minor, serious, and fatal injuries. A 10-fold cross-validation of
+            the trained model confirms that it performs better than the null model (which just predicts the mean at all times).
+            However, the coefficient of determination is mostly negative, which hints at a possibly poorly fit model. Further
+            work can expound on the feature set by considering hospital proximity to the road crash incident or use an outright
+            different machine learning model altogether (i.e., neural networks).
         </p>
     </div>
 
