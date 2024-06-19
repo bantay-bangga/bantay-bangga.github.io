@@ -1,8 +1,10 @@
 <script>
     import AsideCard from '$lib/components/AsideCard.svelte';
+    import { CarCrash, LocalHospital } from '@steeze-ui/material-design-icons';
     import DataCollection from './DataCollection.svelte';
     import DataExploration from './DataExploration.svelte';
     import Hero from './Hero.svelte';
+    import { Icon } from '@steeze-ui/svelte-icon';
     import MachineLearning from './MachineLearning.svelte';
     import Researcher from './Researcher.svelte';
 
@@ -22,16 +24,22 @@
                 occupancy, equipment availability, and staff manpower).
             </p>
         </AsideCard>
-        <div class="row-span-1 grid grid-cols-subgrid gap-4">
+        <div class="row-span-1 grid auto-rows-min gap-4">
             <p>The analysis relies on two sources of data:</p>
-            <p class="text-lg">
-                (1) approximately 46,000 road incident records in the Philippines spanning from 2016 to 2024
-            </p>
-            <p class="text-lg">
-                (2) approximately one million records of hospital bed occupancy, human resources, and medical equipment
-                from the Department of Health <dfn><abbr title="Department of Health">(DOH)</abbr></dfn> from 2020 to 2022
-                during the height of the COVID-19 pandemic.
-            </p>
+            <div class="grid grid-cols-[auto_1fr] items-center gap-4">
+                <Icon src={CarCrash} class="inline size-8" />
+                <p class="text-lg">
+                    approximately 46,000 road incident records in the Philippines spanning from 2016 to 2024
+                </p>
+            </div>
+            <div class="grid grid-cols-[auto_1fr] items-center gap-4">
+                <Icon src={LocalHospital} class="inline size-8" />
+                <p class="text-lg">
+                    approximately one million records of hospital bed occupancy, human resources, and medical equipment
+                    from the Department of Health <dfn><abbr title="Department of Health">(DOH)</abbr></dfn> from 2020 to
+                    2022 during the height of the COVID-19 pandemic.
+                </p>
+            </div>
         </div>
         <div class="md:col-span-2">
             <p>
