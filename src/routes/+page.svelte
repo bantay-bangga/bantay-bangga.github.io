@@ -190,6 +190,13 @@
         <DataExploration />
         <h2 class="not-prose">Ordinary Least-Squares Linear Regression</h2>
         <MachineLearning />
+
+        <p class="text-red-500">
+            [ADD TO CONCLUSION] Researchers, government officials, and hospital organizations can use these results to
+            strengthen or deprioritize (if necessary) certain factors of hospital capacity to reduce road-related
+            injuries overall.
+        </p>
+
         <h3 class="not-prose">Pilipinas in a Nutshell (PILIPINUTS 2023)</h3>
         <enhanced:img src="$lib/images/Bantay-Bangga-Nutshell.png" alt="Bantay Bangga plot for Pilipinuts 2023" />
         <p>
