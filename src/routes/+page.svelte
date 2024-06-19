@@ -190,7 +190,7 @@
         <DataCollection />
         <h2 class="not-prose">Data Exploration</h2>
         <DataExploration />
-        <h2 class="not-prose">Ordinary Least-Squares Linear Regression</h2>
+        <h2 class="not-prose">Modelling with Ordinary Least-Squares Linear Regression</h2>
         <MachineLearning />
 
         <Simulations />
