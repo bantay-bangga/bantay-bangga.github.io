@@ -7,6 +7,7 @@
     } from '@steeze-ui/heroicons';
     import { CarCrash, LocalHospital } from '@steeze-ui/material-design-icons';
     import AsideCard from '$lib/components/AsideCard.svelte';
+    import Conclusions from './Conclusions.svelte';
     import DataCollection from './DataCollection.svelte';
     import DataExploration from './DataExploration.svelte';
     import Hero from './Hero.svelte';
@@ -193,6 +194,8 @@
         <MachineLearning />
 
         <Simulations />
+
+        <Conclusions />
 
         <p class="text-red-500">
             [ADD TO CONCLUSION] Researchers, government officials, and hospital organizations can use these results to
