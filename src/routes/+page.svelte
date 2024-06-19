@@ -1,4 +1,10 @@
 <script>
+    import {
+        ArrowTrendingUp,
+        ClipboardDocumentList,
+        PresentationChartLine,
+        QuestionMarkCircle,
+    } from '@steeze-ui/heroicons';
     import AsideCard from '$lib/components/AsideCard.svelte';
     import { CarCrash, LocalHospital } from '@steeze-ui/material-design-icons';
     import DataCollection from './DataCollection.svelte';
