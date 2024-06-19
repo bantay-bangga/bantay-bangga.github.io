@@ -5,6 +5,8 @@
     let target: HTMLDivElement;
     export let data = [{}];
     export let showLegend: boolean = true;
+    export let xaxisLabel = '';
+    export let yaxisLabel = '';
 
     onMount(async () => {
         const Plotly = await import('plotly.js-dist-min');
@@ -28,6 +30,8 @@
                 },
                 paper_bgcolor: '#F5F8F7',
                 plot_bgcolor: '#F5F8F7',
+                xaxis: {title: { text: xaxisLabel, standoff: 15 }, automargin:true},
+                yaxis: {title: yaxisLabel},
             },
             { responsive: true },
         );

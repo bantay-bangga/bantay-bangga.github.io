@@ -38,7 +38,7 @@
 
 <h3>Research Question 1: To what extent does hospital capacity affect the fatality rate of road incidents?</h3>
 <h4>Bed Occupancy vs. Minor Injuries</h4>
-<PlotlyScatter data={TotalBedsVsMinor} showLegend={false} />
+<PlotlyScatter data={TotalBedsVsMinor} showLegend={false} xaxisLabel={'Total beds occupied'} yaxisLabel={'Minor injuries'} />
 <p>
     First, the total number of road crash victims with <b>minor</b> injuries is compared to the total bed occupancy.
     Eyeballing the plot shows a slight linear relationship between the two variables with a correlation coefficient
