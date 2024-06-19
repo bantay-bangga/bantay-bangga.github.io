@@ -1,4 +1,5 @@
 <script>
+    import AsideCard from '$lib/components/AsideCard.svelte';
     import DataCollection from './DataCollection.svelte';
     import DataExploration from './DataExploration.svelte';
     import Hero from './Hero.svelte';
@@ -14,13 +15,13 @@
 <article class="max-w-none">
     <h2>Overview</h2>
     <div class="grid gap-8 gap-x-20 md:grid-cols-2">
-        <div>
-            <p class="text-2xl">
+        <AsideCard>
+            <p class="text-2xl" slot="card-content">
                 The <b>Bantay Bangga</b> project investigates correlations between road crash injuries of varying severity
                 (e.g., minor, serious, and fatal) and hospital capacity (for some definition of "capacity" involving bed
                 occupancy, equipment availability, and staff manpower).
             </p>
-        </div>
+        </AsideCard>
         <div class="row-span-1 grid grid-cols-subgrid gap-4">
             <p>The analysis relies on two sources of data:</p>
             <p class="text-lg">
