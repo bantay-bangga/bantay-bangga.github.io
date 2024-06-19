@@ -46,20 +46,3 @@
     determine if this were true or not, as it seems counter-intuitive that more room for patients would not need more
     staff tending to their needs.
 </p>
-
-<p>Given a total of:</p>
-<ul>
-    <li>
-        <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>600</mn></mrow></math> occupied ICU beds with COVID-19
-        patients
-    </li>
-    <li>
-        <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>12400</mn></mrow></math> vacant beds dedicated for COVID-19
-        patients
-    </li>
-    <li>
-        <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>0</mn><mi>.</mi><mn>42</mn></mrow></math> or
-        <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>42</mn><mi>%</mi></mrow></math> mechanical ventilation
-        unit usage rate
-    </li>
-</ul>
