@@ -33,7 +33,7 @@
                 xaxis: { title: { text: xaxisLabel, standoff: 15 }, automargin: true },
                 yaxis: { title: yaxisLabel },
             },
-            { responsive: true },
+            { responsive: true, scrollZoom: true },
         );
     });
 </script>
