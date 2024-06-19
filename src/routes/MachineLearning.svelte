@@ -31,21 +31,21 @@
                 >icu_o_c</code
             >);
         </li>
-        <li>the weekly total number of available medical gowns (<code>gowns</code>);</li>
-        <li>and the weekly total number of available medical gloves (<code>gloves</code>) .</li>
+        <li>the weekly total number of vacant beds dedicated to COVID-19 patients (<code>total_covid_v</code>);</li>
+        <li>and the weekly total number of used mechanical ventilation units (<code>mechvents_used</code>) .</li>
     </ol>
     <p>
         It turns out that this subset of features yields the least <abbr title="Root Mean-Squared Error">RMSE</abbr>
         out of the other subsets that have been exhaustively tried. A 10-fold cross-validation of the model reports
-        <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>3</mn><mi>.</mi><mn>7850</mn></mrow></math>
+        <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>3</mn><mi>.</mi><mn>4178</mn></mrow></math>
         as the
         <abbr title="Root Mean-Squared Error">RMSE</abbr> and
         <math xmlns="http://www.w3.org/1998/Math/MathML"
-            ><mrow><mo>&#x2212;</mo><mn>8</mn><mi>.</mi><mn>0940</mn></mrow></math
+            ><mrow><mo>&#x2212;</mo><mn>8</mn><mi>.</mi><mn>4825</mn></mrow></math
         >
         as the <math xmlns="http://www.w3.org/1998/Math/MathML"><msup><mi>R</mi><mn>2</mn></msup></math> score. Note
         that the <abbr title="Root Mean-Squared Error">RMSE</abbr> of the
-        <abbr title="Ordinary Least-Squares Regression">OLS</abbr> model is slightly better than that of the null model.
+        <abbr title="Ordinary Least-Squares Regression">OLS</abbr> model is better than that of the null model.
         Unfortunately, the negative
         <math xmlns="http://www.w3.org/1998/Math/MathML"><msup><mi>R</mi><mn>2</mn></msup></math> score is an indicator for
         a poorly fitted model, but this is the best that can be done with the data.
