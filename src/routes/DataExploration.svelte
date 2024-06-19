@@ -1,10 +1,26 @@
 <script>
+    import BedsvsFatal from '$lib/plots/data/totalbeds-vs-fatal.json';
+    import BedsvsMinor from '$lib/plots/data/totalbeds-vs-minor.json';
+    import BedsvsSerious from '$lib/plots/data/totalbeds-vs-serious.json';
+    import BedsvsTotal from '$lib/plots/data/totalbeds-vs-totalinjury.json';
+    import DoctorvsFatal from '$lib/plots/data/doc-vs-fatal.json';
+    import EquipvsFatal from '$lib/plots/data/equip-vs-fatal.json';
+    import EquipvsMinor from '$lib/plots/data/equip-vs-minor.json';
+    import EquipvsSerious from '$lib/plots/data/equip-vs-serious.json';
+    import FaceShieldvsSerious from '$lib/plots/data/faceshield-vs-serious.json';
+    import GlovesvsSerious from '$lib/plots/data/gloves-vs-serious.json';
+    import ICUOCvsFatal from '$lib/plots/data/icuoc-vs-fatal.json';
+    import NonICUOCvsFatal from '$lib/plots/data/nonicuoc-vs-fatal.json';
+    import NursevsFatal from '$lib/plots/data/nurse-vs-fatal.json';
     import PlotlyScatter from '$lib/components/PlotlyScatter.svelte';
+    import StaffvsFatal from '$lib/plots/data/staff-vs-fatal.json';
+    import StaffvsMinor from '$lib/plots/data/staff-vs-minor.json';
+    import StaffvsSerious from '$lib/plots/data/staff-vs-serious.json';
+    import SurgMaskvsSerious from '$lib/plots/data/surgmask-vs-serious.json';
     import WeeklyBedData from '$lib/plots/data/weekly-bed-occupancy.json';
     import WeeklyEquipData from '$lib/plots/data/weekly-equip.json';
     import WeeklyInjuryData from '$lib/plots/data/weekly-injuries.json';
     import WeeklyStaffData from '$lib/plots/data/weekly-staff.json';
-    import TotalBedsVsMinor from '$lib/plots/data/totalbeds-vs-minor.json';
 </script>
 
 <h3>Weekly Trends</h3>
@@ -38,7 +54,7 @@
 
 <h3>Research Question 1: To what extent does hospital capacity affect the fatality rate of road incidents?</h3>
 <h4>Bed Occupancy vs. Minor Injuries</h4>
-<PlotlyScatter data={TotalBedsVsMinor} showLegend={false} xaxisLabel={'Total beds occupied'} yaxisLabel={'Minor injuries'} />
+<PlotlyScatter data={BedsvsMinor} showLegend={false} xaxisLabel="Total beds occupied" yaxisLabel="Minor injuries" />
 <p>
     First, the total number of road crash victims with <b>minor</b> injuries is compared to the total bed occupancy.
     Eyeballing the plot shows a slight linear relationship between the two variables with a correlation coefficient
@@ -77,11 +93,7 @@
 </p>
 
 <h4>Bed Occupancy vs. Serious Injuries</h4>
-<enhanced:img
-    src="$lib/plots/totalbeds_vs_serious.png"
-    alt="A scatter plot of total occupied hospital bed percentage vs serious road incident injuries"
-    class="mx-auto block max-w-2xl"
-/>
+<PlotlyScatter data={BedsvsSerious} showLegend={false} xaxisLabel="Total beds occupied" yaxisLabel="Serious injuries" />
 <p>
     A similar analysis can be done for serious injuries. Plotting the weekly total number of beds versus the weekly
     total number of serious injuries yields the scatter plot above. The regression results in <math
@@ -102,21 +114,19 @@
 </p>
 
 <h4>Bed Occupancy vs. Fatal Injuries</h4>
-<enhanced:img
-    src="$lib/plots/totalbeds_vs_fatal.png"
-    alt="A scatter plot of total occupied hospital bed percentage vs fatal road incident injuries"
-    class="mx-auto block max-w-2xl"
-/>
+<PlotlyScatter data={BedsvsFatal} showLegend={false} xaxisLabel="Total beds occupied" yaxisLabel="Fatal injuries" />
 <div class="grid grid-flow-col gap-2">
-    <enhanced:img
-        src="$lib/plots/icu-o-c_vs_fatal.png"
-        alt="A scatter plot of occupied ICUs vs fatal road incident injuries"
-        class="mx-auto block max-w-xl"
+    <PlotlyScatter
+        data={ICUOCvsFatal}
+        showLegend={false}
+        xaxisLabel="Total occupied ICU beds for COVID patients"
+        yaxisLabel="Fatal injuries"
     />
-    <enhanced:img
-        src="$lib/plots/nonicu-o-c_vs_fatal.png"
-        alt="A scatter plot of occupied non-ICU rooms vs fatal road incident injuries"
-        class="mx-auto block max-w-xl"
+    <PlotlyScatter
+        data={NonICUOCvsFatal}
+        showLegend={false}
+        xaxisLabel="Total occupied non-ICU beds for COVID patients"
+        yaxisLabel="Fatal injuries"
     />
 </div>
 <p>
@@ -177,18 +187,10 @@
     beds (by COVID-19 patient) increase, the weekly total number of fatal injuries in road crash incidents decrease.
 </p>
 <h4>Bed Occupancy vs. Total Injuries</h4>
-<enhanced:img
-    src="$lib/plots/totalbeds_vs_totalinjury.png"
-    alt="A scatter plot of total occupied hospital bed percentage vs overall total road incident injuries"
-    class="mx-auto block max-w-2xl"
-/>
+<PlotlyScatter data={BedsvsTotal} showLegend={false} xaxisLabel="Total beds occupied" yaxisLabel="Total injuries" />
 
 <h4>Staff Resources vs. Minor Injuries</h4>
-<enhanced:img
-    src="$lib/plots/staff_vs_minor.png"
-    alt="A scatter plot of total medical staff on duty vs minor road incident injuries"
-    class="mx-auto block max-w-2xl"
-/>
+<PlotlyScatter data={StaffvsMinor} showLegend={false} xaxisLabel="Total medical staff" yaxisLabel="Minor injuries" />
 <p>
     Plotting the weekly total number of staff members (i.e., doctors, nurses, and support staff) versus the weekly total
     number of minor injuries from road crash incidents yields <math xmlns="http://www.w3.org/1998/Math/MathML"
@@ -206,10 +208,11 @@
 </p>
 
 <h4>Staff Resources vs. Serious Injuries</h4>
-<enhanced:img
-    src="$lib/plots/staff_vs_serious.png"
-    alt="A scatter plot of total medical staff on duty vs serious road incident injuries"
-    class="mx-auto block max-w-2xl"
+<PlotlyScatter
+    data={StaffvsSerious}
+    showLegend={false}
+    xaxisLabel="Total medical staff"
+    yaxisLabel="Serious injuries"
 />
 <p>
     Plotting the weekly total number of staff members (i.e., doctors, nurses, and support staff) versus the weekly total
@@ -229,22 +232,10 @@
 </p>
 
 <h4>Staff Resources vs. Fatal Injuries</h4>
-<enhanced:img
-    src="$lib/plots/staff_vs_fatal.png"
-    alt="A scatter plot of total medical staff on duty vs fatal road incident injuries"
-    class="mx-auto block max-w-2xl"
-/>
+<PlotlyScatter data={StaffvsFatal} showLegend={false} xaxisLabel="Total medical staff" yaxisLabel="Fatal injuries" />
 <div class="grid grid-flow-col gap-2">
-    <enhanced:img
-        src="$lib/plots/doc_vs_fatal.png"
-        alt="A scatter plot of total doctors on duty vs fatal road incident injuries"
-        class="mx-auto block max-w-xl"
-    />
-    <enhanced:img
-        src="$lib/plots/nurse_vs_fatal.png"
-        alt="A scatter plot of total nurses on duty vs fatal road incident injuries"
-        class="mx-auto block max-w-xl"
-    />
+    <PlotlyScatter data={DoctorvsFatal} showLegend={false} xaxisLabel="Total doctors" yaxisLabel="Fatal injuries" />
+    <PlotlyScatter data={NursevsFatal} showLegend={false} xaxisLabel="Total nurse" yaxisLabel="Fatal injuries" />
 </div>
 <p>
     Plotting the weekly total number of staff members (i.e., doctors, nurses, and support staff) versus the weekly total
@@ -291,10 +282,11 @@
 </p>
 
 <h4>Medical Equipment vs. Minor Injuries</h4>
-<enhanced:img
-    src="$lib/plots/equip_vs_minor.png"
-    alt="A scatter plot of total medical equipment vs minor road incident injuries"
-    class="mx-auto block max-w-2xl"
+<PlotlyScatter
+    data={EquipvsMinor}
+    showLegend={false}
+    xaxisLabel="Total medical equipment"
+    yaxisLabel="Minor injuries"
 />
 <p>
     Here, the total number of road crash victims who sustained <b>minor</b> injuries is compared to the weekly total
@@ -319,25 +311,29 @@
 
 <h4>Medical Equipment vs. Serious Injuries</h4>
 <div class="grid grid-flow-col grid-rows-2 gap-2">
-    <enhanced:img
-        src="$lib/plots/equip_vs_serious.png"
-        alt="A scatter plot of total medical equipment vs serious road incident injuries"
-        class="mx-auto block max-w-xl"
+    <PlotlyScatter
+        data={EquipvsSerious}
+        showLegend={false}
+        xaxisLabel="Total medical equipment"
+        yaxisLabel="Serious injuries"
     />
-    <enhanced:img
-        src="$lib/plots/gloves_vs_serious.png"
-        alt="A scatter plot of total medical gloves in stock vs fatal road incident injuries"
-        class="mx-auto block max-w-xl"
+    <PlotlyScatter
+        data={GlovesvsSerious}
+        showLegend={false}
+        xaxisLabel="Total medical gloves"
+        yaxisLabel="Serious injuries"
     />
-    <enhanced:img
-        src="$lib/plots/faceshield_vs_serious.png"
-        alt="A scatter plot of total face shields in stock vs fatal road incident injuries"
-        class="mx-auto block max-w-xl"
+    <PlotlyScatter
+        data={FaceShieldvsSerious}
+        showLegend={false}
+        xaxisLabel="Total face shields"
+        yaxisLabel="Serious injuries"
     />
-    <enhanced:img
-        src="$lib/plots/surgmask_vs_serious.png"
-        alt="A scatter plot of total surgical masks in stock vs fatal road incident injuries"
-        class="mx-auto block max-w-xl"
+    <PlotlyScatter
+        data={SurgMaskvsSerious}
+        showLegend={false}
+        xaxisLabel="Total surgical masks"
+        yaxisLabel="Serious injuries"
     />
 </div>
 <p>
@@ -383,10 +379,11 @@
 </p>
 
 <h4>Medical Equipment vs. Fatal Injuries</h4>
-<enhanced:img
-    src="$lib/plots/equip_vs_fatal.png"
-    alt="A scatter plot of total medical equipment vs fatal road incident injuries"
-    class="mx-auto block max-w-2xl"
+<PlotlyScatter
+    data={EquipvsFatal}
+    showLegend={false}
+    xaxisLabel="Total medical equipment"
+    yaxisLabel="Fatal injuries"
 />
 <p>
     Plotting the weekly total number of medical equipment (i.e., <code>gown</code>, <code>gloves</code>,
