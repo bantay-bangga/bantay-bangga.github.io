@@ -30,10 +30,10 @@
         <div>
             <h4 class="not-prose">Road Injury Types by Week</h4>
             <p>
-                The road incident data set is first aggregated by each recorded date, accounting for the number of minor injuries,
-                serious injuries, fatal injuries, and total injuries on that day. The rate of each incident severity is also
-                computed using the number of incidents of a particular severity over the total number of incidents. The data is then
-                aggregated by week and by month.
+                The road incident data set is first aggregated by each recorded date, accounting for the number of minor
+                injuries, serious injuries, fatal injuries, and total injuries on that day. The rate of each incident
+                severity is also computed using the number of incidents of a particular severity over the total number
+                of incidents. The data is then aggregated by week and by month.
             </p>
         </div>
     </div>
@@ -42,9 +42,9 @@
         <div>
             <h4 class="not-prose">Bed Occupancy Percentage by Week</h4>
             <p>
-                The hospital bed occupancy data is aggregated as a percentage: occupied beds over the total beds (sum of occupied
-                and vacant). The data is then aggregated by week and by month by getting the mean occupancy percentage for the
-                week/month.
+                The hospital bed occupancy data is aggregated as a percentage: occupied beds over the total beds (sum of
+                occupied and vacant). The data is then aggregated by week and by month by getting the mean occupancy
+                percentage for the week/month.
             </p>
         </div>
     </div>
@@ -52,9 +52,7 @@
         <PlotlyScatter data={WeeklyStaffData} />
         <div>
             <h4 class="not-prose">Average Medical Staff Availability by Week</h4>
-            <p>
-                The medical staff data is aggregated as a sum per day, and by the mean per week and per month.
-            </p>
+            <p>The medical staff data is aggregated as a sum per day, and by the mean per week and per month.</p>
         </div>
     </div>
     <div class="grid items-center gap-x-8 md:grid-cols-[1.75fr_1fr]">
@@ -64,10 +62,7 @@
             <p>The medical equipment data is aggregated as a sum per day, week and month.</p>
         </div>
     </div>
-
 </div>
-
-
 
 <h3 class="not-prose">
     Research Question 1: To what extent does hospital capacity affect the fatality rate of road incidents?
