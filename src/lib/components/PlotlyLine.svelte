@@ -4,6 +4,7 @@
     // eslint-disable-next-line init-declarations
     let target: HTMLDivElement;
     export let data = [{}];
+    export let showLegend: boolean = true;
 
     onMount(async () => {
         const Plotly = await import('plotly.js-dist-min');
@@ -12,7 +13,7 @@
             data,
             {
                 font: { family: 'Raleway' },
-                showlegend: true,
+                showlegend: showLegend,
                 legend: {
                     x: 1,
                     xanchor: 'right',
