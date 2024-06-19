@@ -1,6 +1,7 @@
 <script>
     import { ArrowTopRightOnSquare } from '@steeze-ui/heroicons';
     import DataLink from './DataLink.svelte';
+    import DetailsCollapsible from '$lib/components/DetailsCollapsible.svelte';
     import { Icon } from '@steeze-ui/svelte-icon';
 </script>
 
@@ -39,54 +40,62 @@
                 </DataLink>
             </div>
         </div>
-        <h4>Description</h4>
-        <p>
-            <strong>Road incident details.</strong>
-            Each data point records the date of incident, time of incident, collision type, incident location, weather condition,
-            and light condition.
-        </p>
-        <p>
-            <strong>Persons involved.</strong>
-            For each road incident, the data set encodes persons involved (e.g., drivers, passengers, pedestrians, and witnesses)
-            with their respective ages, sexes, sustained injuries, resulting fatalities, and usage of safety equipment (e.g.,
-            seatbelts and helmets).
-        </p>
-        <p>
-            <strong>Vehicles involved.</strong>
-            For each road incident, the data set encodes the model and make of each vehicle involved as well as their intended
-            function (e.g., private, public, government, or for-hire).
-        </p>
-        <h4>Preprocessing</h4>
-        <p>
-            <strong>Redacted columns.</strong>
-            Out of respect for the privacy of the individuals involved (sometimes fatally) in these road crash incidents,
-            personally identifiable columns such as names, plate numbers, license numbers, addresses, and hospitals have
-            been intentionally redacted from the original databases. Although these are readily available from the raw databases,
-            Bantay Bangga deems this data unnecessary and irrelevant to the data analysis.
-        </p>
-        <p>
-            <strong>Joining related data points.</strong>
-            The resulting data set is a left-join of all the one-to-many relationships represented by the database.
-        </p>
-        <div class="prose prose-invert">
-            <ul>
-                <li>
-                    One incident is to many involved persons. Note that these include drivers, passengers, pedestrians,
-                    and witnesses.
-                </li>
-                <li>
-                    One incident is to many involved vehicles. Note that most collisions occur between two vehicles, but
-                    it is totally possible to be involved in a mass collision.
-                </li>
-            </ul>
-        </div>
-        <p>
-            <strong>Addressing null/misspelled entries.</strong>
-            One major limitation of the data set is the ubiquity of null data and misspelled categories. To address these
-            concerns, only non-null entries of column-specific analyses will be considered. For misspellings and variations
-            in letter casing, text data will be standardized in lower case or upper case. Either is sufficient as long as
-            the scheme is consistent for a particular analysis.
-        </p>
+        <DetailsCollapsible>
+            <h4 slot="title">Description</h4>
+            <div slot="content">
+                <p>
+                    <strong>Road incident details.</strong>
+                    Each data point records the date of incident, time of incident, collision type, incident location, weather
+                    condition, and light condition.
+                </p>
+                <p>
+                    <strong>Persons involved.</strong>
+                    For each road incident, the data set encodes persons involved (e.g., drivers, passengers, pedestrians,
+                    and witnesses) with their respective ages, sexes, sustained injuries, resulting fatalities, and usage
+                    of safety equipment (e.g., seatbelts and helmets).
+                </p>
+                <p>
+                    <strong>Vehicles involved.</strong>
+                    For each road incident, the data set encodes the model and make of each vehicle involved as well as their
+                    intended function (e.g., private, public, government, or for-hire).
+                </p>
+            </div>
+        </DetailsCollapsible>
+        <DetailsCollapsible>
+            <h4 slot="title">Preprocessing</h4>
+            <div slot="content">
+                <p>
+                    <strong>Redacted columns.</strong>
+                    Out of respect for the privacy of the individuals involved (sometimes fatally) in these road crash incidents,
+                    personally identifiable columns such as names, plate numbers, license numbers, addresses, and hospitals
+                    have been intentionally redacted from the original databases. Although these are readily available from
+                    the raw databases, Bantay Bangga deems this data unnecessary and irrelevant to the data analysis.
+                </p>
+                <p>
+                    <strong>Joining related data points.</strong>
+                    The resulting data set is a left-join of all the one-to-many relationships represented by the database.
+                </p>
+                <div class="prose prose-invert">
+                    <ul>
+                        <li>
+                            One incident is to many involved persons. Note that these include drivers, passengers,
+                            pedestrians, and witnesses.
+                        </li>
+                        <li>
+                            One incident is to many involved vehicles. Note that most collisions occur between two
+                            vehicles, but it is totally possible to be involved in a mass collision.
+                        </li>
+                    </ul>
+                </div>
+                <p>
+                    <strong>Addressing null/misspelled entries.</strong>
+                    One major limitation of the data set is the ubiquity of null data and misspelled categories. To address
+                    these concerns, only non-null entries of column-specific analyses will be considered. For misspellings
+                    and variations in letter casing, text data will be standardized in lower case or upper case. Either is
+                    sufficient as long as the scheme is consistent for a particular analysis.
+                </p>
+            </div>
+        </DetailsCollapsible>
     </article>
 
     <article>
@@ -127,30 +136,37 @@
                 </DataLink>
             </div>
         </div>
-        <h4>Description</h4>
-        <p>
-            <strong>Bed occupancy.</strong>
-            The data set contains daily updates on the number of hospital beds occupied in a facility, for each type of bed:
-            <dfn>Intensive Care Unit <abbr title="Intensive Care Unit">(ICU)</abbr></dfn>, non-<abbr
-                title="Intensive Care Unit">ICU</abbr
-            >, <abbr title="Intensive Care Unit">ICU</abbr> for non-COVID patients, non-<abbr
-                title="Intensive Care Unit">ICU</abbr
-            > for non-COVID patients, as well as mechanical ventilators in use.
-        </p>
-        <p>
-            <strong>Medical staff.</strong>
-            The data set contains updates on the number of active doctors, nurses, and support staff in a facility.
-        </p>
-        <p>
-            <strong>Medical equipment.</strong>
-            The data set contains updates on the number of available medical equipment in a facility such as hospital gowns,
-            gloves, head cover, goggles, coverall, shoe cover, face shields, surgical masks, and N95 masks.
-        </p>
-        <h4>Preprocessing</h4>
-        <p>
-            <strong>Concatenating 2020 and 2022 data sets.</strong>
-            For some data sets, column names (i.e., medical staff classifications, bed classifications) and date formats
-            have changed over the years, which required appropriate column aliasing during the data analysis.
-        </p>
+        <DetailsCollapsible>
+            <h4 slot="title">Description</h4>
+            <div slot="content">
+                <p>
+                    <strong>Bed occupancy.</strong>
+                    The data set contains daily updates on the number of hospital beds occupied in a facility, for each type
+                    of bed:
+                    <dfn>Intensive Care Unit <abbr title="Intensive Care Unit">(ICU)</abbr></dfn>, non-<abbr
+                        title="Intensive Care Unit">ICU</abbr
+                    >, <abbr title="Intensive Care Unit">ICU</abbr> for non-COVID patients, non-<abbr
+                        title="Intensive Care Unit">ICU</abbr
+                    > for non-COVID patients, as well as mechanical ventilators in use.
+                </p>
+                <p>
+                    <strong>Medical staff.</strong>
+                    The data set contains updates on the number of active doctors, nurses, and support staff in a facility.
+                </p>
+                <p>
+                    <strong>Medical equipment.</strong>
+                    The data set contains updates on the number of available medical equipment in a facility such as hospital
+                    gowns, gloves, head cover, goggles, coverall, shoe cover, face shields, surgical masks, and N95 masks.
+                </p>
+            </div>
+        </DetailsCollapsible>
+        <DetailsCollapsible>
+            <h4 slot="title">Preprocessing</h4>
+            <p slot="content">
+                <strong>Concatenating 2020 and 2022 data sets.</strong>
+                For some data sets, column names (i.e., medical staff classifications, bed classifications) and date formats
+                have changed over the years, which required appropriate column aliasing during the data analysis.
+            </p>
+        </DetailsCollapsible>
     </article>
 </div>
