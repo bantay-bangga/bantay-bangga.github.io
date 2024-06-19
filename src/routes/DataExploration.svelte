@@ -501,17 +501,28 @@
 </h3>
 <p>
     As seen in the previous section, there are several factors that contribute to a hospital's overall capacity to
-    provide care to its patients. During the pandemic, the bed occupancy of COVID-19 patients is one of the more
-    statistically significant predictors for the eventual severity of road crash injuries (namely that of minor and
-    fatal injuries).
+    provide care to its patients.
 </p>
-<p>
-    Meanwhile, the total number of medical staff plays little to no role when predicting the severity of injuries. The
-    only exception occurs with fatal injuries, where the weekly total number of doctors and nurses are statistically
-    significant predictors.
-</p>
-<p>
-    Finally, the available medical equipment also plays little to no role when predicting the severity of injuries. The
-    only exception occurs with serious injuries, where the weekly total number of gloves, surgical masks, and face
-    shields interestingly are statistically significant predictors.
-</p>
+<div class="my-4 grid md:grid-flow-col auto-rows-max gap-2">
+    <div class="flex flex-col rounded-xl border border-tertiary-700 bg-tertiary-900 p-6 text-center">
+        <p>
+            During the pandemic, the <strong>bed occupancy</strong> of COVID-19 patients is one of the more
+            <strong>statistically significant</strong> predictors for the eventual severity of road crash injuries (namely that of minor and
+            fatal injuries).
+        </p>
+    </div>
+    <div class="flex grow rounded-xl border border-tertiary-700 bg-surface-950 p-6 text-center">
+        <p>
+            Meanwhile, the <strong>total number of medical staff</strong> plays <strong>little to no role</strong> when predicting the severity of injuries. The
+            only exception occurs with fatal injuries, where the weekly total number of doctors and nurses are statistically
+            significant predictors.
+        </p>
+    </div>
+    <div class="flex grow rounded-xl border border-tertiary-700 bg-surface-950 p-6 text-center">
+        <p>
+            Finally, the <strong>available medical equipment</strong> also plays <strong>little to no role</strong> when predicting the severity of injuries. The
+            only exception occurs with serious injuries, where the weekly total number of gloves, surgical masks, and face
+            shields interestingly are statistically significant predictors.
+        </p>
+    </div>
+</div>
