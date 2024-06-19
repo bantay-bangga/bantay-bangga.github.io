@@ -94,50 +94,6 @@
         <math xmlns="http://www.w3.org/1998/Math/MathML"><msup><mi>R</mi><mn>2</mn></msup></math> score indicates a poorly
         fitted model.
     </p>
-    <h3>Predicting the Serious Injuries</h3>
-    <p>
-        The second <abbr title="Ordinary Least-Squares Regression">OLS</abbr> model attempts to predict the total weekly
-        number of <em>serious</em> injuries given the nationwide hospital capacity for that week. The baseline (null)
-        model uses the mean
-        <math xmlns="http://www.w3.org/1998/Math/MathML"
-            ><mrow
-                ><mover><mi>x</mi><mo stretchy="true" style="math-style:normal;math-depth:0;">&#x2212;</mo></mover><mo
-                    >&#x2248;</mo
-                ><mn>2</mn><mi>.</mi><mn>9767</mn></mrow
-            ></math
-        >. Hence, the null model has a
-        <dfn>root mean-squared error <abbr title="Root Mean-Squared Error">(RMSE)</abbr></dfn>
-        of
-        <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>1</mn><mi>.</mi><mn>4058</mn></mrow></math> (i.e., the
-        "score" to beat as a baseline).
-    </p>
-    <p>In accordance with the findings in the previous section, the selected features for hospital capacity are:</p>
-    <ol>
-        <li>
-            the weekly total number of <abbr title="Intensive Care Unit">ICU</abbr> beds occupied by COVID-19 patients (<code
-                >icu_o_c</code
-            >);
-        </li>
-        <li>the weekly total number of available face shields (<code>face_shield</code>);</li>
-        <li>the weekly total number of available goggles (<code>goggles</code>);</li>
-        <li>and the weekly total number of available surgical masks (<code>surgmask</code>).</li>
-    </ol>
-    <p>
-        A 10-fold cross-validation of the model reports an <abbr title="Root Mean-Squared Error">RMSE</abbr> of
-        <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>1</mn><mi>.</mi><mn>0432</mn></mrow></math>
-        and an
-        <math xmlns="http://www.w3.org/1998/Math/MathML"><msup><mi>R</mi><mn>2</mn></msup></math>
-        score of
-        <math xmlns="http://www.w3.org/1998/Math/MathML"
-            ><mrow><mo>&#x2212;</mo><mn>0</mn><mi>.</mi><mn>8334</mn></mrow></math
-        >
-        given this subset of features. An exhaustive search over all possible feature subsets shows that this yields the
-        best metrics. Just like in the previous model, although the
-        <abbr title="Ordinary Least-Squares Regression">OLS</abbr>
-        model performs better than the null model, the slightly negative
-        <math xmlns="http://www.w3.org/1998/Math/MathML"><msup><mi>R</mi><mn>2</mn></msup></math> score indicates a poorly
-        fitted model.
-    </p>
     <h3>Predicting the Fatal Injuries</h3>
     <p>
         The final <abbr title="Ordinary Least-Squares Regression">OLS</abbr> model attempts to predict the total weekly
