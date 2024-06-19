@@ -74,18 +74,18 @@
                 >icu_o_c</code
             >);
         </li>
-        <li>the weekly total number of available face shields (<code>face_shield</code>);</li>
-        <li>the weekly total number of available goggles (<code>goggles</code>);</li>
+        <li>the weekly total number of available beds (<code>total_beds_v</code>);</li>
+        <li>the weekly total number of vacant mechanical ventilation units (<code>total_mechvent_v</code>);</li>
         <li>and the weekly total number of available surgical masks (<code>surgmask</code>).</li>
     </ol>
     <p>
         A 10-fold cross-validation of the model reports an <abbr title="Root Mean-Squared Error">RMSE</abbr> of
-        <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>1</mn><mi>.</mi><mn>0432</mn></mrow></math>
+        <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>0</mn><mi>.</mi><mn>9627</mn></mrow></math>
         and an
         <math xmlns="http://www.w3.org/1998/Math/MathML"><msup><mi>R</mi><mn>2</mn></msup></math>
         score of
         <math xmlns="http://www.w3.org/1998/Math/MathML"
-            ><mrow><mo>&#x2212;</mo><mn>0</mn><mi>.</mi><mn>8334</mn></mrow></math
+            ><mrow><mo>&#x2212;</mo><mn>0</mn><mi>.</mi><mn>4616</mn></mrow></math
         >
         given this subset of features. An exhaustive search over all possible feature subsets shows that this yields the
         best metrics. Just like in the previous model, although the
