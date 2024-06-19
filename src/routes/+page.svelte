@@ -2,6 +2,7 @@
     import DataCollection from './DataCollection.svelte';
     import DataExploration from './DataExploration.svelte';
     import Hero from './Hero.svelte';
+    import MachineLearning from './MachineLearning.svelte';
     import Researcher from './Researcher.svelte';
 
     import basti from '$lib/images/basti.png?enhanced';
@@ -154,6 +155,9 @@
 
     <h2>Data Exploration</h2>
     <DataExploration />
+
+    <h2>Ordinary Least-Squares Linear Regression</h2>
+    <MachineLearning />
 
     <h3>Pilipinas in a Nutshell (PILIPINUTS 2023)</h3>
     <enhanced:img src="$lib/images/Bantay-Bangga-Nutshell.png" alt="Bantay Bangga plot for Pilipinuts 2023" />
