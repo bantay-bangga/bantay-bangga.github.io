@@ -19,7 +19,9 @@
         class="flex items-center justify-center rounded-lg bg-secondary px-10 py-12 shadow-md transition-transform hover:scale-105 hover:shadow-2xl"
     >
         <span>
-            <h2 class="m-0 w-min text-center font-anon text-4xl font-bold tracking-wider">2020 to 2022</h2>
+            <h2 class="m-0 w-min text-center font-anon text-4xl font-bold tracking-wider text-surface-950">
+                2020 to 2022
+            </h2>
             <p class="text-center font-raleway text-lg">DOH Data</p>
         </span>
     </div>
@@ -35,7 +37,7 @@
         class="col-span-full space-y-2 rounded-lg bg-tertiary-50 px-6 py-12 shadow-md transition-transform hover:scale-105 hover:shadow-2xl md:col-span-3 md:px-10"
     >
         <span class="text-gray-500">Researchers</span>
-        <h2 class="font-anon text-2xl font-bold tracking-wider sm:text-4xl">FerrisWheel&#129408;</h2>
+        <h2 class="font-anon text-2xl font-bold tracking-wider text-surface-950 sm:text-4xl">FerrisWheel&#129408;</h2>
         <ul class="font-raleway underline">
             <li class="flex items-center gap-1">
                 <Icon src={MarkGithub} size="3%" /><a href="https://github.com/Dox-Dev" target="_blank"

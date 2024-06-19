@@ -29,7 +29,7 @@
 
     h2,
     h3 {
-        @apply font-anon;
+        @apply font-anon text-surface-300;
     }
 
     h2 {

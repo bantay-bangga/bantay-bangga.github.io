@@ -171,7 +171,7 @@
         <AsideCard>
             <div slot="card-content">
                 <div class="row-span-1 grid auto-rows-min gap-4">
-                    <h2 class="my-2 text-3xl">Research Questions</h2>
+                    <h2 class="my-2 text-3xl text-primary-950">Research Questions</h2>
                     <div class="grid grid-cols-[auto_1fr] items-center gap-4">
                         <Icon src={QuestionMarkCircle} class="inline size-8" />
                         <p>To what extent does hospital capacity affect the fatality rate of road incidents?</p>
