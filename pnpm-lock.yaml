@@ -21,6 +21,9 @@ importers:
       '@steeze-ui/heroicons':
         specifier: ^2.3.0
         version: 2.3.0
+      '@steeze-ui/material-design-icons':
+        specifier: ^1.1.2
+        version: 1.1.2
       '@steeze-ui/octicons':
         specifier: ^2.1.1
         version: 2.1.1
@@ -605,6 +608,9 @@ packages:
 
   '@steeze-ui/heroicons@2.3.0':
     resolution: {integrity: sha512-tVOamjAd9ZzXgDwVKwbA3K+o86Z1ks/IMvqdgoCf9hKeGINVUIlAlGhM3wdpSmt7brIoBLgR70wlnsXGytZk9g==}
+
+  '@steeze-ui/material-design-icons@1.1.2':
+    resolution: {integrity: sha512-p1csJ9RR8J2zG+ED3JJehVHxIi88B0ilUhg0ScbduVe54lgTZ1suAu5d94zOrBww/ImKDPhFshEXUWodVpELLw==}
 
   '@steeze-ui/octicons@2.1.1':
     resolution: {integrity: sha512-HDfk+IElAXFXU0BGgoMqXWJK2Tcukle7fwkLnKmKhh7fQzOp5vwvaRRxBi4r2p/6ccO66kdRhGCj1xy79mZOCg==}
@@ -2930,6 +2936,8 @@ snapshots:
     optional: true
 
   '@steeze-ui/heroicons@2.3.0': {}
+
+  '@steeze-ui/material-design-icons@1.1.2': {}
 
   '@steeze-ui/octicons@2.1.1': {}
 
