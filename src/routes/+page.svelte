@@ -139,34 +139,48 @@
         </table>
     </div>
 
-    <div class="grid gap-x-20 md:grid-cols-[1.75fr_1.25fr]">
-        <div class="grid gap-2">
-            <h2 class="col-span-2">Action Plan</h2>
-            <span>✔</span>
-            <p>
-                We examine the injury types of recorded road incidents starting from the onset of the COVID-19 pandemic
-                in 2020 to its slumps in 2022.
-            </p>
-            <span>✔</span>
-            <p>
-                We then relate the number of minor, serious, and fatal injuries with different factors of hospital
-                capacity (e.g., bed occupancy, staff availability, and equipment availability) using statistical
-                analysis with hypothesis testing.
-            </p>
-            <span>✔</span>
-            <p>
-                Researchers, government officials, and hospital organizations can use these results to strengthen or
-                deprioritize (if necessary) certain factors of hospital capacity to reduce road-related injuries
-                overall.
-            </p>
+    <div class="grid items-center gap-12 md:grid-cols-[1.75fr_1.25fr]">
+        <div class="row-span-1 grid auto-rows-min gap-2">
+            <h2>Action Plan</h2>
+            <div class="grid grid-cols-[auto_1fr] items-center gap-4">
+                <Icon src={CarCrash} class="inline size-8" />
+                <p>
+                    We examine the injury types of recorded road incidents starting from the onset of the COVID-19
+                    pandemic in 2020 to its slumps in 2022.
+                </p>
+            </div>
+            <div class="grid grid-cols-[auto_1fr] items-center gap-4">
+                <Icon src={ClipboardDocumentList} class="inline size-8" />
+                <p>
+                    We then relate the number of minor, serious, and fatal injuries with different factors of hospital
+                    capacity (e.g., bed occupancy, staff availability, and equipment availability) using statistical
+                    analysis with hypothesis testing.
+                </p>
+            </div>
+            <div class="grid grid-cols-[auto_1fr] items-center gap-4">
+                <Icon src={PresentationChartLine} class="inline size-8" />
+                <p>
+                    We train an ordinary least-squares (<abbr title="ordinary least-squares regression">OLS</abbr>)
+                    regression model to predict the number and severity of road incident injuries given the state of the
+                    nationwide hospital capacity at that time.
+                </p>
+            </div>
         </div>
-        <div class="grid auto-rows-min gap-2">
-            <h2 class="col-span-2">Research Questions</h2>
-            <span>❓</span>
-            <p>To what extent does hospital capacity affect the fatality rate of road incidents?</p>
-            <span>❓</span>
-            <p>What factors contribute to a hospital's overall capacity to provide care to patients?</p>
-        </div>
+        <AsideCard>
+            <div slot="card-content">
+                <div class="row-span-1 grid auto-rows-min gap-4">
+                    <h2 class="my-2 text-3xl">Research Questions</h2>
+                    <div class="grid grid-cols-[auto_1fr] items-center gap-4">
+                        <Icon src={QuestionMarkCircle} class="inline size-8" />
+                        <p>To what extent does hospital capacity affect the fatality rate of road incidents?</p>
+                    </div>
+                    <div class="grid grid-cols-[auto_1fr] items-center gap-4">
+                        <Icon src={QuestionMarkCircle} class="inline size-8" />
+                        <p>What factors contribute to a hospital's overall capacity to provide care to patients?</p>
+                    </div>
+                </div>
+            </div>
+        </AsideCard>
     </div>
 
     <div class="prose prose-invert max-w-none">
