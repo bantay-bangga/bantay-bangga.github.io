@@ -35,15 +35,18 @@
             <div class="grid grid-cols-[auto_1fr] items-center gap-4">
                 <Icon src={CarCrash} class="inline size-8" />
                 <p class="text-lg">
-                    approximately 46,000 road incident records in the Philippines spanning from 2016 to 2024
+                    approximately <strong>46,000 road incident records</strong> in the Philippines spanning from 2016 to
+                    2024
                 </p>
             </div>
             <div class="grid grid-cols-[auto_1fr] items-center gap-4">
                 <Icon src={LocalHospital} class="inline size-8" />
                 <p class="text-lg">
-                    approximately one million records of hospital bed occupancy, human resources, and medical equipment
-                    from the Department of Health <dfn><abbr title="Department of Health">(DOH)</abbr></dfn> from 2020 to
-                    2022 during the height of the COVID-19 pandemic.
+                    approximately <strong
+                        >one million records of hospital bed occupancy, human resources, and medical equipment from the
+                        Department of Health
+                    </strong><dfn> <abbr title="Department of Health">(DOH)</abbr></dfn> from 2020 to 2022 during the height
+                    of the COVID-19 pandemic.
                 </p>
             </div>
         </div>
@@ -58,7 +61,8 @@
 
     <h2>Background</h2>
     <p>
-        The past decade has seen an alarming 39% increase in road-related deaths from 2011-2021, according to the
+        The past decade has seen an alarming <strong>39% increase</strong> in road-related deaths from 2011-2021,
+        according to the
         <a
             target="_blank"
             href="https://www.who.int/philippines/news/detail/18-12-2023-dotr--who--road-safety-partners-launch-global-status-report-on-road-safety-2023-in-the-philippines"
