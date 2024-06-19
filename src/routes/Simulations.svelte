@@ -17,7 +17,7 @@
     </li>
 </ul>
 <p>
-    The number of predicted minor injuries given the model was<math xmlns="http://www.w3.org/1998/Math/MathML"
+    The number of predicted minor injuries given the model was <math xmlns="http://www.w3.org/1998/Math/MathML"
         ><mrow><mn>11</mn><mi>.</mi><mn>7770</mn></mrow></math
     >.
 </p>
@@ -42,7 +42,7 @@
     </li>
 </ul>
 <p>
-    The number of predicted serious injuries given the model was<math xmlns="http://www.w3.org/1998/Math/MathML"
+    The number of predicted serious injuries given the model was <math xmlns="http://www.w3.org/1998/Math/MathML"
         ><mrow><mn>1</mn><mi>.</mi><mn>0188</mn></mrow></math
     >.
 </p>
@@ -65,7 +65,7 @@
     <li><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mn>1100000</mn></mrow></math> available N95 masks</li>
 </ul>
 <p>
-    The number of predicted serious injuries given the model was<math xmlns="http://www.w3.org/1998/Math/MathML"
+    The number of predicted serious injuries given the model was <math xmlns="http://www.w3.org/1998/Math/MathML"
         ><mrow><mn>0</mn><mi>.</mi><mn>6222</mn></mrow></math
     >.
 </p>
