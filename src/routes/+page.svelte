@@ -71,24 +71,24 @@
         by the Department of Transportation <dfn><abbr title="Department of Transportation">(DOTr)</abbr></dfn>
         alongside the World Health Organization <dfn><abbr title="World Health Organization">(WHO)</abbr></dfn>.
     </p>
-    <div class="m-4 flex flex-row flex-wrap justify-around gap-4">
-        <div class="grid-rows-auto grid text-center">
+    <div class="my-4 flex flex-row flex-wrap items-center justify-around gap-2">
+        <div class="rounded-xl border border-tertiary-700 bg-tertiary-900 p-6 text-center">
             <p class="text-lg">Increase in annual road casualties in the PH</p>
             <div class="grid-cols-auto grid grid-flow-col">
-                <div class="grid-rows-auto grid p-2">
+                <div class="grid grid-rows-[auto_1fr_auto] p-2">
                     <p class="font-anon text-4xl font-bold">7938</p>
                     <p>in 2011</p>
                 </div>
-                <div class="self-center">to</div>
-                <div class="grid-rows-auto grid p-2">
+                <Icon src={ArrowTrendingUp} class="inline size-12 self-center justify-self-center" />
+                <div class="grid-rows-auto grid p-2 text-secondary">
                     <p class="font-anon text-4xl font-bold">11096</p>
                     <p>in 2021</p>
                 </div>
             </div>
         </div>
-        <div class="grid-rows-auto grid text-center">
+        <div class="grid auto-rows-min rounded-xl border border-tertiary-700 bg-tertiary-900 p-6 text-center">
             <p class="text-lg">Road injuries cost approx.</p>
-            <p class="font-anon text-4xl font-bold">2.6%</p>
+            <p class="font-anon text-4xl font-bold text-secondary">2.6%</p>
             <p class="text-lg">of the country's GDP</p>
         </div>
     </div>
