@@ -13,6 +13,7 @@
     import { Icon } from '@steeze-ui/svelte-icon';
     import MachineLearning from './MachineLearning.svelte';
     import Researcher from './Researcher.svelte';
+    import Simulations from './Simulations.svelte';
 
     import basti from '$lib/images/basti.png?enhanced';
     import ellis from '$lib/images/ellis.png?enhanced';
@@ -190,6 +191,8 @@
         <DataExploration />
         <h2 class="not-prose">Ordinary Least-Squares Linear Regression</h2>
         <MachineLearning />
+
+        <Simulations />
 
         <p class="text-red-500">
             [ADD TO CONCLUSION] Researchers, government officials, and hospital organizations can use these results to
