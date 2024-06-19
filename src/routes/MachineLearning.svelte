@@ -73,7 +73,7 @@
             >icu_o_nc</code
         >);
     </li>
-    <li>the weekly total number of available beds (<code>total_beds_v</code>);</li>
+    <li>the weekly total number of available beds (both ICU and non-ICU) (<code>total_beds_v</code>);</li>
     <li>the weekly total number of vacant mechanical ventilation units (<code>total_mechvent_v</code>);</li>
     <li>and the weekly total number of available surgical masks (<code>surgmask</code>).</li>
 </ol>
