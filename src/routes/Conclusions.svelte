@@ -1,4 +1,4 @@
-<h3 class="not-prose">Conclusions</h3>
+<h2 class="not-prose">Conclusions</h2>
 <h4 class="not-prose">Features That Matter</h4>
 <p>
     The researchers have noticed that upon using machine learning and linear regression, as well as looking into
