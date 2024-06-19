@@ -5,8 +5,8 @@
         PresentationChartLine,
         QuestionMarkCircle,
     } from '@steeze-ui/heroicons';
-    import AsideCard from '$lib/components/AsideCard.svelte';
     import { CarCrash, LocalHospital } from '@steeze-ui/material-design-icons';
+    import AsideCard from '$lib/components/AsideCard.svelte';
     import DataCollection from './DataCollection.svelte';
     import DataExploration from './DataExploration.svelte';
     import Hero from './Hero.svelte';
